@@ -1,0 +1,72 @@
+{
+  "protocol": "RML2018A_cls_dev_round5_iq",
+  "smoke": true,
+  "seed": 17,
+  "epochs": 5,
+  "variants": {
+    "R0": {
+      "best_epoch": 3,
+      "val_oa": 1.0,
+      "val_macro_f1": 0.041666666666666664,
+      "trainable_real_scalar_parameters": 2216760,
+      "real_scalar_parameters": 2216760,
+      "frozen_hash": null
+    },
+    "C0": {
+      "best_epoch": 3,
+      "val_oa": 1.0,
+      "val_macro_f1": 0.041666666666666664,
+      "trainable_real_scalar_parameters": 2215352,
+      "real_scalar_parameters": 2215352,
+      "frozen_hash": null
+    },
+    "Rb": {
+      "best_epoch": 3,
+      "val_oa": 1.0,
+      "val_macro_f1": 0.041666666666666664,
+      "trainable_real_scalar_parameters": 2216936,
+      "real_scalar_parameters": 2216936,
+      "frozen_hash": null
+    },
+    "Cb": {
+      "best_epoch": 3,
+      "val_oa": 1.0,
+      "val_macro_f1": 0.041666666666666664,
+      "trainable_real_scalar_parameters": 2215528,
+      "real_scalar_parameters": 2215528,
+      "frozen_hash": null
+    },
+    "Q_linear": {
+      "best_epoch": 1,
+      "val_oa": 1.0,
+      "val_macro_f1": 0.041666666666666664,
+      "trainable_real_scalar_parameters": 2219784,
+      "real_scalar_parameters": 2219784,
+      "frozen_hash": null
+    },
+    "Q_corr": {
+      "best_epoch": 1,
+      "val_oa": 1.0,
+      "val_macro_f1": 0.041666666666666664,
+      "trainable_real_scalar_parameters": 2219784,
+      "real_scalar_parameters": 2219784,
+      "frozen_hash": null
+    },
+    "R_corr": {
+      "best_epoch": 1,
+      "val_oa": 1.0,
+      "val_macro_f1": 0.041666666666666664,
+      "trainable_real_scalar_parameters": 2219824,
+      "real_scalar_parameters": 2219824,
+      "frozen_hash": null
+    },
+    "Q_corr_frozen": {
+      "best_epoch": 1,
+      "val_oa": 1.0,
+      "val_macro_f1": 0.041666666666666664,
+      "trainable_real_scalar_parameters": 2219752,
+      "real_scalar_parameters": 2219784,
+      "frozen_hash": "ae2672546fff581251993b758db952371058e7198028cf3b9b54c4b703052c73"
+    }
+  }
+}

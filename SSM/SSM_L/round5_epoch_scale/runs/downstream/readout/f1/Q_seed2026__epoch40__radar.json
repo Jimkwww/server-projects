@@ -1,0 +1,24 @@
+{
+  "status": "ok",
+  "encoder_sha256": "a4add7e105866e949ec472c9805ef7f2d75242f88dd9cbc9975233e2b3198af1",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round5_epoch_scale/runs/pretrain/f1/Q_seed2026/ckpt_epoch40.pt",
+  "step": 31280,
+  "pass": 40,
+  "val": {
+    "oa": 0.8115,
+    "macro_f1": 0.8116716390243461,
+    "n_iter": 549,
+    "converged": true
+  },
+  "test": {
+    "oa": 0.8203,
+    "macro_f1": 0.8204851483335498,
+    "n_iter": 549,
+    "converged": true
+  },
+  "corpus": "f1",
+  "seed": 2026,
+  "ckpt_name": "epoch40",
+  "backbone": "Q",
+  "task": "radar"
+}

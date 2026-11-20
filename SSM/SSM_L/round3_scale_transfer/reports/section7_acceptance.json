@@ -1,0 +1,314 @@
+[
+  {
+    "check": "weight_loading",
+    "key": "f1_G_seed17",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f1_G_seed42",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f1_G_seed2026",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f1_G_Qlearn_seed17",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f1_G_Qlearn_seed42",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f1_G_Qlearn_seed2026",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f1_Q_seed17",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f1_Q_seed42",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f1_Q_seed2026",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f2_G_seed17",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f2_G_seed42",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f2_G_seed2026",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f2_G_Qlearn_seed17",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f2_G_Qlearn_seed42",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f2_G_Qlearn_seed2026",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f2_Q_seed17",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f2_Q_seed42",
+    "ok": true
+  },
+  {
+    "check": "weight_loading",
+    "key": "f2_Q_seed2026",
+    "ok": true
+  },
+  {
+    "check": "q_trainable",
+    "key": "f1_G_Qlearn_seed17",
+    "ok": true,
+    "abs_sum": 26.057476043701172
+  },
+  {
+    "check": "q_trainable",
+    "key": "f1_G_Qlearn_seed42",
+    "ok": true,
+    "abs_sum": 25.559341430664062
+  },
+  {
+    "check": "q_trainable",
+    "key": "f1_G_Qlearn_seed2026",
+    "ok": true,
+    "abs_sum": 29.88866424560547
+  },
+  {
+    "check": "q_trainable",
+    "key": "f1_Q_seed17",
+    "ok": true,
+    "abs_sum": 17.223323822021484
+  },
+  {
+    "check": "q_trainable",
+    "key": "f1_Q_seed42",
+    "ok": true,
+    "abs_sum": 15.231832504272461
+  },
+  {
+    "check": "q_trainable",
+    "key": "f1_Q_seed2026",
+    "ok": true,
+    "abs_sum": 17.47905158996582
+  },
+  {
+    "check": "q_trainable",
+    "key": "f2_G_Qlearn_seed17",
+    "ok": true,
+    "abs_sum": 36.11354064941406
+  },
+  {
+    "check": "q_trainable",
+    "key": "f2_G_Qlearn_seed42",
+    "ok": true,
+    "abs_sum": 33.81282043457031
+  },
+  {
+    "check": "q_trainable",
+    "key": "f2_G_Qlearn_seed2026",
+    "ok": true,
+    "abs_sum": 35.15854263305664
+  },
+  {
+    "check": "q_trainable",
+    "key": "f2_Q_seed17",
+    "ok": true,
+    "abs_sum": 19.931591033935547
+  },
+  {
+    "check": "q_trainable",
+    "key": "f2_Q_seed42",
+    "ok": true,
+    "abs_sum": 18.62270736694336
+  },
+  {
+    "check": "q_trainable",
+    "key": "f2_Q_seed2026",
+    "ok": true,
+    "abs_sum": 19.9711971282959
+  },
+  {
+    "check": "data_isolation",
+    "key": "f1_disjoint_val",
+    "ok": true
+  },
+  {
+    "check": "data_isolation",
+    "key": "f1_disjoint_test",
+    "ok": true
+  },
+  {
+    "check": "data_isolation",
+    "key": "f1_includes_f0",
+    "ok": true
+  },
+  {
+    "check": "data_isolation",
+    "key": "f2c_subset_f1",
+    "ok": true
+  },
+  {
+    "check": "data_isolation",
+    "key": "f2c_disjoint_valtest",
+    "ok": true
+  },
+  {
+    "check": "data_isolation",
+    "key": "test_sealed",
+    "ok": true
+  },
+  {
+    "check": "resume_step",
+    "key": "f1_G_seed17",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f1_G_seed42",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f1_G_seed2026",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f1_G_Qlearn_seed17",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f1_G_Qlearn_seed42",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f1_G_Qlearn_seed2026",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f1_Q_seed17",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f1_Q_seed42",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f1_Q_seed2026",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f2_G_seed17",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f2_G_seed42",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f2_G_seed2026",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f2_G_Qlearn_seed17",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f2_G_Qlearn_seed42",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f2_G_Qlearn_seed2026",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f2_Q_seed17",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f2_Q_seed42",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "resume_step",
+    "key": "f2_Q_seed2026",
+    "ok": true,
+    "final_step": 7800
+  },
+  {
+    "check": "mask_before_q",
+    "key": "structural",
+    "ok": true,
+    "note": "mask_patches applied before front proj and aux_descriptor"
+  },
+  {
+    "check": "probe_frozen",
+    "key": "load_encoder",
+    "ok": true,
+    "note": "common.load_encoder sets requires_grad_(False) on all params"
+  }
+]

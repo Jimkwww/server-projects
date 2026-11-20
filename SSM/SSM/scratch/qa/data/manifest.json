@@ -1,0 +1,15 @@
+{
+  "format": "npy",
+  "x": "x.npy",
+  "y": "y.npy",
+  "snr": "snr.npy",
+  "layout": "NLC",
+  "label_format": "integer",
+  "normalization": "none",
+  "classes": 4,
+  "splits": {
+    "train": "train.npy",
+    "val": "val.npy",
+    "test": "test.npy"
+  }
+}

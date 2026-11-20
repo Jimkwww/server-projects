@@ -1,0 +1,2 @@
+model,params_M,trainable_M,size_disk_MB,size_fp32_MB,flops_G,flops_paper_G,latency_b1_ms,latency_b1_std_ms,throughput_b256_sps,gpu_mem_b1_MB,gpu_mem_b256_MB,param_mem_MB,f1
+A100-SXM4-FP32,18.06,2.11,69.2,68.9,4.63,1.75,10.486,0.416,1827.5,98.3,644.8,68.9,0.6474

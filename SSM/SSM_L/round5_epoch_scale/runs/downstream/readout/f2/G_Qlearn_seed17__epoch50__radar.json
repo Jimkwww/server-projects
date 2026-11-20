@@ -1,0 +1,24 @@
+{
+  "status": "ok",
+  "encoder_sha256": "4c8ab40b580b7d8a0f99fe14c243a6b9bf3a066b9a5dc48684b08b0e691524b2",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round5_epoch_scale/runs/pretrain/f2/G_Qlearn_seed17/encoder_final.pt",
+  "step": 39100,
+  "pass": 50,
+  "val": {
+    "oa": 0.7904,
+    "macro_f1": 0.7903184120175857,
+    "n_iter": 457,
+    "converged": true
+  },
+  "test": {
+    "oa": 0.7993,
+    "macro_f1": 0.7994423807774252,
+    "n_iter": 457,
+    "converged": true
+  },
+  "corpus": "f2",
+  "seed": 17,
+  "ckpt_name": "epoch50",
+  "backbone": "G_Qlearn",
+  "task": "radar"
+}

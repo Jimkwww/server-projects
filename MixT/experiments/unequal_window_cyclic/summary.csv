@@ -1,0 +1,5 @@
+run_id,seed,best_epoch,best_val_oa,macro_f1,last_val_oa,train_oa_at_best,parameters,window_budget,impl,train_seconds_total,peak_mem_bytes,checkpoint
+G_50_s2024,2024,21,0.3869,0.3766,0.3712,0.559,2251592,16384,global,344.9,1477814784,runs/G_50_s2024/best.pt
+U-F_50_s2024,2024,22,0.3577,0.3451,0.3465,0.6193,2251592,3872,dense_mask,341.0,1488300544,runs/U-F_50_s2024/best.pt
+U-C_50_s2024,2024,27,0.3462,0.3484,0.3378,0.7809,2251592,3872,dense_mask,341.7,1488300544,runs/U-C_50_s2024/best.pt
+E32-S_50_s2024,2024,18,0.35,0.3245,0.341,0.5201,2251592,4096,window32_shift16,338.3,1360923136,runs/E32-S_50_s2024/best.pt

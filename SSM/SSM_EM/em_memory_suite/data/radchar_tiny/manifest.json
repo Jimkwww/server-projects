@@ -1,0 +1,49 @@
+{
+  "dataset_id": "radchar_tiny",
+  "group_namespace": "radchar_tiny",
+  "provenance": "RadChar-Tiny radar waveforms (5-class) reused from SSM_L round2 split (train 30000/dev 10000/eval 10000). Samples independently simulated; groups=per-sample unique id. normalization=none. task=radar_waveform (radar waveform classification, not comm modulation).",
+  "tasks": {
+    "radar_waveform": {
+      "kind": "classification",
+      "outputs": 5,
+      "classes": [
+        "coherent_pulse_train",
+        "barker_code",
+        "polyphase_barker_code",
+        "frank_code",
+        "linear_frequency_modulated"
+      ]
+    }
+  },
+  "splits": {
+    "train": {
+      "x": "train_x.npy",
+      "ids": "train_ids.npy",
+      "groups": "train_groups.npy",
+      "snr": "train_snr.npy",
+      "targets": {
+        "radar_waveform": "train_y.npy"
+      }
+    },
+    "val": {
+      "x": "val_x.npy",
+      "ids": "val_ids.npy",
+      "groups": "val_groups.npy",
+      "snr": "val_snr.npy",
+      "targets": {
+        "radar_waveform": "val_y.npy"
+      }
+    },
+    "test": {
+      "x": "test_x.npy",
+      "ids": "test_ids.npy",
+      "groups": "test_groups.npy",
+      "snr": "test_snr.npy",
+      "targets": {
+        "radar_waveform": "test_y.npy"
+      }
+    }
+  },
+  "sample_rate_hz": null,
+  "center_frequency_hz": null
+}

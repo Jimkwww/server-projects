@@ -1,0 +1,24 @@
+{
+  "status": "ok",
+  "encoder_sha256": "351fe756a3f69ccaf69e8ffc224a366e1df76b2bba341158498b9f5dcc7825fd",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round6_objective_bidirectional/runs/pretrain/f1/Q_bi_denoise_seed2026/encoder_final.pt",
+  "step": 39100,
+  "pass": 50,
+  "val": {
+    "oa": 0.8222,
+    "macro_f1": 0.8218324651634333,
+    "n_iter": 746,
+    "converged": true
+  },
+  "test": {
+    "oa": 0.818,
+    "macro_f1": 0.8175681247674842,
+    "n_iter": 746,
+    "converged": true
+  },
+  "corpus": "f1",
+  "seed": 2026,
+  "ckpt_name": "epoch50",
+  "backbone": "Q_bi",
+  "task": "radar"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "encoder_sha256": "90e34f45d9d377284ef15f63cc5ecbf4ed3e1b1b53ab5dd73be7d5cc259d51f2",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round5_epoch_scale/runs/pretrain/f2/G_Qlearn_seed2026/ckpt_step7800.pt",
+  "step": 7800,
+  "pass": 9,
+  "val": {
+    "oa": 0.32403846153846155,
+    "macro_f1": 0.31239832702653625,
+    "n_iter": 769,
+    "converged": true
+  },
+  "corpus": "f2",
+  "seed": 2026,
+  "ckpt_name": "step7800",
+  "backbone": "G_Qlearn",
+  "task": "rml"
+}

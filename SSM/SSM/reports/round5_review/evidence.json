@@ -1,0 +1,40 @@
+{
+  "B_line_Q_corr_frozen_vs_Q_corr_init": {
+    "state_max_abs_diff": 0.0,
+    "descriptor_max_abs_diff": 0.0,
+    "logits_max_abs_diff": 0.0,
+    "bit_identical": true
+  },
+  "A_line_backbone_weight_identity": {
+    "n_keys": 40,
+    "all_r0_equal_s1": true,
+    "all_c0_equal_s1": true
+  },
+  "first_update_gradient_into_branch": {
+    "Wf_grad_step1": 3.7123632431030273,
+    "branch_grad_step1": {
+      "raw_alpha": 0.0,
+      "theta": 0.0,
+      "b": 0.0
+    },
+    "Wf_grad_step2": 3.36165714263916,
+    "branch_grad_step2": {
+      "raw_alpha": 0.0019940726924687624,
+      "theta": 0.02912619151175022,
+      "b": 4.4843869773103506e-07
+    }
+  },
+  "front_equivalent_weight_output_scale": {
+    "W_R_var": 0.021821288391947746,
+    "W_I_var": 0.020038804039359093,
+    "M_var": 0.02091924473643303,
+    "M_element_var_theoretical_1_over_48": 0.020833333333333332,
+    "M_vs_Linear_default_var": {
+      "M_var": 0.02091924473643303,
+      "nn_linear_var": 0.0211851354688406
+    },
+    "complex_front_output_var": 0.33546140789985657,
+    "real_front_output_var": 0.33546140789985657,
+    "output_max_abs_diff": 7.152557373046875e-07
+  }
+}

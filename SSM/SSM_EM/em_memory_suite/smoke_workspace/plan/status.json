@@ -1,0 +1,632 @@
+{
+  "pre_structured_s17": {
+    "status": "done",
+    "signature": "defe9e3ed72556e17708ae5551dc936af9c39067938dadfe532fa48a960c0c8a",
+    "returncode": 0,
+    "seconds": 2.4723989963531494
+  },
+  "pre_structured_s17_synthetic_waveform_probe_f1.0": {
+    "status": "done",
+    "signature": "7728ee0828399b2e0d954499be69aceed07ce3cbeed1e2a09b8a1a5e95d99eb5",
+    "returncode": 0,
+    "seconds": 2.318506956100464
+  },
+  "pre_structured_s17_synthetic_waveform_probe_f1.0_test": {
+    "status": "done",
+    "signature": "65efbb1b961acb6407b35d4dce537d1d6fdf35075c5020330cc0140095805d17",
+    "returncode": 0,
+    "seconds": 1.3108997344970703
+  },
+  "pre_structured_s17_synthetic_waveform_probe_f1.0_ood": {
+    "status": "done",
+    "signature": "063bd034ff655c73366b8abaf0eb521d96ce32dab13b6e95781977b162ab0f4a",
+    "returncode": 0,
+    "seconds": 1.3202629089355469
+  },
+  "pre_structured_s17_synthetic_waveform_finetune_f1.0": {
+    "status": "done",
+    "signature": "af2f5ebeeaeb8ec67124e6748aff5e248d6395a295c1cad3a6f2be625f36bd10",
+    "returncode": 0,
+    "seconds": 2.499067544937134
+  },
+  "pre_structured_s17_synthetic_waveform_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "7b458e238ee7f76ab06cb88e9c5df00679bf5ff9b8df0714188747fb4c344c85",
+    "returncode": 0,
+    "seconds": 1.31831693649292
+  },
+  "pre_structured_s17_synthetic_waveform_finetune_f1.0_ood": {
+    "status": "done",
+    "signature": "13b1542a477eb67b86042644eaeb2e3017bf6fd4e94690ba6ac5c5af38b502fa",
+    "returncode": 0,
+    "seconds": 1.332801103591919
+  },
+  "pre_structured_s17_synthetic_waveform_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "ba3d182ff26dcf871f7a160c77cbf4f4c8e84fa07a840e2843abfda162351760",
+    "returncode": 0,
+    "seconds": 1.333003044128418
+  },
+  "pre_structured_s17_synthetic_waveform_finetune_f1.0_drop_energy": {
+    "status": "done",
+    "signature": "38ff7a1699c5605ce4baed644ddf84dabd08021cd379f8cdbecb91f1d28eefcf",
+    "returncode": 0,
+    "seconds": 1.333500862121582
+  },
+  "pre_structured_s17_synthetic_waveform_finetune_f1.0_drop_coherence": {
+    "status": "done",
+    "signature": "d1f5d54dfe4a22fd1fd938bc2e72516420ce7e2e8dd0b0bc36ff4f1214cbb71f",
+    "returncode": 0,
+    "seconds": 1.3363769054412842
+  },
+  "pre_structured_s17_synthetic_waveform_finetune_f1.0_drop_spectrum": {
+    "status": "done",
+    "signature": "0fa7a0e955966493ab641c61ef4bc92dd49b4567dfb2fd6fd63a8c5ef17ee64f",
+    "returncode": 0,
+    "seconds": 1.3468642234802246
+  },
+  "pre_structured_s17_synthetic_waveform_finetune_f1.0_drop_period": {
+    "status": "done",
+    "signature": "18a4f08ae048219751958762d2724e8421fcdc700644ff6c007b32f209ec9e70",
+    "returncode": 0,
+    "seconds": 1.3353285789489746
+  },
+  "pre_structured_s17_synthetic_waveform_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "2ba7931bf9161ccfac63f6694596cb10e815b199f80598e4c46aab9e42c83357",
+    "returncode": 0,
+    "seconds": 1.335768461227417
+  },
+  "pre_structured_s17_diagnose": {
+    "status": "done",
+    "signature": "0d769fc8dc44e82cfc9e32739de34530ff8ce5e1bed0563361765ee9a7012655",
+    "returncode": 0,
+    "seconds": 1.4952316284179688
+  },
+  "pre_structured_s17_synthetic_regression_probe_f1.0": {
+    "status": "done",
+    "signature": "f0cce5641386ecc78a5b39811b1f29878a31ef6bc303434c1f70fecf94af10c4",
+    "returncode": 0,
+    "seconds": 2.3354358673095703
+  },
+  "pre_structured_s17_synthetic_regression_probe_f1.0_test": {
+    "status": "done",
+    "signature": "31ae3d40e60c1972567569c72c66fa120b61792675435004aafab9d970f61e9d",
+    "returncode": 0,
+    "seconds": 1.3291547298431396
+  },
+  "pre_structured_s17_synthetic_regression_probe_f1.0_ood": {
+    "status": "done",
+    "signature": "f10b27c58080b34ce2d04c6913ff49b71aa280f3083ee044ac3c797ce230e9eb",
+    "returncode": 0,
+    "seconds": 1.3189632892608643
+  },
+  "pre_structured_s17_synthetic_regression_finetune_f1.0": {
+    "status": "done",
+    "signature": "0df9127b206093286869805da7aff9e891a2323325b59eb72959ae00f8f1e7cd",
+    "returncode": 0,
+    "seconds": 2.4792206287384033
+  },
+  "pre_structured_s17_synthetic_regression_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "4c0f9180bbf7030b0406f5c7508c1674c2acc8bae12d33263c29a3fdde7b6b6d",
+    "returncode": 0,
+    "seconds": 1.3208303451538086
+  },
+  "pre_structured_s17_synthetic_regression_finetune_f1.0_ood": {
+    "status": "done",
+    "signature": "2ac42eec0709f199fc307ea5ca920f682ee4253865fb1257fd875b939b559602",
+    "returncode": 0,
+    "seconds": 1.3307933807373047
+  },
+  "pre_structured_s17_synthetic_regression_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "4e880be81ac0430a30be6706d3b959205d288b093118162c856e7e66852fe070",
+    "returncode": 0,
+    "seconds": 1.327193021774292
+  },
+  "pre_structured_s17_synthetic_regression_finetune_f1.0_drop_energy": {
+    "status": "done",
+    "signature": "1f6cdb15b067f0d61239cbcfb8674d5d1055a0b60f91d401ce63371e2b3ea422",
+    "returncode": 0,
+    "seconds": 1.3277535438537598
+  },
+  "pre_structured_s17_synthetic_regression_finetune_f1.0_drop_coherence": {
+    "status": "done",
+    "signature": "8144563380a5f32c9eaa9adbe61c485cd34cf83e8ee2256553972f1a2eb97aa1",
+    "returncode": 0,
+    "seconds": 1.3473634719848633
+  },
+  "pre_structured_s17_synthetic_regression_finetune_f1.0_drop_spectrum": {
+    "status": "done",
+    "signature": "b7332cd70467077170358cf0ceebdcc71020feabe9e8be9742795d0e77c812a8",
+    "returncode": 0,
+    "seconds": 1.334367036819458
+  },
+  "pre_structured_s17_synthetic_regression_finetune_f1.0_drop_period": {
+    "status": "done",
+    "signature": "4b3a6355033f7dabb8a039e49ce350534c5bfe107b7cce091f3d241b90c10427",
+    "returncode": 0,
+    "seconds": 1.362567663192749
+  },
+  "pre_structured_s17_synthetic_regression_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "08700ef2031efa08f4c675e85167bd3d4e1377c06fb063441c9811c44f71913d",
+    "returncode": 0,
+    "seconds": 1.3329761028289795
+  },
+  "pre_structured_s17_synthetic_segmentation_probe_f1.0": {
+    "status": "done",
+    "signature": "32eefd963897917d1bb433e737b8dbfc47d84307757f467cbf77c750748da549",
+    "returncode": 0,
+    "seconds": 2.336895704269409
+  },
+  "pre_structured_s17_synthetic_segmentation_probe_f1.0_test": {
+    "status": "done",
+    "signature": "9fea109bc2c421f4b475e4f1966ac9e05ab0f8b1e6058c8c347df7b19a5ba08d",
+    "returncode": 0,
+    "seconds": 1.3089945316314697
+  },
+  "pre_structured_s17_synthetic_segmentation_probe_f1.0_ood": {
+    "status": "done",
+    "signature": "d7cc3ed7f202961fd3ef6f14227d4e2910282d4796499135a7e4c6e28de98879",
+    "returncode": 0,
+    "seconds": 1.3415663242340088
+  },
+  "pre_structured_s17_synthetic_segmentation_finetune_f1.0": {
+    "status": "done",
+    "signature": "8722e254ca907040d009202a31bac5d9b0c88d8907d10c04fa60d1ee35aeaca3",
+    "returncode": 0,
+    "seconds": 2.4837002754211426
+  },
+  "pre_structured_s17_synthetic_segmentation_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "42524d31fb6ee4db301be70822dbf5690e4fa596d089850294e66038375f8bde",
+    "returncode": 0,
+    "seconds": 1.3074951171875
+  },
+  "pre_structured_s17_synthetic_segmentation_finetune_f1.0_ood": {
+    "status": "done",
+    "signature": "bdc2c2cc36bc420fde702fd9bb4616b0a61d12d2520d3e60dc284418ee5f0c17",
+    "returncode": 0,
+    "seconds": 1.3481600284576416
+  },
+  "pre_structured_s17_synthetic_segmentation_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "801e5ee58b1ee611506a591e7fa50c11cbf311604f733f94b1fb422db0ec32eb",
+    "returncode": 0,
+    "seconds": 1.3519823551177979
+  },
+  "pre_structured_s17_synthetic_segmentation_finetune_f1.0_drop_energy": {
+    "status": "done",
+    "signature": "6cc29a81a0c827c8fe5275e1da7ff8857716b31eccc7d37c9ea2f28433df408a",
+    "returncode": 0,
+    "seconds": 1.3294801712036133
+  },
+  "pre_structured_s17_synthetic_segmentation_finetune_f1.0_drop_coherence": {
+    "status": "done",
+    "signature": "289c46f1b3f8e29310985c03e8a3890f336cbb6fa80b78d1b21b3fe1c3fd18cc",
+    "returncode": 0,
+    "seconds": 1.327998399734497
+  },
+  "pre_structured_s17_synthetic_segmentation_finetune_f1.0_drop_spectrum": {
+    "status": "done",
+    "signature": "e4eabfaddd22f9ae8e3f5280f4622ac7caae1774058def84bd479dd5fbf466b8",
+    "returncode": 0,
+    "seconds": 1.3357973098754883
+  },
+  "pre_structured_s17_synthetic_segmentation_finetune_f1.0_drop_period": {
+    "status": "done",
+    "signature": "7ea81996e88f5304b8fe50134caaf689b57860cdb5c26f1127b0bb4dd173f746",
+    "returncode": 0,
+    "seconds": 1.33302903175354
+  },
+  "pre_structured_s17_synthetic_segmentation_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "9bb394432161e9c9e106e193fb03da043e4bf21de2011bd357cc56e9469edd66",
+    "returncode": 0,
+    "seconds": 1.3369331359863281
+  },
+  "pre_structured_s17_benchmark": {
+    "status": "done",
+    "signature": "f6fe5d3500e96370e3c9e19d672e704931ed1a14319fe38d44aa565b5194fdb7",
+    "returncode": 0,
+    "seconds": 0.9591813087463379
+  },
+  "pre_generic_ssm_recon_s17": {
+    "status": "done",
+    "signature": "9bfc4d5ccfbdc4863d873ced2f3072e66a380653aefb1dc0c46a1ad7a4a774cc",
+    "returncode": 0,
+    "seconds": 2.3072433471679688
+  },
+  "pre_generic_ssm_recon_s17_synthetic_waveform_probe_f1.0": {
+    "status": "done",
+    "signature": "74545afb69fbd77003999e430c0ee04280446bff1f898e0d75726628b981027f",
+    "returncode": 0,
+    "seconds": 2.256730794906616
+  },
+  "pre_generic_ssm_recon_s17_synthetic_waveform_probe_f1.0_test": {
+    "status": "done",
+    "signature": "3b70af2477e15a3ce0ee49edb871b5dc17d15fa29ec4672c552683e525502133",
+    "returncode": 0,
+    "seconds": 1.2974011898040771
+  },
+  "pre_generic_ssm_recon_s17_synthetic_waveform_probe_f1.0_ood": {
+    "status": "done",
+    "signature": "85bd5793640386b91e815fb55b2bf6352fa565d7b9c9c136132245bc93dd6316",
+    "returncode": 0,
+    "seconds": 1.3111319541931152
+  },
+  "pre_generic_ssm_recon_s17_synthetic_waveform_finetune_f1.0": {
+    "status": "done",
+    "signature": "d176ec3d44c17eddcc296ac8418313a7d09a9fa12ce0f8b9b0103e2201497fd7",
+    "returncode": 0,
+    "seconds": 2.344162940979004
+  },
+  "pre_generic_ssm_recon_s17_synthetic_waveform_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "beabf6eb50b3f12b824c526c8d190cb3abe4378dc25dd4dab5b6983d9cb772f4",
+    "returncode": 0,
+    "seconds": 1.2982020378112793
+  },
+  "pre_generic_ssm_recon_s17_synthetic_waveform_finetune_f1.0_ood": {
+    "status": "done",
+    "signature": "f15b8c3b1e94c9a4e3423254d8781e8a03ac94c5087e4d9d6cc96c72643fa188",
+    "returncode": 0,
+    "seconds": 1.306739330291748
+  },
+  "pre_generic_ssm_recon_s17_synthetic_waveform_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "3a97bdb8ccafe3d8276fa431f2cdaf9536bb1942d4b84acc5fa4c304cef5da7e",
+    "returncode": 0,
+    "seconds": 1.3176591396331787
+  },
+  "pre_generic_ssm_recon_s17_synthetic_waveform_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "dd786d34d49db015376f1e96976455d7a040042014c674464020eca2780156c6",
+    "returncode": 0,
+    "seconds": 1.3145601749420166
+  },
+  "pre_generic_ssm_recon_s17_diagnose": {
+    "status": "done",
+    "signature": "d0e053b92a3527d3e50326ea6e9f4f6b9576ba3a8288fd4932aaa5181131ab8a",
+    "returncode": 0,
+    "seconds": 1.4716403484344482
+  },
+  "pre_generic_ssm_recon_s17_synthetic_regression_probe_f1.0": {
+    "status": "done",
+    "signature": "79a79b42e25898ec6042d00bc729f7410fc90812e1df8b1b6dd2f34eed161999",
+    "returncode": 0,
+    "seconds": 2.2701058387756348
+  },
+  "pre_generic_ssm_recon_s17_synthetic_regression_probe_f1.0_test": {
+    "status": "done",
+    "signature": "98edcf2c6e4dcc949d033c169e45040038fc71c7ebfde419a41fb3905e970678",
+    "returncode": 0,
+    "seconds": 1.287322998046875
+  },
+  "pre_generic_ssm_recon_s17_synthetic_regression_probe_f1.0_ood": {
+    "status": "done",
+    "signature": "f0d25d6cf9a4b1090b74a091c9c14c85b53eeda7d0f6263ab3475490689a76dc",
+    "returncode": 0,
+    "seconds": 1.3013324737548828
+  },
+  "pre_generic_ssm_recon_s17_synthetic_regression_finetune_f1.0": {
+    "status": "done",
+    "signature": "96c99f32445b4d65cd804ed3a02f27b72ce9e9c9fdb05da9a12be281136bb0b8",
+    "returncode": 0,
+    "seconds": 2.3265225887298584
+  },
+  "pre_generic_ssm_recon_s17_synthetic_regression_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "cee8d4c685be98a8a391a53725635e53b08b7427269f66323c0cd7447c80dfcb",
+    "returncode": 0,
+    "seconds": 1.286510944366455
+  },
+  "pre_generic_ssm_recon_s17_synthetic_regression_finetune_f1.0_ood": {
+    "status": "done",
+    "signature": "7597b91dcf6c4db963749991ed971cef55fbf82111a4746411c09d32b4603f4f",
+    "returncode": 0,
+    "seconds": 1.291750431060791
+  },
+  "pre_generic_ssm_recon_s17_synthetic_regression_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "8e3a04c242eded039b79be7641893455c48732da825834cf3128ed9d87b29bf2",
+    "returncode": 0,
+    "seconds": 1.3074681758880615
+  },
+  "pre_generic_ssm_recon_s17_synthetic_regression_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "2db6491a36edd04fa80c7b412806007188e7af13a5e9f21254117738f3dc0b20",
+    "returncode": 0,
+    "seconds": 1.311241865158081
+  },
+  "pre_generic_ssm_recon_s17_synthetic_segmentation_probe_f1.0": {
+    "status": "done",
+    "signature": "697ab311f9ed5103c3dc119a654f51c9c1f90417d612f4747d8d491a925802ea",
+    "returncode": 0,
+    "seconds": 2.2752976417541504
+  },
+  "pre_generic_ssm_recon_s17_synthetic_segmentation_probe_f1.0_test": {
+    "status": "done",
+    "signature": "38581f847ad649e9262b321cbedd119203052f67f4db5f122820604c392fd0e9",
+    "returncode": 0,
+    "seconds": 1.284607172012329
+  },
+  "pre_generic_ssm_recon_s17_synthetic_segmentation_probe_f1.0_ood": {
+    "status": "done",
+    "signature": "87587c52ae72d4837a08176cc1587370bf0e8ef77dae92b5980b1436b6ddc954",
+    "returncode": 0,
+    "seconds": 1.3330459594726562
+  },
+  "pre_generic_ssm_recon_s17_synthetic_segmentation_finetune_f1.0": {
+    "status": "done",
+    "signature": "d7de93f2691c2d6d7f23a30764d3645b1174fff86b63270272e03f9b7d1b60d9",
+    "returncode": 0,
+    "seconds": 2.340561866760254
+  },
+  "pre_generic_ssm_recon_s17_synthetic_segmentation_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "bdfb81faf53b81c6275914bc939a529cde8cc8dd2b89deaf2a08b87fa86105df",
+    "returncode": 0,
+    "seconds": 1.3058178424835205
+  },
+  "pre_generic_ssm_recon_s17_synthetic_segmentation_finetune_f1.0_ood": {
+    "status": "done",
+    "signature": "f8e92cd2730c1fc76e6a7791df44723426efa732c5c5e0cfbedcf747bc6773a7",
+    "returncode": 0,
+    "seconds": 1.3120906352996826
+  },
+  "pre_generic_ssm_recon_s17_synthetic_segmentation_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "2a8758db42303b887cc6fca65d8f191117fc514d2f0230c93c7ab1b3cdf3d09f",
+    "returncode": 0,
+    "seconds": 1.3030261993408203
+  },
+  "pre_generic_ssm_recon_s17_synthetic_segmentation_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "0d708515911c016076d032d185bb0bb56587d826aaa22c0cd521219dd18e6e00",
+    "returncode": 0,
+    "seconds": 1.300652027130127
+  },
+  "pre_generic_ssm_recon_s17_benchmark": {
+    "status": "done",
+    "signature": "995522ef79ab4da217a4e7c7baeec90790bd411d6260c75ac1b3e3275f072535",
+    "returncode": 0,
+    "seconds": 0.9095284938812256
+  },
+  "pre_pointwise_physical_s17": {
+    "status": "done",
+    "signature": "c81f68e0944ac642ef0adf03fcfae49358f8e6c573502cb6781cb32beddd5b60",
+    "returncode": 0,
+    "seconds": 2.3779988288879395
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_probe_f1.0": {
+    "status": "done",
+    "signature": "c18a97440d1a528136196636323bb78bfa8a83cd4681bbbeb7308bf82dd6b7ba",
+    "returncode": 0,
+    "seconds": 2.3068389892578125
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_probe_f1.0_test": {
+    "status": "done",
+    "signature": "f43e87993c40e4655b22a8146ffad694aec9d77745482711728140f1582ceba6",
+    "returncode": 0,
+    "seconds": 1.305422306060791
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_probe_f1.0_ood": {
+    "status": "done",
+    "signature": "cda86d66aa025561c731b2d224551b582e5018f5a32e9f2c02fde5082489e943",
+    "returncode": 0,
+    "seconds": 1.3152861595153809
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_finetune_f1.0": {
+    "status": "done",
+    "signature": "780137af625313e6960286267d0fcfa01be4e844a8ca83f3f253fad894f5b6f8",
+    "returncode": 0,
+    "seconds": 2.413888931274414
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "b8ca1b12870dd527e04bfbba5cf56df60bd3c392260850fa54d157eef4a97abc",
+    "returncode": 0,
+    "seconds": 1.3106262683868408
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_finetune_f1.0_ood": {
+    "status": "done",
+    "signature": "4a205f98bb092942b7ed0db8efa1b97285a9705ca72835347b3f2840e2ddd574",
+    "returncode": 0,
+    "seconds": 1.312828779220581
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "ea5688b1c792ad47bc2adbe16e00b469161c72aee0c2d54349a64b753464c965",
+    "returncode": 0,
+    "seconds": 1.3320398330688477
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_finetune_f1.0_drop_energy": {
+    "status": "done",
+    "signature": "9700ffd806a9fe06029803e704b8ca68f70ecf5960450ecb04bade5e78967e24",
+    "returncode": 0,
+    "seconds": 1.3204255104064941
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_finetune_f1.0_drop_coherence": {
+    "status": "done",
+    "signature": "91b40387ab148af1fa090131f7ab4165205edee235e68c2862fd54ed8c7f2799",
+    "returncode": 0,
+    "seconds": 1.3273570537567139
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_finetune_f1.0_drop_spectrum": {
+    "status": "done",
+    "signature": "72ee1823aed8008dfc8c4e42bc4ab5f89f018b4d4140a9d3a09e61407f7980ad",
+    "returncode": 0,
+    "seconds": 1.33736252784729
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_finetune_f1.0_drop_period": {
+    "status": "done",
+    "signature": "2526262e1f7a0d3dec5c29076e614fcd2be50f9f968c012ba1acd3e877e0354e",
+    "returncode": 0,
+    "seconds": 1.34547758102417
+  },
+  "pre_pointwise_physical_s17_synthetic_waveform_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "e874c1f5b72c74a981b2c2b2e1d4ea2f62a3526eea7cf12c4daf374bb9db503d",
+    "returncode": 0,
+    "seconds": 1.3284602165222168
+  },
+  "pre_pointwise_physical_s17_diagnose": {
+    "status": "done",
+    "signature": "a038ef45a3bfd642bcc9494f707b7bf6551f53245bc4b1d55f1b0d3edf253431",
+    "returncode": 0,
+    "seconds": 1.449632167816162
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_probe_f1.0": {
+    "status": "done",
+    "signature": "f0a5ba41f395b36205148e80890797e1b780cf922bb624ff93f94c66a942730f",
+    "returncode": 0,
+    "seconds": 2.311720609664917
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_probe_f1.0_test": {
+    "status": "done",
+    "signature": "e71d5553599f7a5409a677e30831144b55cb68a36cc3826c21e7cc8c1de01c7f",
+    "returncode": 0,
+    "seconds": 1.3178815841674805
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_probe_f1.0_ood": {
+    "status": "done",
+    "signature": "79bf79593e30ed551f4d75f2d0b0d44809efbc87b1773d79c6665a0d04782561",
+    "returncode": 0,
+    "seconds": 1.3218364715576172
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_finetune_f1.0": {
+    "status": "done",
+    "signature": "340b6ad1b514c8c5cee3ec067ab95a0e638694b4d6db956e0a79d777538a13f2",
+    "returncode": 0,
+    "seconds": 2.4168641567230225
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "cee2d77cc1a2d0527f012a89d1045d9aa0923efa9139b8e9d939c59d53a52063",
+    "returncode": 0,
+    "seconds": 1.3130037784576416
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_finetune_f1.0_ood": {
+    "status": "done",
+    "signature": "c467dce9d439ce16e83fd32fd0b9c4c1d6f2b49e6800397dd78a3a166a9ee0d6",
+    "returncode": 0,
+    "seconds": 1.33699631690979
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "db85c3047ac82b160ed18166a555e5f39c2ce376f733378db4d5e844fc78a988",
+    "returncode": 0,
+    "seconds": 1.31941556930542
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_finetune_f1.0_drop_energy": {
+    "status": "done",
+    "signature": "64ae5e8f9d3586799b3a8e9c33b95d341476ecdd47e95ac78119fb6d2f198e40",
+    "returncode": 0,
+    "seconds": 1.3269612789154053
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_finetune_f1.0_drop_coherence": {
+    "status": "done",
+    "signature": "e845fed09f5abcab93336be0b26f1a1d278dc085cf1c636e2662a376e518680c",
+    "returncode": 0,
+    "seconds": 1.325953722000122
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_finetune_f1.0_drop_spectrum": {
+    "status": "done",
+    "signature": "dd1a5a79831bb2575698925288b914d6fe49a26e391d4bf8fd98330e1cfff269",
+    "returncode": 0,
+    "seconds": 1.3169012069702148
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_finetune_f1.0_drop_period": {
+    "status": "done",
+    "signature": "27543997bedafdfb60a97b44dc0f72b851d689fb8e143dc96ccfc0a41c44631a",
+    "returncode": 0,
+    "seconds": 1.32157301902771
+  },
+  "pre_pointwise_physical_s17_synthetic_regression_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "3a073b086328c8f627b8775ccc3880fb74d39205f4d9437df52a7019c8d3b679",
+    "returncode": 0,
+    "seconds": 1.326483964920044
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_probe_f1.0": {
+    "status": "done",
+    "signature": "d87bfa49e973fdd963b2aee174e9acca024bb3666b5dc3b1075dd5799b423b67",
+    "returncode": 0,
+    "seconds": 2.299504041671753
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_probe_f1.0_test": {
+    "status": "done",
+    "signature": "e434d97fb5fe34ddc278f2f80313b624685347c71ca05a6cf6524d72d119e727",
+    "returncode": 0,
+    "seconds": 1.300487756729126
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_probe_f1.0_ood": {
+    "status": "done",
+    "signature": "19591be445f8654b70140ba6403e2a6a349b45c2d72f8bf3f2f33c2a1ea8357e",
+    "returncode": 0,
+    "seconds": 1.3133888244628906
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_finetune_f1.0": {
+    "status": "done",
+    "signature": "905038802eda3c41341fe8618357ef7b97a14c90f207609f716a951611b00733",
+    "returncode": 0,
+    "seconds": 2.420266628265381
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "13ad8501e586d7a444c602ef8e9310ea2c6be9d08c4c705a1377db854a8f03ff",
+    "returncode": 0,
+    "seconds": 1.3122060298919678
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_finetune_f1.0_ood": {
+    "status": "done",
+    "signature": "8729b0e66b1982c7fdde0385b4f0ddf065f51162b095b2aba8a108174e239245",
+    "returncode": 0,
+    "seconds": 1.3128395080566406
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "ec1c2f0c16421bb59673f587679d3e3e6405f0feb55ed6979f4b96d1b9721ae2",
+    "returncode": 0,
+    "seconds": 1.3197014331817627
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_finetune_f1.0_drop_energy": {
+    "status": "done",
+    "signature": "bf4680c2228c5e1776da03d22bb319e639358a39cab91b56a816f6eed898f7c9",
+    "returncode": 0,
+    "seconds": 1.3187272548675537
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_finetune_f1.0_drop_coherence": {
+    "status": "done",
+    "signature": "4650ef834cd4112a57c6ea35d9fe7f22aee434dcd621bf2a73ec6669caea945f",
+    "returncode": 0,
+    "seconds": 1.3240079879760742
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_finetune_f1.0_drop_spectrum": {
+    "status": "done",
+    "signature": "78cfa404f065b8d2b9a4d8c5f6e283f82df1571795c9ebf11915c3652978b098",
+    "returncode": 0,
+    "seconds": 1.325392246246338
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_finetune_f1.0_drop_period": {
+    "status": "done",
+    "signature": "c5d6aec696e53b2a2c1cfa9078c81f0b8a738ea29cfced95dcd4bbc2f061d464",
+    "returncode": 0,
+    "seconds": 1.3151063919067383
+  },
+  "pre_pointwise_physical_s17_synthetic_segmentation_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "e5e787c2dcb640f95baaf4ef8e7f9722b48a19c973b672ba0b63746b5bf08a33",
+    "returncode": 0,
+    "seconds": 1.3227660655975342
+  },
+  "pre_pointwise_physical_s17_benchmark": {
+    "status": "done",
+    "signature": "dc3f8d07a04159a44fdd01bd7e710812c85419bc6a64767a812b8dc92a772afe",
+    "returncode": 0,
+    "seconds": 0.9445583820343018
+  }
+}

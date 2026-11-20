@@ -1,0 +1,26 @@
+# Environment — 2026-10-29 08:03:34
+conda env: SFM
+python 3.11.16
+torch 2.14.0+cu126
+torch.cuda 12.6
+cuda_available True
+numpy 2.4.6
+h5py 3.16.0
+--- GPU ---
+0, NVIDIA A100-PCIE-40GB, 40960 MiB, 610.57.04
+1, NVIDIA A100-SXM4-40GB, 40960 MiB, 610.57.04
+2, NVIDIA A100-SXM4-40GB, 40960 MiB, 610.57.04
+--- driver ---
+610.57.04
+--- relevant pip ---
+h5py                     3.16.0
+matplotlib               3.11.1
+numpy                    2.4.6
+pytest                   9.1.1
+scikit-learn             1.9.0
+scipy                    1.17.1
+torch                    2.14.0+cu126
+torchao                  0.18.0
+torchaudio               2.11.0+cu126
+torchsummary             1.5.1
+torchvision              0.29.0+cu126

@@ -1,0 +1,4 @@
+name,pool,status,reason,independent_records,preprocessing,sha256
+F0,RML2018A cls_dev train,可用,第一轮 RML train,19968,"none (raw IQ, max_abs_norm in-loop)",fa77d43ff3613227db2521bd8438f708b2c69347df6c2ce87a59d070319b90c6
+F1,"RML2018A (minus cls_dev val/test, deduped)",可用,同域扩大；独立 IQ 去重后池,100000,none (raw IQ),1d4aeb14124dca990c3f0f92016322a6027e33a88eee74166855746d4346b50c
+F2,50% comm + 50% OOD raw IQ,不适用,异域原始 IQ 无合格语料：RadChar 已整体留出用于 E；RadarCommDataset 为实值(非复 IQ)；EM-Radar-mixed 为盲源分离(非分类)。,0,n/a,

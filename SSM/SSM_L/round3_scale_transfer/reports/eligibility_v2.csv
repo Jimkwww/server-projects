@@ -1,0 +1,4 @@
+name,pool,status,reason,independent_records,preprocessing,sha256
+F0,RML2018A cls_dev train,可用,第一轮 RML train（24 调制 x 26 SNR x 32，分层平衡）,19968,none (raw IQ),(见 f1_meta per_cell；F0 全量并入 F1)
+F1,"RML2018A 全量 - cls_dev val/test（(mod,SNR) 分层，含全部 F0）",可用,"同域扩大；修正 round-2 按索引顺序扫描导致的 mod-0-only 缺陷，改 (mod,SNR) 分层",100000 行 / 100000 唯一 IQ,none (raw IQ),ed61aebc507d8f45645572844748f41cbfa1044606f13f04c08b14f882db303d
+F2,50k comm(F1 分层子集) + 50k OOD(EM-Radar-mixed),可用,异域 IQ 合格（EM-Radar 为雷达+通信混合复 IQ，5MHz/16dB/1024 点，36 标签；RadChar 已整体留出用于迁移评估，二者长度不同 512 vs 1024，无样本重叠）,50000 + 50000,comm: none(raw IQ float32)；ood: float64->float32，max_abs_norm in-loop,comm=1afb514ba48abd3e... ood=ed140b8dc8d5e6af...

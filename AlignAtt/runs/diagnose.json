@@ -1,0 +1,133 @@
+{
+  "args": {
+    "pairs": 1000,
+    "P": 8,
+    "d": 2,
+    "snr": "inf,20,10,0,-10",
+    "seed": 17,
+    "device": "cpu",
+    "out": "runs/diagnose.json"
+  },
+  "results": {
+    "noiseless": {
+      "controlled": {
+        "max_abs_mean": 0.9999998807907104,
+        "max_abs_median": 0.9999998211860657,
+        "delay_acc": 0.264,
+        "delay_mae": 2.233,
+        "entropy_mean": 0.32660701777453677
+      },
+      "same_class": {
+        "max_abs_mean": 0.7028958797454834,
+        "max_abs_median": 0.7453558444976807,
+        "entropy_mean": 0.7073579895918739
+      },
+      "diff_class": {
+        "max_abs_mean": 0.7058000564575195,
+        "max_abs_median": 0.7177404761314392,
+        "entropy_mean": 0.717051754788609
+      },
+      "noise": {
+        "max_abs_mean": 0.5519749522209167,
+        "max_abs_median": 0.5457775592803955,
+        "entropy_mean": 0.6724954632244756
+      }
+    },
+    "SNR 20dB": {
+      "controlled": {
+        "max_abs_mean": 0.9920803904533386,
+        "max_abs_median": 0.9925463199615479,
+        "delay_acc": 0.308,
+        "delay_mae": 1.875,
+        "entropy_mean": 0.34834902140082685
+      },
+      "same_class": {
+        "max_abs_mean": 0.6922525763511658,
+        "max_abs_median": 0.723829984664917,
+        "entropy_mean": 0.7025849711446822
+      },
+      "diff_class": {
+        "max_abs_mean": 0.7036430835723877,
+        "max_abs_median": 0.7237800359725952,
+        "entropy_mean": 0.719849870115273
+      },
+      "noise": {
+        "max_abs_mean": 0.5495839715003967,
+        "max_abs_median": 0.5495179891586304,
+        "entropy_mean": 0.6729252728987322
+      }
+    },
+    "SNR 10dB": {
+      "controlled": {
+        "max_abs_mean": 0.9285898208618164,
+        "max_abs_median": 0.9328228235244751,
+        "delay_acc": 0.306,
+        "delay_mae": 1.9,
+        "entropy_mean": 0.42496339963647134
+      },
+      "same_class": {
+        "max_abs_mean": 0.6841691136360168,
+        "max_abs_median": 0.7097594738006592,
+        "entropy_mean": 0.6980915358979707
+      },
+      "diff_class": {
+        "max_abs_mean": 0.6817001104354858,
+        "max_abs_median": 0.7048991918563843,
+        "entropy_mean": 0.7263812575147435
+      },
+      "noise": {
+        "max_abs_mean": 0.5574316382408142,
+        "max_abs_median": 0.5540865659713745,
+        "entropy_mean": 0.6627394092675924
+      }
+    },
+    "SNR 0dB": {
+      "controlled": {
+        "max_abs_mean": 0.6764459013938904,
+        "max_abs_median": 0.6831666231155396,
+        "delay_acc": 0.212,
+        "delay_mae": 1.821,
+        "entropy_mean": 0.5890174119273307
+      },
+      "same_class": {
+        "max_abs_mean": 0.5892384648323059,
+        "max_abs_median": 0.5941438674926758,
+        "entropy_mean": 0.6868670282899171
+      },
+      "diff_class": {
+        "max_abs_mean": 0.5974980592727661,
+        "max_abs_median": 0.6046323180198669,
+        "entropy_mean": 0.6741257128959511
+      },
+      "noise": {
+        "max_abs_mean": 0.5527765154838562,
+        "max_abs_median": 0.5483178496360779,
+        "entropy_mean": 0.6670777851827776
+      }
+    },
+    "SNR -10dB": {
+      "controlled": {
+        "max_abs_mean": 0.5593675971031189,
+        "max_abs_median": 0.5627375841140747,
+        "delay_acc": 0.198,
+        "delay_mae": 1.566,
+        "entropy_mean": 0.6622664626818351
+      },
+      "same_class": {
+        "max_abs_mean": 0.5556245446205139,
+        "max_abs_median": 0.5514136552810669,
+        "entropy_mean": 0.6676792236691226
+      },
+      "diff_class": {
+        "max_abs_mean": 0.5546202659606934,
+        "max_abs_median": 0.5481990575790405,
+        "entropy_mean": 0.6711847763104718
+      },
+      "noise": {
+        "max_abs_mean": 0.5530068278312683,
+        "max_abs_median": 0.5552966594696045,
+        "entropy_mean": 0.6733369228204962
+      }
+    }
+  }
+}

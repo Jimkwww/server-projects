@@ -1,0 +1,18 @@
+{
+  "dataset_id": "REPLACE_WITH_DATASET_VERSION",
+  "group_namespace": "REPLACE_WITH_CAPTURE_SOURCE_NAMESPACE",
+  "provenance": "Record source/version/license/split protocol/capture identities and prior project split hashes",
+  "sample_rate_hz": null,
+  "center_frequency_hz": null,
+  "amplitude_policy": "fixed dataset calibration; preserve gain; if source has normalized away absolute power mark it unavailable",
+  "tasks": {
+    "modulation": {"kind": "classification", "outputs": 24},
+    "parameters": {"kind": "regression", "outputs": 2, "names": ["observable_1", "observable_2"], "loss_scale": [1.0, 0.01]},
+    "activity": {"kind": "segmentation", "outputs": 2}
+  },
+  "splits": {
+    "train": {"x": "train_x.npy", "ids": "train_ids.npy", "groups": "train_groups.npy", "snr": "train_snr.npy", "targets": {"modulation": "train_y.npy"}},
+    "val": {"x": "val_x.npy", "ids": "val_ids.npy", "groups": "val_groups.npy", "snr": "val_snr.npy", "targets": {"modulation": "val_y.npy"}},
+    "test": {"x": "test_x.npy", "ids": "test_ids.npy", "groups": "test_groups.npy", "snr": "test_snr.npy", "targets": {"modulation": "test_y.npy"}}
+  }
+}

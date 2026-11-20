@@ -1,0 +1,45 @@
+{
+  "protocol": {
+    "verified": true,
+    "audit_report": "/home/user_wzk/wzk/projects/SSM/SSM/reports/server_audit.md",
+    "name": "RML2018A_cls_dev_round5_iq"
+  },
+  "model": {
+    "variant": "R0",
+    "patch": 8,
+    "dim": 176,
+    "depth": 6,
+    "heads": 4,
+    "state": 128,
+    "selector_hidden": 64,
+    "classes": 24,
+    "input_length": 1024,
+    "ffn_ratio": 4,
+    "dropout": 0.0,
+    "position": "none",
+    "direction": "forward",
+    "scan": "parallel",
+    "ssm_gain": 1.0
+  },
+  "train": {
+    "seed": 17,
+    "epochs": 5,
+    "lr": 0.0003,
+    "batch_size": 128,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "scheduler": "cosine",
+    "warmup_fraction": 0.05,
+    "grad_clip": 1.0,
+    "precision": "fp32",
+    "augment_cfo_max": 0.002,
+    "physical_fit_samples": 8192,
+    "aux_fit_samples": 8192,
+    "diagnostic_every": 100,
+    "augment_on_raw": true
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "dataset_id": "rml2018a_clsdev",
+  "group_namespace": "rml2018a_clsdev",
+  "provenance": "RML2018A (Deepsig 2018.01a) 24-class AMC. Splits reused from SSM_L cls_dev (train 19968/val 3120/test 8112), (mod,SNR) stratified. Samples independently simulated; no shared source-capture grouping -> groups=per-sample unique id. normalization=none (raw IQ, amplitude retained). sample_rate_hz/center_frequency_hz unavailable (source provides none).",
+  "tasks": {
+    "modulation": {
+      "kind": "classification",
+      "outputs": 24,
+      "classes": [
+        "OOK",
+        "4ASK",
+        "8ASK",
+        "BPSK",
+        "QPSK",
+        "8PSK",
+        "16PSK",
+        "32PSK",
+        "16APSK",
+        "32APSK",
+        "64APSK",
+        "128APSK",
+        "16QAM",
+        "32QAM",
+        "64QAM",
+        "128QAM",
+        "256QAM",
+        "AM-SSB-WC",
+        "AM-SSB-SC",
+        "AM-DSB-WC",
+        "AM-DSB-SC",
+        "FM",
+        "GMSK",
+        "OQPSK"
+      ]
+    }
+  },
+  "splits": {
+    "train": {
+      "x": "train_x.npy",
+      "ids": "train_ids.npy",
+      "groups": "train_groups.npy",
+      "snr": "train_snr.npy",
+      "targets": {
+        "modulation": "train_y.npy"
+      }
+    },
+    "val": {
+      "x": "val_x.npy",
+      "ids": "val_ids.npy",
+      "groups": "val_groups.npy",
+      "snr": "val_snr.npy",
+      "targets": {
+        "modulation": "val_y.npy"
+      }
+    },
+    "test": {
+      "x": "test_x.npy",
+      "ids": "test_ids.npy",
+      "groups": "test_groups.npy",
+      "snr": "test_snr.npy",
+      "targets": {
+        "modulation": "test_y.npy"
+      }
+    }
+  },
+  "sample_rate_hz": null,
+  "center_frequency_hz": null
+}

@@ -1,0 +1,47 @@
+--- reports/round5_review/resume_fix/model.py.before	2026-11-02 04:20:23.406745704 +0000
++++ ssm_exp/model.py	2026-11-02 04:25:42.810709268 +0000
+@@ -93,7 +93,7 @@
+         self.raw_delta = nn.Parameter(torch.full((state,), math.log(math.expm1(1.))))
+         self.selector = None
+         if variant in ('S1', 'S2', 'S2_concat', 'S1_energy', 'S1_corr', 'B_front',
+-                       'R0', 'C0', 'Rb', 'Cb', 'Q_linear', 'Q_corr', 'R_corr'):
++                       'R0', 'C0', 'Rb', 'Cb', 'Q_linear', 'Q_corr', 'R_corr', 'Q_corr_frozen'):
+             # S1 uses zero physical slots: exactly same parameter count as S2.
+             self.selector = nn.Sequential(nn.Linear(dim+3, hidden), nn.SiLU(), nn.Linear(hidden, 2*state))
+             nn.init.normal_(self.selector[-1].weight, std=1e-3)
+@@ -522,7 +522,7 @@
+         v = cfg['variant']
+         if v not in ('G','S0','S1','S2','S2_concat','S1_energy','S1_corr','G_full','G_corr',
+                      'A64','A128','B_front','C_bi_front','D_complex',
+-                     'R0','C0','Rb','Cb','Q_linear','Q_corr','R_corr'):
++                     'R0','C0','Rb','Cb','Q_linear','Q_corr','R_corr','Q_corr_frozen'):
+             raise ValueError('unsupported variant')
+         if cfg['direction'] != 'forward':
+             raise ValueError('v1 implements forward scan only; do not silently change direction')
+@@ -540,7 +540,7 @@
+             self.norm = ComplexRMSNorm(cd)
+             self.head = nn.Linear(cfg['dim'], cfg['classes'])
+         else:
+-            round5 = v in ('R0', 'C0', 'Rb', 'Cb', 'Q_linear', 'Q_corr', 'R_corr')
++            round5 = v in ('R0', 'C0', 'Rb', 'Cb', 'Q_linear', 'Q_corr', 'R_corr', 'Q_corr_frozen')
+             if round5 and seed is None:
+                 raise ValueError('round-5 variants require an explicit seed for matched init')
+             if v in ('R0', 'Rb'):
+@@ -561,11 +561,16 @@
+             self.fusion = nn.Linear(3, cfg['dim'], bias=False) if v in ('S2_concat','S1_energy','S1_corr','G_full','G_corr') else None
+             # B-line IQ auxiliary branch (free real main path; only models raw-IQ complex
+             # temporal structure via an auxiliary branch). W_f init zero so full model == S1.
+-            if v in ('Q_linear', 'Q_corr'):
++            if v in ('Q_linear', 'Q_corr', 'Q_corr_frozen'):
+                 self.aux_branch = ComplexRecurBranch(seed=seed + 70002)
+                 self.aux_readout = 'mean' if v == 'Q_linear' else 'corr'
+                 self.aux_fusion = nn.Linear(16, cfg['dim'], bias=False)
+                 nn.init.zeros_(self.aux_fusion.weight)
++                if v == 'Q_corr_frozen':
++                    # Freeze the aux branch (raw_alpha/theta/b) from its initial (pre-training)
++                    # values; S1 main path + W_f + head still train. Same seed+70002 init as Q_corr.
++                    for p in self.aux_branch.parameters():
++                        p.requires_grad_(False)
+             elif v == 'R_corr':
+                 self.aux_branch = RealRecurBranch(seed=seed + 70002)
+                 self.aux_readout = 'corr'

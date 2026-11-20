@@ -1,0 +1,108 @@
+--- reports/round5_review/resume_fix/engine.py.before	2026-11-02 04:20:23.402745591 +0000
++++ ssm_exp/engine.py	2026-11-02 05:24:06.982786827 +0000
+@@ -71,6 +71,17 @@
+ 
+ 
+ @torch.no_grad()
++def frozen_branch_hash(model):
++    """SHA256 of the frozen aux-branch parameters (Q_corr_frozen). Used to verify each epoch
++    that the frozen recurrence (raw_alpha/theta/b) is untouched by gradients or weight decay."""
++    parts = []
++    for name, p in model.aux_branch.named_parameters():
++        parts.append(name.encode())
++        parts.append(p.detach().cpu().contiguous().numpy().tobytes())
++    return hashlib.sha256(b''.join(parts)).hexdigest()
++
++
++@torch.no_grad()
+ def evaluate(model,loader,device,frequency=0.,phase=0.,save_predictions=None,normalize=False):
+     model.eval(); ys=[]; ps=[]; zs=[]; ids=[]; total_loss=0.; count=0
+     for x,y,z,i in loader:
+@@ -127,11 +138,12 @@
+     aug_gen=torch.Generator(device=device).manual_seed(c['train']['seed']+100000)
+     dl=make_loader(ds,c['train']['batch_size'],args.workers,True,gen)
+     vl=make_loader(val,c['train']['batch_size'],args.workers)
+-    if c['model']['variant'] in ('R0','C0','Rb','Cb','Q_linear','Q_corr','R_corr'):
++    if c['model']['variant'] in ('R0','C0','Rb','Cb','Q_linear','Q_corr','R_corr','Q_corr_frozen'):
+         model=build_round5_model(c['model'],c['train']['seed']).to(device)
+     else:
+         model=Classifier(c['model']).to(device)
+-    opt=torch.optim.AdamW(model.parameters(),lr=c['train']['lr'],weight_decay=c['train']['weight_decay'],
++    opt=torch.optim.AdamW((p for p in model.parameters() if p.requires_grad),
++                         lr=c['train']['lr'],weight_decay=c['train']['weight_decay'],
+                          betas=tuple(c['train']['betas']),eps=c['train']['adam_eps'])
+     # Step-level warmup + cosine, matching the historical Global protocol (warmup is a
+     # fraction of total optimizer steps, not epochs).
+@@ -143,23 +155,42 @@
+         return .5*(1+math.cos(math.pi*min(1.,(step-warmup_steps)/max(1,total_steps-warmup_steps))))
+     scheduler=torch.optim.lr_scheduler.LambdaLR(opt,lr_factor)
+     provenance={'data':data_audit,'code_sha256':code_hash(),'environment':environment(),'smoke':args.smoke}
+-    start=0; best=-1.; best_epoch=-1; phys=None
++    AUX_VARIANTS=('Q_linear','Q_corr','R_corr','Q_corr_frozen')
++    start=0; best=-1.; best_epoch=-1; phys=None; aux=None; frozen_hash=None
+     if args.resume:
+         ck=torch.load(out/'last.pt',map_location='cpu',weights_only=False)
+         if ck['config']!=c or ck['provenance']!=provenance:
+             raise ValueError('resume config/data/code/environment differs; create a new run')
++        # Frozen aux standardization buffers must come from the checkpoint, never silently
++        # refit. Checked before load_state_dict so a missing buffer raises a clear error.
++        if c['model']['variant'] in AUX_VARIANTS:
++            for nm in ('aux_mean','aux_std'):
++                if nm not in ck['model']:
++                    raise ValueError(f'resume: checkpoint lacks frozen buffer {nm}; refusing to silently refit')
++            aux=ck.get('aux')
++            if aux is None:
++                raise ValueError('resume: checkpoint lacks aux stats; refusing to silently refit')
++        if c['model']['variant']=='Q_corr_frozen':
++            frozen_hash=ck.get('frozen_hash')
++            if frozen_hash is None:
++                raise ValueError('resume: checkpoint lacks frozen branch hash')
+         model.load_state_dict(ck['model']); opt.load_state_dict(ck['optimizer']); scheduler.load_state_dict(ck['scheduler'])
+         start=ck['epoch']+1; best=ck['best']; best_epoch=ck['best_epoch']; phys=ck['physics']
+         restore_rng(ck['rng'],gen)
+         aug_gen.set_state(ck['augment_rng'])
+-    elif c['model']['variant'] in ('S2','S2_concat','S1_energy','S1_corr','G_full','G_corr'):
+-        phys=fit_physics(model,ds,c,device)
+-    if c['model']['variant'] in ('Q_linear','Q_corr','R_corr'):
+-        aux=fit_aux(model,ds,c,device)
+     else:
+-        aux=None
++        if c['model']['variant'] in ('S2','S2_concat','S1_energy','S1_corr','G_full','G_corr'):
++            phys=fit_physics(model,ds,c,device)
++        if c['model']['variant'] in AUX_VARIANTS:
++            aux=fit_aux(model,ds,c,device)
++        if c['model']['variant']=='Q_corr_frozen':
++            frozen_hash=frozen_branch_hash(model)
+     save_json(out/'config.json',c); save_json(out/'provenance.json',provenance)
+-    save_json(out/'model_info.json',{'real_scalar_parameters':parameter_count(model),'physics':phys,'aux':aux})
++    trainable_params = sum(p.numel()*(2 if p.is_complex() else 1)
++                           for p in model.parameters() if p.requires_grad)
++    save_json(out/'model_info.json',{'real_scalar_parameters':parameter_count(model),
++                                     'trainable_real_scalar_parameters':trainable_params,
++                                     'physics':phys,'aux':aux,'frozen_hash':frozen_hash})
+     # In interrupted runs discard uncommitted history lines beyond last checkpoint.
+     history=out/'history.jsonl'
+     if args.resume and history.exists():
+@@ -201,9 +232,12 @@
+              'peak_training_allocated_bytes':torch.cuda.max_memory_allocated(device) if device.type=='cuda' else None,
+              'step':scheduler.last_epoch+1,
+              'diagnostics':diagnostics}
++        if c['model']['variant']=='Q_corr_frozen' and frozen_branch_hash(model)!=frozen_hash:
++            raise RuntimeError('frozen aux branch parameters changed during training')
+         ck={'model':model.state_dict(),'optimizer':opt.state_dict(),'scheduler':scheduler.state_dict(),
+             'config':c,'provenance':provenance,'epoch':epoch,'best':best,'best_epoch':best_epoch,
+-            'rng':rng_state(gen),'augment_rng':aug_gen.get_state(),'physics':phys}
++            'rng':rng_state(gen),'augment_rng':aug_gen.get_state(),'physics':phys,
++            'aux':aux,'frozen_hash':frozen_hash}
+         save_checkpoint(out/'last.pt',ck)
+         if improved: save_checkpoint(out/'best.pt',ck)
+         with history.open('a') as f: f.write(json.dumps(row,allow_nan=False)+'\n')
+@@ -220,7 +254,7 @@
+ def main():
+     p=argparse.ArgumentParser()
+     p.add_argument('--config',required=True); p.add_argument('--manifest',required=True); p.add_argument('--out',required=True)
+-    p.add_argument('--variant',choices=['G','S0','S1','S2','S2_concat','S1_energy','S1_corr','G_full','G_corr','A64','A128','B_front','C_bi_front','D_complex','R0','C0','Rb','Cb','Q_linear','Q_corr','R_corr']); p.add_argument('--seed',type=int)
++    p.add_argument('--variant',choices=['G','S0','S1','S2','S2_concat','S1_energy','S1_corr','G_full','G_corr','A64','A128','B_front','C_bi_front','D_complex','R0','C0','Rb','Cb','Q_linear','Q_corr','R_corr','Q_corr_frozen']); p.add_argument('--seed',type=int)
+     p.add_argument('--device',default='cuda'); p.add_argument('--workers',type=int,default=4)
+     p.add_argument('--augment-max',type=float); p.add_argument('--resume',action='store_true')
+     p.add_argument('--smoke',action='store_true'); p.add_argument('--epochs',type=int)

@@ -1,0 +1,44 @@
+{
+  "dataset_id": "techrec_3class",
+  "group_namespace": "techrec_capture",
+  "provenance": "TECHRec (Technology Recognition: LTE/WiFi/DVB-T), real captured IQ, 1 MHz (10Msps files excluded). 1024-length slices, up to 512 per capture record. Split by capture location (train merelbeke/rabot/gentbrugge/igent, val uz, test reep) -> cross-location generalization. group = capture file. sample_rate_hz=1e6; center_frequency_hz varies per file (unavailable per-file).",
+  "sample_rate_hz": 1000000.0,
+  "center_frequency_hz": null,
+  "tasks": {
+    "technology": {
+      "kind": "classification",
+      "outputs": 3,
+      "classes": [
+        "dvbt",
+        "lte",
+        "wf"
+      ]
+    }
+  },
+  "splits": {
+    "train": {
+      "x": "train_x.npy",
+      "ids": "train_ids.npy",
+      "groups": "train_groups.npy",
+      "targets": {
+        "technology": "train_y.npy"
+      }
+    },
+    "val": {
+      "x": "val_x.npy",
+      "ids": "val_ids.npy",
+      "groups": "val_groups.npy",
+      "targets": {
+        "technology": "val_y.npy"
+      }
+    },
+    "test": {
+      "x": "test_x.npy",
+      "ids": "test_ids.npy",
+      "groups": "test_groups.npy",
+      "targets": {
+        "technology": "test_y.npy"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "variant": "Q_corr_frozen",
+    "params": 2219784,
+    "latency_b1_ms": 3.53048462420702,
+    "throughput_b64_sps": 7757.888799571137,
+    "inference_peak_mem_mb": 1427.63525390625
+  }
+]

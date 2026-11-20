@@ -1,0 +1,23 @@
+{
+  "format": "h5",
+  "file": "/data1/user_wzk/datasets/Radchar/radchar_tiny_rml.h5",
+  "x_key": "X",
+  "y_key": "Y",
+  "snr_key": "Z",
+  "layout": "NLC",
+  "label_format": "one_hot",
+  "normalization": "none",
+  "classes": 5,
+  "splits": {
+    "train": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_train.npy",
+    "val": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_dev.npy",
+    "test": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_eval.npy"
+  },
+  "class_names": [
+    "coherent_pulse_train",
+    "barker_code",
+    "polyphase_barker_code",
+    "frank_code",
+    "linear_frequency_modulated"
+  ]
+}

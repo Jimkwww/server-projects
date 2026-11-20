@@ -1,0 +1,338 @@
+{
+  "G_Qlearn_fixedq_mae__rml_seed17": {
+    "encoder_sha256": "f153f22e0150ae7b6996c7652749182021e2bd1c4b3e17aab4255d2f39b64814",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_Qlearn_fixedq_mae_seed17/encoder_final.pt",
+    "val": {
+      "oa": 0.30288461538461536,
+      "macro_f1": 0.2851893506375614,
+      "n_iter": 793,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_Qlearn_fixedq_mae__rml_seed42": {
+    "encoder_sha256": "4b5fe55cbf49350f5ad4b7863e778bc2f03cf8b187eeb48a1c9d02bbd6237d59",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_Qlearn_fixedq_mae_seed42/encoder_final.pt",
+    "val": {
+      "oa": 0.28942307692307695,
+      "macro_f1": 0.27061011292618886,
+      "n_iter": 746,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_Qlearn_fixedq_mae__rml_seed2026": {
+    "encoder_sha256": "437938f45b5d42806a9a4703159b4d08ce02b86860157b86389a658d49a2852e",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_Qlearn_fixedq_mae_seed2026/encoder_final.pt",
+    "val": {
+      "oa": 0.28974358974358977,
+      "macro_f1": 0.27143182779573494,
+      "n_iter": 778,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_Qlearn_learnq_mae__rml_seed17": {
+    "encoder_sha256": "602eec38463f427cb7d3a9e3229909c8217befae56ea9b196a9f01549e1f182b",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/runs/pretrain/G_Qlearn_mae_seed17/encoder_final.pt",
+    "val": {
+      "oa": 0.2846153846153846,
+      "macro_f1": 0.2655204411719778,
+      "n_iter": 721,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_Qlearn_learnq_mae__rml_seed42": {
+    "encoder_sha256": "34771f704bfa08dac74c3f20d635c41d5385a22a3fb5d50831b4055ed29b96f0",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/runs/pretrain/G_Qlearn_mae_seed42/encoder_final.pt",
+    "val": {
+      "oa": 0.28044871794871795,
+      "macro_f1": 0.26117946774166273,
+      "n_iter": 750,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_Qlearn_learnq_mae__rml_seed2026": {
+    "encoder_sha256": "42f0513cc4cd062cb3733f96cd485eee2d5f0d44d5da2be170ac04b8dadfa059",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/runs/pretrain/G_Qlearn_mae_seed2026/encoder_final.pt",
+    "val": {
+      "oa": 0.2878205128205128,
+      "macro_f1": 0.2670400405284495,
+      "n_iter": 784,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_corr_mae__rml_seed17": {
+    "encoder_sha256": "d9be3fc637720fcd203e2613527c91255dd931acccd97caaa1870d6c7a697417",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_corr_mae_seed17/encoder_final.pt",
+    "val": {
+      "oa": 0.266025641025641,
+      "macro_f1": 0.24497334902629597,
+      "n_iter": 743,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_corr_mae__rml_seed42": {
+    "encoder_sha256": "d1e72cc927c9701eb3ad9a9edf40ee0fafcdc9fb0e319a733cbf5818872bd314",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_corr_mae_seed42/encoder_final.pt",
+    "val": {
+      "oa": 0.27403846153846156,
+      "macro_f1": 0.2507011504141928,
+      "n_iter": 852,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_corr_mae__rml_seed2026": {
+    "encoder_sha256": "3ea1ce150bd7bddc489c46dae7aeeb0b72c202245c9519593d84d3cad1f2937f",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_corr_mae_seed2026/encoder_final.pt",
+    "val": {
+      "oa": 0.28557692307692306,
+      "macro_f1": 0.2673492209458906,
+      "n_iter": 779,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_mae__rml_seed17": {
+    "encoder_sha256": "6b109309cdb8de257110e1ca50ebbdda34f1a51967fa7ed1e73da870964932d5",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/runs/pretrain/G_mae_seed17/encoder_final.pt",
+    "val": {
+      "oa": 0.32083333333333336,
+      "macro_f1": 0.30790955049627233,
+      "n_iter": 1069,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_mae__rml_seed42": {
+    "encoder_sha256": "fada67e9a82fecca96ed01a8951b6bc481cb96dcdf322e6b1bd9a3093e378350",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/runs/pretrain/G_mae_seed42/encoder_final.pt",
+    "val": {
+      "oa": 0.32019230769230766,
+      "macro_f1": 0.3066551501438001,
+      "n_iter": 899,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_mae__rml_seed2026": {
+    "encoder_sha256": "7f669d58b9691ba0cc414c530e1e71eb16f191d653753398e8de64fecc7fa638",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/runs/pretrain/G_mae_seed2026/encoder_final.pt",
+    "val": {
+      "oa": 0.3105769230769231,
+      "macro_f1": 0.2991862553181877,
+      "n_iter": 889,
+      "converged": true
+    },
+    "main_split": "val"
+  },
+  "G_Qlearn_fixedq_mae__radar_seed17": {
+    "encoder_sha256": "f153f22e0150ae7b6996c7652749182021e2bd1c4b3e17aab4255d2f39b64814",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_Qlearn_fixedq_mae_seed17/encoder_final.pt",
+    "val": {
+      "oa": 0.8039,
+      "macro_f1": 0.8034656353027685,
+      "n_iter": 484,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.8046,
+      "macro_f1": 0.8042120342734866,
+      "n_iter": 484,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_Qlearn_fixedq_mae__radar_seed42": {
+    "encoder_sha256": "4b5fe55cbf49350f5ad4b7863e778bc2f03cf8b187eeb48a1c9d02bbd6237d59",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_Qlearn_fixedq_mae_seed42/encoder_final.pt",
+    "val": {
+      "oa": 0.7944,
+      "macro_f1": 0.7941999725550783,
+      "n_iter": 451,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.8013,
+      "macro_f1": 0.8010588493944486,
+      "n_iter": 451,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_Qlearn_fixedq_mae__radar_seed2026": {
+    "encoder_sha256": "437938f45b5d42806a9a4703159b4d08ce02b86860157b86389a658d49a2852e",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_Qlearn_fixedq_mae_seed2026/encoder_final.pt",
+    "val": {
+      "oa": 0.7916,
+      "macro_f1": 0.7908613457358523,
+      "n_iter": 516,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.796,
+      "macro_f1": 0.7957051726495779,
+      "n_iter": 516,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_Qlearn_learnq_mae__radar_seed17": {
+    "encoder_sha256": "602eec38463f427cb7d3a9e3229909c8217befae56ea9b196a9f01549e1f182b",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/runs/pretrain/G_Qlearn_mae_seed17/encoder_final.pt",
+    "val": {
+      "oa": 0.808,
+      "macro_f1": 0.807573614720201,
+      "n_iter": 499,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.807,
+      "macro_f1": 0.8066612919254388,
+      "n_iter": 499,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_Qlearn_learnq_mae__radar_seed42": {
+    "encoder_sha256": "34771f704bfa08dac74c3f20d635c41d5385a22a3fb5d50831b4055ed29b96f0",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/runs/pretrain/G_Qlearn_mae_seed42/encoder_final.pt",
+    "val": {
+      "oa": 0.8016,
+      "macro_f1": 0.8012152120932556,
+      "n_iter": 442,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.8054,
+      "macro_f1": 0.8050008718862045,
+      "n_iter": 442,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_Qlearn_learnq_mae__radar_seed2026": {
+    "encoder_sha256": "42f0513cc4cd062cb3733f96cd485eee2d5f0d44d5da2be170ac04b8dadfa059",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/runs/pretrain/G_Qlearn_mae_seed2026/encoder_final.pt",
+    "val": {
+      "oa": 0.7944,
+      "macro_f1": 0.7936746385502275,
+      "n_iter": 547,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.8002,
+      "macro_f1": 0.7997231311245544,
+      "n_iter": 547,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_corr_mae__radar_seed17": {
+    "encoder_sha256": "d9be3fc637720fcd203e2613527c91255dd931acccd97caaa1870d6c7a697417",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_corr_mae_seed17/encoder_final.pt",
+    "val": {
+      "oa": 0.7918,
+      "macro_f1": 0.791789698064378,
+      "n_iter": 416,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.7996,
+      "macro_f1": 0.7996431064850955,
+      "n_iter": 416,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_corr_mae__radar_seed42": {
+    "encoder_sha256": "d1e72cc927c9701eb3ad9a9edf40ee0fafcdc9fb0e319a733cbf5818872bd314",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_corr_mae_seed42/encoder_final.pt",
+    "val": {
+      "oa": 0.7861,
+      "macro_f1": 0.7862545923764254,
+      "n_iter": 536,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.79,
+      "macro_f1": 0.7897864959778399,
+      "n_iter": 536,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_corr_mae__radar_seed2026": {
+    "encoder_sha256": "3ea1ce150bd7bddc489c46dae7aeeb0b72c202245c9519593d84d3cad1f2937f",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round4_no_cfo_qstudy/runs/pretrain/G_corr_mae_seed2026/encoder_final.pt",
+    "val": {
+      "oa": 0.7947,
+      "macro_f1": 0.7947357272657799,
+      "n_iter": 450,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.7969,
+      "macro_f1": 0.7969197032219515,
+      "n_iter": 450,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_mae__radar_seed17": {
+    "encoder_sha256": "6b109309cdb8de257110e1ca50ebbdda34f1a51967fa7ed1e73da870964932d5",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/runs/pretrain/G_mae_seed17/encoder_final.pt",
+    "val": {
+      "oa": 0.7653,
+      "macro_f1": 0.7655777399140946,
+      "n_iter": 353,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.7675,
+      "macro_f1": 0.767143127686836,
+      "n_iter": 353,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_mae__radar_seed42": {
+    "encoder_sha256": "fada67e9a82fecca96ed01a8951b6bc481cb96dcdf322e6b1bd9a3093e378350",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/runs/pretrain/G_mae_seed42/encoder_final.pt",
+    "val": {
+      "oa": 0.7469,
+      "macro_f1": 0.7472291715584647,
+      "n_iter": 278,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.7575,
+      "macro_f1": 0.7574610384506246,
+      "n_iter": 278,
+      "converged": true
+    },
+    "main_split": "test"
+  },
+  "G_mae__radar_seed2026": {
+    "encoder_sha256": "7f669d58b9691ba0cc414c530e1e71eb16f191d653753398e8de64fecc7fa638",
+    "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/runs/pretrain/G_mae_seed2026/encoder_final.pt",
+    "val": {
+      "oa": 0.772,
+      "macro_f1": 0.7722577336944672,
+      "n_iter": 302,
+      "converged": true
+    },
+    "test": {
+      "oa": 0.7673,
+      "macro_f1": 0.7674515557372594,
+      "n_iter": 302,
+      "converged": true
+    },
+    "main_split": "test"
+  }
+}

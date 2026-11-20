@@ -1,0 +1,72 @@
+{
+  "quant": "merge_compile_default",
+  "total": 2212,
+  "correct": 1497,
+  "accuracy": 0.6767631103074141,
+  "elapsed_sec": 244.79809403419495,
+  "avg_sec_per_sample": 0.11066821610949139,
+  "peak_mem_GB": 9.272467456,
+  "qwen_disk_GB": 8.411663315,
+  "per_class": {
+    "AM_Jamming": {
+      "correct": 146,
+      "total": 200,
+      "acc": 0.73
+    },
+    "Comb_Jamming": {
+      "correct": 165,
+      "total": 200,
+      "acc": 0.825
+    },
+    "FM_Jamming": {
+      "correct": 102,
+      "total": 200,
+      "acc": 0.51
+    },
+    "Multi_Tone": {
+      "correct": 88,
+      "total": 200,
+      "acc": 0.44
+    },
+    "Narrowband": {
+      "correct": 120,
+      "total": 200,
+      "acc": 0.6
+    },
+    "No_Interference": {
+      "correct": 10,
+      "total": 12,
+      "acc": 0.8333333333333334
+    },
+    "Protocol_Bluetooth": {
+      "correct": 126,
+      "total": 200,
+      "acc": 0.63
+    },
+    "Protocol_WiFi": {
+      "correct": 154,
+      "total": 200,
+      "acc": 0.77
+    },
+    "Pulse_DME": {
+      "correct": 161,
+      "total": 200,
+      "acc": 0.805
+    },
+    "Single_Tone": {
+      "correct": 157,
+      "total": 200,
+      "acc": 0.785
+    },
+    "Sweep_Chirp": {
+      "correct": 139,
+      "total": 200,
+      "acc": 0.695
+    },
+    "Wideband": {
+      "correct": 129,
+      "total": 200,
+      "acc": 0.645
+    }
+  }
+}

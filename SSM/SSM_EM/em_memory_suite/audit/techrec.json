@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "issues": [],
+  "summary": [
+    {
+      "dataset": "techrec_3class",
+      "split": "train",
+      "n": 53248,
+      "length": 1024
+    },
+    {
+      "dataset": "techrec_3class",
+      "split": "val",
+      "n": 15360,
+      "length": 1024
+    },
+    {
+      "dataset": "techrec_3class",
+      "split": "test",
+      "n": 15360,
+      "length": 1024
+    }
+  ],
+  "warning": "Exact hashes do not detect cropped, resampled or transformed source duplicates; source/group provenance review is mandatory."
+}

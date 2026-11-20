@@ -1,0 +1,100 @@
+{
+  "config_and_data_sha256": {
+    "pretrain.json": "12c1657bb0b28afaa9268d64a675d97f7b8ff35488b935d21dcabbafaca39684",
+    "downstream_nocfo_rml.json": "e090b25c3a50a7891b60608be2801953e7f5d35192cecc7d9ae260dd4e29a817",
+    "downstream_nocfo_radar.json": "dc86ed7ab979232a92c7ea789a8e04ef8e6cd330aa2c3fdf397923e7dfc5e1f6",
+    "manifest_f1.json": "4b179b0a91b519ec02e2d09f0c3ab447ce5186324223c0c2faa90c39fc5a4eb9",
+    "f1_indices.npy": "445ec2efb8fd63da471826f39f53062efa03c346d23a137a4811c11be3b682dd",
+    "rml_manifest.json": "6cfd6367f7660e3033913c9d04285381916e9095534299fbc8672cc08db9a4b6",
+    "radar_manifest.json": "841d0de136ba4291d8357783db6a05308042a36c69f0374be608076ee4456245"
+  },
+  "shared_init_sha256": [
+    {
+      "backbone": "G",
+      "seed": 17,
+      "shared_init_sha256": "f1c54bc61ed6d3ade00928b7c14972e6c889a7a7bb647b2e54d6aa0df7462f6c",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "G",
+      "seed": 42,
+      "shared_init_sha256": "06aee13f6a35b2f0d17d368ad03d092fc3b89967e25ccc4e4ea4b37e792fa388",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "G",
+      "seed": 2026,
+      "shared_init_sha256": "a678a3c15c9e062061a62ede1bd168d3e003399464fc7e222b45feed05a9c7fc",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "G",
+      "seed": 17,
+      "shared_init_sha256": "f1c54bc61ed6d3ade00928b7c14972e6c889a7a7bb647b2e54d6aa0df7462f6c",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "G",
+      "seed": 42,
+      "shared_init_sha256": "06aee13f6a35b2f0d17d368ad03d092fc3b89967e25ccc4e4ea4b37e792fa388",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "G",
+      "seed": 2026,
+      "shared_init_sha256": "a678a3c15c9e062061a62ede1bd168d3e003399464fc7e222b45feed05a9c7fc",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "Q",
+      "seed": 17,
+      "shared_init_sha256": "50383718c44a7e908a9a75544ad3aa2cdb731d834be44009f350bcec949bc14a",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "Q",
+      "seed": 42,
+      "shared_init_sha256": "d347e17ea873e2b3f6222e8e7ded9a7a78eb2bb9f1eab01858f185ba011d6c52",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "Q",
+      "seed": 2026,
+      "shared_init_sha256": "cc610d2052d4e21f4df55584ff52da2d6620faa0a097c4c957281728b96015e8",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "Q",
+      "seed": 17,
+      "shared_init_sha256": "50383718c44a7e908a9a75544ad3aa2cdb731d834be44009f350bcec949bc14a",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "Q",
+      "seed": 42,
+      "shared_init_sha256": "d347e17ea873e2b3f6222e8e7ded9a7a78eb2bb9f1eab01858f185ba011d6c52",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "Q",
+      "seed": 2026,
+      "shared_init_sha256": "cc610d2052d4e21f4df55584ff52da2d6620faa0a097c4c957281728b96015e8",
+      "note": "reused from round5"
+    },
+    {
+      "backbone": "Q_bi",
+      "seed": 17,
+      "shared_init_sha256": "3083450e958631dabbe79118e338cb0c8d0f1fd748bbeba9a5495dd5f86289d2"
+    },
+    {
+      "backbone": "Q_bi",
+      "seed": 42,
+      "shared_init_sha256": "491ab9db4977fa457bb895fdc5f4b65e367d461752ca6c9725ab59f074a2dfef"
+    },
+    {
+      "backbone": "Q_bi",
+      "seed": 2026,
+      "shared_init_sha256": "5a58890fc6b2051fed0e7bb421df0ba85d2a5614b78e3991295abc1e601a0054"
+    }
+  ]
+}

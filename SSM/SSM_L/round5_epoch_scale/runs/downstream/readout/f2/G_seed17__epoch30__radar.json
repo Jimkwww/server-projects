@@ -1,0 +1,24 @@
+{
+  "status": "ok",
+  "encoder_sha256": "ba9b5f52970d7568eb8f7d1f31f356fde1aea88fd57488ba6b4366dec26e7a43",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round5_epoch_scale/runs/pretrain/f2/G_seed17/ckpt_epoch30.pt",
+  "step": 23460,
+  "pass": 30,
+  "val": {
+    "oa": 0.7897,
+    "macro_f1": 0.7895532553578157,
+    "n_iter": 478,
+    "converged": true
+  },
+  "test": {
+    "oa": 0.792,
+    "macro_f1": 0.7918208203777339,
+    "n_iter": 478,
+    "converged": true
+  },
+  "corpus": "f2",
+  "seed": 17,
+  "ckpt_name": "epoch30",
+  "backbone": "G",
+  "task": "radar"
+}

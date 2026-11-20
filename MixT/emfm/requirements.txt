@@ -1,0 +1,4 @@
+# Use the existing SERVER environment; do not reinstall CUDA/PyTorch blindly.
+torch>=2.0
+numpy
+h5py

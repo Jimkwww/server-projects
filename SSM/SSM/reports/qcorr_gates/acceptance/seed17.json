@@ -1,0 +1,158 @@
+{
+  "seed": 17,
+  "check1_hand_calc_descriptors": {
+    "const_exp_c_max_dev": 1.1920928955078125e-07,
+    "const_exp_d_max_abs": 4.384588919492671e-06,
+    "const_exp_d0_exact_zero": true,
+    "two_token_r0": [
+      1.0,
+      0.0
+    ],
+    "two_token_r1": [
+      -9.480109497417288e-08,
+      1.0
+    ],
+    "two_token_c": [
+      1.0,
+      1.0
+    ],
+    "two_token_d0": 0.0,
+    "two_token_d1": 1.4142136573791504,
+    "two_token_d1_expected_sqrt2": 1.4142135623730951
+  },
+  "check2_cfo_transform": {
+    "cfo": 0.001,
+    "r_common_rotation_max_abs_err": 2.5463114639023843e-07,
+    "c_preserved_max_abs_err": 2.980232238769531e-07,
+    "d_preserved_max_abs_err": 2.3096799850463867e-07
+  },
+  "check3_zero_init_and_params": {
+    "base_params_Q_corr": 2219784,
+    "variants": {
+      "Q_corr_gate_c": {
+        "max_abs_logit_diff_vs_Q_corr": 0.0,
+        "params": 2220552,
+        "param_increment": 768,
+        "token_shape": [
+          8,
+          128,
+          176
+        ]
+      },
+      "Q_corr_gate_d": {
+        "max_abs_logit_diff_vs_Q_corr": 0.0,
+        "params": 2220552,
+        "param_increment": 768,
+        "token_shape": [
+          8,
+          128,
+          176
+        ]
+      },
+      "Q_corr_gate_cd": {
+        "max_abs_logit_diff_vs_Q_corr": 0.0,
+        "params": 2221320,
+        "param_increment": 1536,
+        "token_shape": [
+          8,
+          128,
+          176
+        ]
+      },
+      "Q_corr_token_c": {
+        "max_abs_logit_diff_vs_Q_corr": 0.0,
+        "params": 2219960,
+        "param_increment": 176,
+        "token_shape": [
+          8,
+          128,
+          176
+        ]
+      },
+      "Q_corr_token_d": {
+        "max_abs_logit_diff_vs_Q_corr": 0.0,
+        "params": 2219960,
+        "param_increment": 176,
+        "token_shape": [
+          8,
+          128,
+          176
+        ]
+      },
+      "Q_corr_token_cd": {
+        "max_abs_logit_diff_vs_Q_corr": 0.0,
+        "params": 2220136,
+        "param_increment": 352,
+        "token_shape": [
+          8,
+          128,
+          176
+        ]
+      }
+    }
+  },
+  "check4_gate_wiring": {
+    "write_gate": {
+      "g_formula_max_abs_err": 5.960464477539063e-08,
+      "g_increases_where_wc_positive": true,
+      "g_decreases_where_wc_negative": true,
+      "g_unchanged_where_w_zero": true,
+      "rho_unchanged": true
+    },
+    "retention_gate": {
+      "rho_formula_max_abs_err": 5.960464477539063e-08,
+      "rho_decreases_where_vd_positive": true,
+      "rho_increases_where_vd_negative": true,
+      "rho_unchanged_where_v_zero": true,
+      "g_unchanged": true
+    },
+    "cd_no_crosstalk": {
+      "g_changes_on_channel0": true,
+      "rho_unchanged_on_channel0": true,
+      "g_unchanged_on_channel2": true,
+      "rho_changes_on_channel2": true
+    }
+  },
+  "check5_gradient_and_update": {
+    "Q_corr_gate_cd": {
+      "new_param_grad_abs_sum": {
+        "blocks.0.mix.write_w": 0.026485968381166458,
+        "blocks.0.mix.retention_v": 0.01997053623199463,
+        "blocks.1.mix.write_w": 0.01893695443868637,
+        "blocks.1.mix.retention_v": 0.00968847144395113,
+        "blocks.2.mix.write_w": 0.01134491991251707,
+        "blocks.2.mix.retention_v": 0.006120753940194845,
+        "blocks.3.mix.write_w": 0.011085398495197296,
+        "blocks.3.mix.retention_v": 0.004673101007938385,
+        "blocks.4.mix.write_w": 0.007620583288371563,
+        "blocks.4.mix.retention_v": 0.0029590874910354614,
+        "blocks.5.mix.write_w": 0.005960951559245586,
+        "blocks.5.mix.retention_v": 0.004370234906673431
+      },
+      "new_params_updated": {
+        "blocks.0.mix.write_w": true,
+        "blocks.0.mix.retention_v": true,
+        "blocks.1.mix.write_w": true,
+        "blocks.1.mix.retention_v": true,
+        "blocks.2.mix.write_w": true,
+        "blocks.2.mix.retention_v": true,
+        "blocks.3.mix.write_w": true,
+        "blocks.3.mix.retention_v": true,
+        "blocks.4.mix.write_w": true,
+        "blocks.4.mix.retention_v": true,
+        "blocks.5.mix.write_w": true,
+        "blocks.5.mix.retention_v": true
+      },
+      "n_new_params": 12
+    },
+    "Q_corr_token_cd": {
+      "new_param_grad_abs_sum": {
+        "token_proj.weight": 3.445312023162842
+      },
+      "new_params_updated": {
+        "token_proj.weight": true
+      },
+      "n_new_params": 1
+    }
+  }
+}

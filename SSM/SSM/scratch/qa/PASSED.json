@@ -1,0 +1,8 @@
+{
+  "synthetic_only": true,
+  "models": 5,
+  "training": true,
+  "evaluation": true,
+  "benchmark": true,
+  "summary": true
+}

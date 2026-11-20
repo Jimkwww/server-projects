@@ -1,0 +1,30 @@
+[
+  {
+    "variant": "G",
+    "params": 2251592,
+    "latency_b1_ms": 0.7957750931382179,
+    "throughput_b64_sps": 13784.153068970172,
+    "inference_peak_mem_mb": 88.708984375
+  },
+  {
+    "variant": "G_corr",
+    "params": 2252120,
+    "latency_b1_ms": 0.9847595356404781,
+    "throughput_b64_sps": 16167.634980017456,
+    "inference_peak_mem_mb": 88.71142578125
+  },
+  {
+    "variant": "G_Q_corr",
+    "params": 2254440,
+    "latency_b1_ms": 1.2897038832306862,
+    "throughput_b64_sps": 13713.637166746175,
+    "inference_peak_mem_mb": 89.22119140625
+  },
+  {
+    "variant": "G_Q_corr_frozen",
+    "params": 2254440,
+    "latency_b1_ms": 1.293614972382784,
+    "throughput_b64_sps": 13654.761841068152,
+    "inference_peak_mem_mb": 89.22119140625
+  }
+]

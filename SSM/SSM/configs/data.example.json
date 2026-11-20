@@ -1,0 +1,16 @@
+{
+  "format": "h5",
+  "file": "/REPLACE/RML2018.01A.hdf5",
+  "x_key": "X",
+  "y_key": "Y",
+  "snr_key": "Z",
+  "layout": "NLC",
+  "label_format": "one_hot",
+  "normalization": "none",
+  "classes": 24,
+  "splits": {
+    "train": "/REPLACE/cls_dev_train.npy",
+    "val": "/REPLACE/cls_dev_val.npy",
+    "test": "/REPLACE/cls_dev_test.npy"
+  }
+}

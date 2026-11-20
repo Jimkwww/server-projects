@@ -1,0 +1,46 @@
+{
+  "level_db": 10.0,
+  "baseline_snr_db": 20.0,
+  "window": 5,
+  "bandwidth_note": "boxcar window=5, cutoff ~1/(2*window) normalized cycles/sample",
+  "mse": {
+    "input_y": {
+      "mse_x": 0.01543414406478405,
+      "mse_s": 0.018596690148115158
+    },
+    "boxcar": {
+      "mse_x": 0.004705663770437241,
+      "mse_s": 0.005614650435745716
+    },
+    "model_G": {
+      "mse_x": 0.5821771621704102,
+      "mse_s": 0.6106783151626587
+    },
+    "model_Q": {
+      "mse_x": 0.5374819040298462,
+      "mse_s": 0.5654738545417786
+    },
+    "identity": {
+      "mse_x": 0.01543414406478405,
+      "mse_s": 0.018596690148115158
+    }
+  },
+  "peak": {
+    "input_y": {
+      "peak_attenuation_ratio": 1.2144443988800049,
+      "mean_position_shift_samples": 0.3333333333333333
+    },
+    "boxcar": {
+      "peak_attenuation_ratio": 1.1887750625610352,
+      "mean_position_shift_samples": 0.3333333333333333
+    },
+    "model_G": {
+      "peak_attenuation_ratio": 0.6788145502408346,
+      "mean_position_shift_samples": 212.33333333333334
+    },
+    "model_Q": {
+      "peak_attenuation_ratio": 0.30525725583235425,
+      "mean_position_shift_samples": -6.0
+    }
+  }
+}

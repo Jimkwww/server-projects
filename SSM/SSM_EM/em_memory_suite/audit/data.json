@@ -1,0 +1,63 @@
+{
+  "per_manifest": {
+    "rml2018a_clsdev": [
+      {
+        "split": "train",
+        "n": 19968,
+        "length": 1024
+      },
+      {
+        "split": "val",
+        "n": 3120,
+        "length": 1024
+      },
+      {
+        "split": "test",
+        "n": 8112,
+        "length": 1024
+      }
+    ],
+    "rml2018a_f1": [
+      {
+        "split": "train",
+        "n": 100000,
+        "length": 1024
+      },
+      {
+        "split": "val",
+        "n": 3120,
+        "length": 1024
+      }
+    ],
+    "radchar_tiny": [
+      {
+        "split": "train",
+        "n": 30000,
+        "length": 512
+      },
+      {
+        "split": "val",
+        "n": 10000,
+        "length": 512
+      },
+      {
+        "split": "test",
+        "n": 10000,
+        "length": 512
+      }
+    ]
+  },
+  "cross_manifest": {
+    "rml2018a_f1 <-> rml2018a_clsdev": [
+      {
+        "a": "rml2018a_f1/train",
+        "b": "rml2018a_clsdev/train",
+        "overlap_waveforms": 19968,
+        "tag": "allowed_train_reuse"
+      }
+    ]
+  },
+  "ok": true,
+  "issues": [],
+  "note": "train<->train overlap is protocol-allowed unlabeled pretrain reuse (DATA_AND_PROTOCOL #6). Any val/test overlap is a real leak and is flagged."
+}

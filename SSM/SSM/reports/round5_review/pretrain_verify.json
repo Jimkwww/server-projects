@@ -1,0 +1,25 @@
+{
+  "seed": 17,
+  "checks": {
+    "init_state_max_abs_diff": 0.0,
+    "init_descriptor_max_abs_diff": 0.0,
+    "init_logits_max_abs_diff": 0.0,
+    "init_state_dict_bit_identical": true,
+    "frozen_branch_requires_grad": {
+      "raw_alpha": false,
+      "theta": false,
+      "b": false
+    },
+    "fit_aux_mean_max_abs_diff": 0.0,
+    "fit_aux_std_max_abs_diff": 0.0,
+    "fit_aux_ids_sha256_equal": true,
+    "fit_aux_samples": 8192,
+    "first_batch_ids_equal": true,
+    "first_batch_cfo_max_abs_diff": 0.0
+  },
+  "first_batch": {
+    "n": 19968,
+    "ids_sha256": "71b201d29b51d508a940ed1cc8ef6d9d456cb8ce67b9823e2f7c2358f6bbfb50",
+    "cfo_sha256": "744031b7a9db4ecc52b77a0beb8398f907eaa54a939e58ae983474389c4c50ed"
+  }
+}

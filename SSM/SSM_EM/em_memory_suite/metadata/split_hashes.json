@@ -1,0 +1,11 @@
+{
+  "rml2018a_clsdev/train": "b24861b539f77543d4bb68c50de44cb51e88dd517c2b0dee22ecb975fd19632a",
+  "rml2018a_clsdev/val": "89dcf123757b69a412d9b9c5a92da078fb6a63e7fbdbfc15af8db548af43eb26",
+  "rml2018a_clsdev/test": "59d5e3077932c87f69d82ff10284ea1cb2e56bd74ed4956536eda613932358b3",
+  "rml2018a_f1/train": "521dc91d7f8163bb8847d3aee554cca89f1ce34943e8d3607674b7d22f0668a1",
+  "rml2018a_f1/val": "c1d36d358596fbdecf3953644b51ae5ebe26bab163b6402c815ba89935b40e84",
+  "radchar_tiny/train": "e6b9f47c38a08de651e16ed50d84426df2b0003433d79acc6d0d4da361a53e06",
+  "radchar_tiny/val": "074a30ff89601e00f9a684690ee7e5499836bfa521725ecbdb32166d742feea2",
+  "radchar_tiny/test": "3dcd4328c2b09c128aeefc661eaa59ea14a9f6f13486ab7aa1ac5f03d0c99361",
+  "techrec_3class/train": "24f6bb25f8bb02f183ecdee9f6cbd93d019264960f4fa41fbca77850ea3716b5"
+}

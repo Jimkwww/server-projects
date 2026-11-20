@@ -1,0 +1,8 @@
+{
+  "variants": 34,
+  "reference_params": 554484,
+  "max_parameter_gap": 0.016620858311511243,
+  "smoke_plan_jobs": 41,
+  "seconds": 7.35,
+  "scope": "metadata/shape-only parameter matching and DAG validation; no experiment runs"
+}

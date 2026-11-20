@@ -1,0 +1,58 @@
+[
+  {
+    "variant": "R0",
+    "params": 2216760,
+    "latency_b1_ms": 2.7367519214749336,
+    "throughput_b64_sps": 8557.507255366298,
+    "inference_peak_mem_mb": 1428.0595703125
+  },
+  {
+    "variant": "C0",
+    "params": 2215352,
+    "latency_b1_ms": 2.7305972762405872,
+    "throughput_b64_sps": 8455.304217905627,
+    "inference_peak_mem_mb": 1427.11669921875
+  },
+  {
+    "variant": "Rb",
+    "params": 2216936,
+    "latency_b1_ms": 2.7159652672708035,
+    "throughput_b64_sps": 8522.03374352981,
+    "inference_peak_mem_mb": 1427.123046875
+  },
+  {
+    "variant": "Cb",
+    "params": 2215528,
+    "latency_b1_ms": 2.7401219122111797,
+    "throughput_b64_sps": 8458.308665714603,
+    "inference_peak_mem_mb": 1427.11767578125
+  },
+  {
+    "variant": "Q_linear",
+    "params": 2219784,
+    "latency_b1_ms": 3.168810624629259,
+    "throughput_b64_sps": 7976.451221392076,
+    "inference_peak_mem_mb": 1503.98828125
+  },
+  {
+    "variant": "Q_corr",
+    "params": 2219784,
+    "latency_b1_ms": 3.2826419919729233,
+    "throughput_b64_sps": 7868.085632215513,
+    "inference_peak_mem_mb": 1513.45703125
+  },
+  {
+    "variant": "R_corr",
+    "params": 2219824,
+    "latency_b1_ms": 43.9644530415535,
+    "throughput_b64_sps": 1264.4424326739836,
+    "inference_peak_mem_mb": 1445.13916015625
+  },
+  {
+    "variant": "S1_corr",
+    "params": 2217464,
+    "latency_b1_ms": 2.7492502704262733,
+    "throughput_b64_sps": 8281.957576578561,
+    "inference_peak_mem_mb": 1427.12548828125
+  }
+]

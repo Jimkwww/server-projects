@@ -1,0 +1,81 @@
+{
+  "environment": {
+    "python": "3.11.16",
+    "torch": "2.14.0+cu126",
+    "numpy": "2.4.6",
+    "cuda": "12.6",
+    "device": "NVIDIA A100-PCIE-40GB",
+    "tf32": false,
+    "deterministic": "warn_only",
+    "precision": "fp32/complex64"
+  },
+  "parameters": 7148,
+  "warmup": 2,
+  "repeats": 3,
+  "scan": "parallel",
+  "model": {
+    "variant": "S1",
+    "patch": 8,
+    "dim": 16,
+    "depth": 2,
+    "heads": 4,
+    "state": 12,
+    "selector_hidden": 8,
+    "classes": 4,
+    "input_length": 64,
+    "ffn_ratio": 4,
+    "dropout": 0.0,
+    "position": "none",
+    "direction": "forward",
+    "scan": "parallel",
+    "ssm_gain": 1.0
+  },
+  "rows": [
+    {
+      "length": 64,
+      "batch": 1,
+      "status": "ok",
+      "latency_ms_mean": 0.2266915204624335,
+      "latency_ms_p50": 0.22902525961399078,
+      "latency_ms_p95": 0.22919625043869019,
+      "throughput_samples_s": 4653.685807901899,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "length": 64,
+      "batch": 4,
+      "status": "ok",
+      "latency_ms_mean": 0.2368364172677199,
+      "latency_ms_p50": 0.23569492623209953,
+      "latency_ms_p95": 0.2408682368695736,
+      "throughput_samples_s": 17321.443112371784,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "length": 128,
+      "batch": 1,
+      "status": "ok",
+      "latency_ms_mean": 0.2391574283440908,
+      "latency_ms_p50": 0.2382388338446617,
+      "latency_ms_p95": 0.2410245593637228,
+      "throughput_samples_s": 4203.778923589497,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    },
+    {
+      "length": 128,
+      "batch": 4,
+      "status": "ok",
+      "latency_ms_mean": 0.27254999925692874,
+      "latency_ms_p50": 0.2731410786509514,
+      "latency_ms_p95": 0.2732848282903433,
+      "throughput_samples_s": 14582.592753805255,
+      "peak_allocated_bytes": null,
+      "peak_reserved_bytes": null
+    }
+  ],
+  "scope": "resident input; includes physical features and entire model; excludes H2D/data loading; inference only",
+  "implementation": "eager PyTorch; parallel affine prefix O(N log N) work, not fused linear-work SSM"
+}

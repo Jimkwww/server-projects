@@ -1,0 +1,24 @@
+{
+  "status": "ok",
+  "encoder_sha256": "dc7ebfc2838be3d4987e8a5937e691fc137724ea38e563a1da658e02afe9626c",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round5_epoch_scale/runs/pretrain/f1/G_Qlearn_seed42/ckpt_step7800.pt",
+  "step": 7800,
+  "pass": 9,
+  "val": {
+    "oa": 0.808,
+    "macro_f1": 0.8078071361149981,
+    "n_iter": 500,
+    "converged": true
+  },
+  "test": {
+    "oa": 0.8095,
+    "macro_f1": 0.8092318018178872,
+    "n_iter": 500,
+    "converged": true
+  },
+  "corpus": "f1",
+  "seed": 42,
+  "ckpt_name": "step7800",
+  "backbone": "G_Qlearn",
+  "task": "radar"
+}

@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "issues": [],
+  "summary": [
+    {
+      "dataset": "synthetic_v1",
+      "split": "train",
+      "n": 48,
+      "length": 256
+    },
+    {
+      "dataset": "synthetic_v1",
+      "split": "val",
+      "n": 24,
+      "length": 256
+    },
+    {
+      "dataset": "synthetic_v1",
+      "split": "test",
+      "n": 24,
+      "length": 256
+    },
+    {
+      "dataset": "synthetic_v1",
+      "split": "ood",
+      "n": 24,
+      "length": 256
+    }
+  ],
+  "warning": "Exact hashes do not detect cropped, resampled or transformed source duplicates; source/group provenance review is mandatory."
+}

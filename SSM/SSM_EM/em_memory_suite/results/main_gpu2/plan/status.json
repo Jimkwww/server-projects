@@ -1,0 +1,793 @@
+{
+  "pre_bidirectional_transformer_s17": {
+    "status": "done",
+    "signature": "79d59d071ea5898b9506194264f09ff18f22937ed85543bda5c33cdf9fa87102",
+    "returncode": 0,
+    "seconds": 1370.722232580185
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_probe_f0.01": {
+    "status": "done",
+    "signature": "e2518ecc6076410b26bb9d08928d97abd9ebd6e2c5e59e5fdedcd6055a49ae3a",
+    "returncode": 0,
+    "seconds": 17.20973491668701
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_probe_f0.01_test": {
+    "status": "done",
+    "signature": "578d8b8ef2cc642de70862a131fc3767c0ef9976c20fb3dfb274fed67505dbcc",
+    "returncode": 0,
+    "seconds": 1.6833715438842773
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_probe_f0.1": {
+    "status": "done",
+    "signature": "15408fa84a3b20cabef76e537573ed3107f0f825d75e4d597e616e70937059bd",
+    "returncode": 0,
+    "seconds": 20.802712202072144
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_probe_f0.1_test": {
+    "status": "done",
+    "signature": "abca2f2c3fe7d2052c6555ec9477f5fb06dea48eb654891140c004918e3d5001",
+    "returncode": 0,
+    "seconds": 1.6872565746307373
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_probe_f1.0": {
+    "status": "done",
+    "signature": "c364a0fd2d8e12e929db935afaa7300bf6aa457579a87ec4d8efc5ebfc1eb4b4",
+    "returncode": 0,
+    "seconds": 51.352947473526
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_probe_f1.0_test": {
+    "status": "done",
+    "signature": "a4452f788c322d6d4186a1cb188c2df87b9236564ba15ab40319547e2528573e",
+    "returncode": 0,
+    "seconds": 1.6596815586090088
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f0.01": {
+    "status": "done",
+    "signature": "cda150953f8dfad50ec8983192d5d1341446c8bec0e80995aa0c81494ad3365c",
+    "returncode": 0,
+    "seconds": 18.793415546417236
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f0.01_test": {
+    "status": "done",
+    "signature": "f250024661bf79680dddcef37b64c89c9bc3d817fe54e307c7704145a88e9264",
+    "returncode": 0,
+    "seconds": 1.7588415145874023
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f0.1": {
+    "status": "done",
+    "signature": "4c14d6df1610ca51c8105de6ba110746b13a4be5f02284f6a9600649e49d8721",
+    "returncode": 0,
+    "seconds": 28.325079917907715
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f0.1_test": {
+    "status": "done",
+    "signature": "8d80a5e1f3feab5f6acf76e02b1f0dcf00fb2bab03b2c9dc0f42ee42900a90d6",
+    "returncode": 0,
+    "seconds": 1.6854186058044434
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0": {
+    "status": "done",
+    "signature": "4b125d4851c91e8c9d97d80593fdc4e219c9f60197ce370170ccadf853c6f0a3",
+    "returncode": 0,
+    "seconds": 120.55311417579651
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "0910bdd089270e0c64c706f844460cfa8476a58e97accf14f794766272c611a9",
+    "returncode": 0,
+    "seconds": 1.7366232872009277
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "e8967fb5facfd562018cf86bf1132748f443eddacf70b84c8969a4ddeceec462",
+    "returncode": 0,
+    "seconds": 1.7942521572113037
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "b795fb50ebd40a215f07860543cbff2a814b14055b3b196d52e9478cc3de4f7a",
+    "returncode": 0,
+    "seconds": 1.6782138347625732
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_phase_0.7853981634": {
+    "status": "done",
+    "signature": "dc1fab3ad2e99538bcbab33f9838100f1fbbc85ddbf0bb87168fd7c74924343d",
+    "returncode": 0,
+    "seconds": 1.7141618728637695
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_phase_1.5707963268": {
+    "status": "done",
+    "signature": "0923b838edcd3e25cf6a49b24b8c6ccfcec401b5b402fef42f9b569042957af7",
+    "returncode": 0,
+    "seconds": 1.6866605281829834
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_phase_3.1415926536": {
+    "status": "done",
+    "signature": "734640c3f765b3d9c168d1fcb6303347e952bed78486ffda7f6bbff10f625bab",
+    "returncode": 0,
+    "seconds": 1.6709771156311035
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_cfo_-0.02": {
+    "status": "done",
+    "signature": "971a7f700596e032c033a83c1f2f8fe07330dd2522bf4c1cb15e5ca206900292",
+    "returncode": 0,
+    "seconds": 1.717306137084961
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_cfo_-0.01": {
+    "status": "done",
+    "signature": "ebafc7f1cf46966fc46548094f4de58b0bc93480ec9605603329b28a68bca71c",
+    "returncode": 0,
+    "seconds": 1.6797235012054443
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_cfo_-0.005": {
+    "status": "done",
+    "signature": "75fe90b34421de0ce40649c5553f67748b0b2c404b7db53cb7326dd5596f0d55",
+    "returncode": 0,
+    "seconds": 1.667332410812378
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_cfo_-0.001": {
+    "status": "done",
+    "signature": "979feb44324439af0d29d3f18aa53641818e8101b3332c8df2614119ab469f89",
+    "returncode": 0,
+    "seconds": 1.6892523765563965
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_cfo_0.001": {
+    "status": "done",
+    "signature": "d424fb7d80b50c798389d5f28c1d5d7271fdc2ac160cb29c100aeb847d6b89bf",
+    "returncode": 0,
+    "seconds": 1.6773531436920166
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_cfo_0.005": {
+    "status": "done",
+    "signature": "849c6e6c4c78e2875b9b4df8caa2bd9ae3061c21826cdd0a12a21a1297020a16",
+    "returncode": 0,
+    "seconds": 1.6792685985565186
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_cfo_0.01": {
+    "status": "done",
+    "signature": "04ab10c58dd248f0446bec5314c1e19190b173a8839f767ce7c6e563fd615dc0",
+    "returncode": 0,
+    "seconds": 1.6840837001800537
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_cfo_0.02": {
+    "status": "done",
+    "signature": "c3d113cb6879eab31af7ec5ac44e6abe79f40688b81e6331584e8b1beb47afdf",
+    "returncode": 0,
+    "seconds": 1.70719313621521
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_gain_0.25": {
+    "status": "done",
+    "signature": "296d8bcff2ddad55209ca5c39e8b0740089b7339008aa31c42feb90eb963bc93",
+    "returncode": 0,
+    "seconds": 1.6839163303375244
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_gain_0.5": {
+    "status": "done",
+    "signature": "d15da1ee76e0939373f9983746c4a1c8b02b53ff1ba8ded72c712e6661cf2315",
+    "returncode": 0,
+    "seconds": 1.6976256370544434
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_gain_2.0": {
+    "status": "done",
+    "signature": "d7f3cc4ef74f267a83f52bcab9dc521adab97cc58a39b663ec947b5a066833d5",
+    "returncode": 0,
+    "seconds": 1.6627223491668701
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_gain_4.0": {
+    "status": "done",
+    "signature": "97c7275d4016c6e8c8644e0ebbf6118ccd26473bd360e60872e3bc83d782caa2",
+    "returncode": 0,
+    "seconds": 1.7170913219451904
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_noise_-5.0": {
+    "status": "done",
+    "signature": "69d49fc3a18b8c5d88fb0f62df885833c0ea43421f1b7f5b8cd59b07e857513b",
+    "returncode": 0,
+    "seconds": 1.6899690628051758
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_noise_0.0": {
+    "status": "done",
+    "signature": "ba683718936c908ee1b67dec2ebb001bb82355e91a74759f6b9846344b25ed44",
+    "returncode": 0,
+    "seconds": 1.702803373336792
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_noise_5.0": {
+    "status": "done",
+    "signature": "1dfaa5e9154294b79b124665570013bfb728e5213aaad651d2a9868f1184a8ae",
+    "returncode": 0,
+    "seconds": 1.7427780628204346
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_noise_10.0": {
+    "status": "done",
+    "signature": "5a626f591e0700d332225ab9659092ba5b40139cc0187d356a3e83d14449911b",
+    "returncode": 0,
+    "seconds": 1.716822624206543
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_noise_20.0": {
+    "status": "done",
+    "signature": "8bc6900e9ed99fee2b27253cbf31e37011318c30fca793700db836cb1aa96a34",
+    "returncode": 0,
+    "seconds": 1.7294604778289795
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_iq_imbalance_0.05": {
+    "status": "done",
+    "signature": "8c504986fe6ef8adb34190699018fefb3432de160aa857320247c6c6d25c4155",
+    "returncode": 0,
+    "seconds": 1.6506013870239258
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_iq_imbalance_0.1": {
+    "status": "done",
+    "signature": "35adbca045cb403fd3ce03d9ae49584178a3e78173fc624ed3412a16cbb457e0",
+    "returncode": 0,
+    "seconds": 1.6776585578918457
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_iq_imbalance_0.2": {
+    "status": "done",
+    "signature": "ea959521e25840abbb47d9232fea878ef6c4c5bee9f2b1f706bfafab8e4bf4ef",
+    "returncode": 0,
+    "seconds": 1.7227962017059326
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_multipath_0.1": {
+    "status": "done",
+    "signature": "86c38f7882ad0a84ef47204c42c20b6aadcec266a6a672c1dffd45bfb13893ab",
+    "returncode": 0,
+    "seconds": 1.721113681793213
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_multipath_0.3": {
+    "status": "done",
+    "signature": "8dbc22c0a7ab9ed08762dcfb0782a8cf08f2e579b32e58a4b358467307fe40d8",
+    "returncode": 0,
+    "seconds": 1.7000045776367188
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_multipath_0.5": {
+    "status": "done",
+    "signature": "8e6fe1207534042580b6c77bcd1a33c88853087b254c83e579331f8f96003f3f",
+    "returncode": 0,
+    "seconds": 1.6822872161865234
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_clip_0.8": {
+    "status": "done",
+    "signature": "96d079866fce378c07133d2642ff32737281aa293579e324f55ef0665e32853a",
+    "returncode": 0,
+    "seconds": 1.7422261238098145
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_clip_1.0": {
+    "status": "done",
+    "signature": "bd1293009e9670bf665a67fcfeba5f2f81e66136a65c34bf2ea8f4ab2503727d",
+    "returncode": 0,
+    "seconds": 1.7217402458190918
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_clip_1.5": {
+    "status": "done",
+    "signature": "4580739c51cbccc23893aac660a730e363a0c9c18c3144e44bea5fbeed9af0f8",
+    "returncode": 0,
+    "seconds": 1.7072296142578125
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_finetune_f1.0_clip_2.0": {
+    "status": "done",
+    "signature": "2adcd3a4d16a616bc5021d327da89052ceaad27d9be4a5574a34f253c4d7394e",
+    "returncode": 0,
+    "seconds": 1.7194616794586182
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_scratch_f0.01": {
+    "status": "done",
+    "signature": "e1e349ec23c3cf999189b85b4f1564083ff11d4ef363aa3edb37797e72b5e30a",
+    "returncode": 0,
+    "seconds": 19.12513279914856
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_scratch_f0.01_test": {
+    "status": "done",
+    "signature": "7ee1d3164793c14d0f9270f43e96bdcfa48b8cef7e6462d66ef2d066291878be",
+    "returncode": 0,
+    "seconds": 1.6705074310302734
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_scratch_f0.1": {
+    "status": "done",
+    "signature": "4896eb3c619883918d77120bc1a2d193cf338d691159289bbf04427ea0ac5ea2",
+    "returncode": 0,
+    "seconds": 28.801571130752563
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_scratch_f0.1_test": {
+    "status": "done",
+    "signature": "6953e1e8e834e40c5eefbab4444e0a152469cfab215795abf439591e09adc557",
+    "returncode": 0,
+    "seconds": 1.723358392715454
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_scratch_f1.0": {
+    "status": "done",
+    "signature": "4645f0f9c9512ca223cd0c33bfe4d466eb72dc8ec95d5f6666aa9982cd55d0a6",
+    "returncode": 0,
+    "seconds": 120.29964447021484
+  },
+  "pre_bidirectional_transformer_s17_rml2018_modulation_scratch_f1.0_test": {
+    "status": "done",
+    "signature": "cacc0c2027af20bcc090c7145039ef010b18c51f8c5fdaca8938e9b02ef89481",
+    "returncode": 0,
+    "seconds": 1.665855884552002
+  },
+  "pre_bidirectional_transformer_s17_diagnose": {
+    "status": "done",
+    "signature": "7efe3eb0bd3e40f42ec2797f3e1904ab1b7b7a196ae11fe1827a19fb28a9dd74",
+    "returncode": 0,
+    "seconds": 2.0154709815979004
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_probe_f0.01": {
+    "status": "done",
+    "signature": "1d779356ab7b29c83b562fc50d277b194a1665066a4faa0488cc5ef044fc16ea",
+    "returncode": 0,
+    "seconds": 21.05843472480774
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_probe_f0.01_test": {
+    "status": "done",
+    "signature": "b410308afd5c70c3e188b6f229a22514a8b27f96646600aa1d30c1761f845655",
+    "returncode": 0,
+    "seconds": 1.6215095520019531
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_probe_f0.1": {
+    "status": "done",
+    "signature": "19345c3df063ded1d5f305e7355677923619853dfc2c82d1af024ff08e842def",
+    "returncode": 0,
+    "seconds": 24.708165407180786
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_probe_f0.1_test": {
+    "status": "done",
+    "signature": "27337534a8eb33a14d3da6c0a714ae1aab8aed5d16c4b1bee6e4ce8627181200",
+    "returncode": 0,
+    "seconds": 1.6234569549560547
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_probe_f1.0": {
+    "status": "done",
+    "signature": "aa26e663701bf9c8738e6b3f2a6c1fc489696798fffbb9e27645a3710548dbd3",
+    "returncode": 0,
+    "seconds": 55.43456745147705
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_probe_f1.0_test": {
+    "status": "done",
+    "signature": "bb2b72abe985c05b98810d2ea81df827cbe0dfca55d8c6f236f405fdb01002a3",
+    "returncode": 0,
+    "seconds": 1.6060304641723633
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f0.01": {
+    "status": "done",
+    "signature": "e5ba9d281d23f932200dc32c33fd07496aaece2336da7a89fedef21d84744808",
+    "returncode": 0,
+    "seconds": 22.80447006225586
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f0.01_test": {
+    "status": "done",
+    "signature": "00712b18d97a817829a63b89358276f52a48a21c51c13e8129e3c4238679a391",
+    "returncode": 0,
+    "seconds": 1.626619577407837
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f0.1": {
+    "status": "done",
+    "signature": "6a567b130371c532566bad6e511cfc129da1cab47bbc93434e96241d3d6522a3",
+    "returncode": 0,
+    "seconds": 30.6329083442688
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f0.1_test": {
+    "status": "done",
+    "signature": "1cd4eed671ab5d52fddc55ccd800dec4247d8bf02d573f224b7ba59d353dca0a",
+    "returncode": 0,
+    "seconds": 1.597898006439209
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0": {
+    "status": "done",
+    "signature": "2f84f9ae5bf8102ac6cbb4d35569be7779d962df198aae2c67fbbf780e5bfe7c",
+    "returncode": 0,
+    "seconds": 104.58168387413025
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "3f209c5325c9bdfa81c22dae5ca4b6a3bd603626fdee884ca04e32ddc566027e",
+    "returncode": 0,
+    "seconds": 1.6170587539672852
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "73321b97bdbe75ecaa10549c4cab900497c7fe537932717734ff697689cac440",
+    "returncode": 0,
+    "seconds": 1.6968977451324463
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "86c7837b84bb5358a8ca084f03bcd7a5d17e6d43de0ac12dbcd380cf14171b7a",
+    "returncode": 0,
+    "seconds": 1.5925531387329102
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_phase_0.7853981634": {
+    "status": "done",
+    "signature": "656931b455e9230452cc7343c7ba0fda18bdd2b5bcc3dda53205289f62f8509b",
+    "returncode": 0,
+    "seconds": 1.5935044288635254
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_phase_1.5707963268": {
+    "status": "done",
+    "signature": "b9eabc27f3b45f092c4ec03538e0a81674b360c983f90988b250dbbe1b55594b",
+    "returncode": 0,
+    "seconds": 1.620347499847412
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_phase_3.1415926536": {
+    "status": "done",
+    "signature": "4daf0cac53c6d6a82e82e3cd0964862ba6ba214db18d8b26816df9a3314df4d6",
+    "returncode": 0,
+    "seconds": 1.641864538192749
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_cfo_-0.02": {
+    "status": "done",
+    "signature": "a86b4eb6535e4d4175209acab04397409ab824d30a2d051c31dc3782451936a3",
+    "returncode": 0,
+    "seconds": 1.597527265548706
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_cfo_-0.01": {
+    "status": "done",
+    "signature": "f19881209e1f8d00c8d447dd509f40463d8cf2259fc4a5993c5fa66a6e9209c4",
+    "returncode": 0,
+    "seconds": 1.631183385848999
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_cfo_0.01": {
+    "status": "done",
+    "signature": "9e8d798176b7a56d99c3102fb63b10cc9337cba4b5392ffea1d868bb0a744cf2",
+    "returncode": 0,
+    "seconds": 1.5990703105926514
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_cfo_0.02": {
+    "status": "done",
+    "signature": "df6c2a4871dedfee32483651f969b295dde92d75c407e80488fb9b246b175ed6",
+    "returncode": 0,
+    "seconds": 1.5958452224731445
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_gain_0.5": {
+    "status": "done",
+    "signature": "3ac746ba2b0f14d422af14a993f6068c6101f18c386f12ce54502fa30fed5e3f",
+    "returncode": 0,
+    "seconds": 1.5872855186462402
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_gain_2.0": {
+    "status": "done",
+    "signature": "d6a466c9d155abfa4e9dafff8723d069ebd5b17d2b62b266e1808b2f05ab9495",
+    "returncode": 0,
+    "seconds": 1.611314058303833
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_noise_-5.0": {
+    "status": "done",
+    "signature": "f01e439b67f451bd1dde672e61e9bcba4d2bf197ac8131062f98dd782706322e",
+    "returncode": 0,
+    "seconds": 1.6499440670013428
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_noise_0.0": {
+    "status": "done",
+    "signature": "b84527b3aa5a4b8845d26026c7d122fd8170b242cae9c567fd2f70d07825f5cf",
+    "returncode": 0,
+    "seconds": 1.6273114681243896
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_noise_5.0": {
+    "status": "done",
+    "signature": "1ecdb2dc6e2da5b0610f73edd48f17410a6b69ac24368c9beb2f4754fe727e27",
+    "returncode": 0,
+    "seconds": 1.6360805034637451
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_finetune_f1.0_noise_10.0": {
+    "status": "done",
+    "signature": "c6ec10f01c2be049a95be69067d6c721db79577ebba389dac0adf52d2d07a4f8",
+    "returncode": 0,
+    "seconds": 1.6388940811157227
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_scratch_f0.01": {
+    "status": "done",
+    "signature": "37407aa7406cccb3f82d4d4e67d9e8861d5a29380020ad58b3bc7e7a6220eb6d",
+    "returncode": 0,
+    "seconds": 22.651668548583984
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_scratch_f0.01_test": {
+    "status": "done",
+    "signature": "2f492c102b96affebf12430a152ef816e4e923cc148f535e329331c932aefacd",
+    "returncode": 0,
+    "seconds": 1.6252226829528809
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_scratch_f0.1": {
+    "status": "done",
+    "signature": "cdd2de487ab3bbb024f5ea027710615bec46842e74b25bfe26b1601e9814716d",
+    "returncode": 0,
+    "seconds": 30.501375198364258
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_scratch_f0.1_test": {
+    "status": "done",
+    "signature": "d415bf1d95a48e14b49e44b2fb318779de80d444a702d09511a32822a5302547",
+    "returncode": 0,
+    "seconds": 1.6608517169952393
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_scratch_f1.0": {
+    "status": "done",
+    "signature": "1c60907b680865cbfcea928d801f1e2e072bfd1c62f9efd02235b8a9013f92b2",
+    "returncode": 0,
+    "seconds": 103.81625437736511
+  },
+  "pre_bidirectional_transformer_s17_radchar_waveform_scratch_f1.0_test": {
+    "status": "done",
+    "signature": "9aeea527a84a812c048c4de912276bf9f7dc7d00d8657f3009bdfa6121c3bd3a",
+    "returncode": 0,
+    "seconds": 1.5984091758728027
+  },
+  "pre_bidirectional_transformer_s17_benchmark": {
+    "status": "done",
+    "signature": "eb24837e21b0d024cbf5260e7558eb560a39eef9f7b7b8d57a7da36ce9a9466c",
+    "returncode": 0,
+    "seconds": 5.268544435501099
+  },
+  "pre_bidirectional_transformer_s42": {
+    "status": "done",
+    "signature": "54a9a7ca7adff9bd4508e6c979b16551ceff5b10459451999a932c97062cefc7",
+    "returncode": 0,
+    "seconds": 1361.0728242397308
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_probe_f0.01": {
+    "status": "done",
+    "signature": "28153a69c0aba1eb52930a8734914ab237ff67a90a39c61df4ebc9077e4d80ea",
+    "returncode": 0,
+    "seconds": 17.738763093948364
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_probe_f0.01_test": {
+    "status": "done",
+    "signature": "4713195fc4c5d1c6b521fef1a55ce9d8e14320d1b62bbf21c1334b3c918eefe0",
+    "returncode": 0,
+    "seconds": 1.6731910705566406
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_probe_f0.1": {
+    "status": "done",
+    "signature": "0108494b2d93a744aaf5899443dc5e7aaff81282b3d6066eaf0f20844cdc1ad8",
+    "returncode": 0,
+    "seconds": 21.49333906173706
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_probe_f0.1_test": {
+    "status": "done",
+    "signature": "f5d328cbb09c744950ad7e777f4dbdc2edc1e02613701cb561c1c700302096fd",
+    "returncode": 0,
+    "seconds": 1.668104648590088
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_probe_f1.0": {
+    "status": "done",
+    "signature": "a83b2c7578cd27e9dcfe93e7eb5c0bebad020d68998e353532e81ea468425bb5",
+    "returncode": 0,
+    "seconds": 51.535032987594604
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_probe_f1.0_test": {
+    "status": "done",
+    "signature": "b1d3d6954b4dd0f819dc1c305f4a368618c94a1f2f30650fc55ecfaf711192d6",
+    "returncode": 0,
+    "seconds": 1.7022771835327148
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f0.01": {
+    "status": "done",
+    "signature": "f822cf4b9973f0ecd131c4d35f2c93b8c5d263d920092291cc8ab18c62d105d5",
+    "returncode": 0,
+    "seconds": 18.7162024974823
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f0.01_test": {
+    "status": "done",
+    "signature": "d26c2077e99ce91692466da57c690996d8f9990ef4784fba25ec589f098027a1",
+    "returncode": 0,
+    "seconds": 1.7011842727661133
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f0.1": {
+    "status": "done",
+    "signature": "6dd1b8a8321e310064e23cebc535a95aabfa59ad0da575b899aa20f8375bb6db",
+    "returncode": 0,
+    "seconds": 28.48148512840271
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f0.1_test": {
+    "status": "done",
+    "signature": "bab731a2b394ec0bb48f55e38f1ee69139fb72c0f5ea3d6d4e51e708a6fc47bb",
+    "returncode": 0,
+    "seconds": 1.6616830825805664
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0": {
+    "status": "done",
+    "signature": "6e35df364172f7cb91164ddeab622789229b652313fbf6a039ac19e4417480ea",
+    "returncode": 0,
+    "seconds": 120.02501606941223
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_test": {
+    "status": "done",
+    "signature": "6ce8b8b45ebd9b4b80d1847692daf0d08b5b6778ecdca0483dcb85f2ba9b587d",
+    "returncode": 0,
+    "seconds": 1.7007355690002441
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_reset": {
+    "status": "done",
+    "signature": "26fe4981c86c8db69fa9271a759aa62e252e240e8d609e32a80f8a9cdade9dcd",
+    "returncode": 0,
+    "seconds": 1.7695157527923584
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_drop_general": {
+    "status": "done",
+    "signature": "af250052c136867d2bd92a6d5df1b0ce53136eda07796a48326e421604133f0d",
+    "returncode": 0,
+    "seconds": 1.6766605377197266
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_phase_0.7853981634": {
+    "status": "done",
+    "signature": "c485f666c14d0441586a278df54cd57d7208ded165a363b5d1ecb689594cc255",
+    "returncode": 0,
+    "seconds": 1.6845319271087646
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_phase_1.5707963268": {
+    "status": "done",
+    "signature": "e8acd7cec3927c710fab26f336aa0e55c46f96aa0b17640a7d6ce5459971e521",
+    "returncode": 0,
+    "seconds": 1.6811716556549072
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_phase_3.1415926536": {
+    "status": "done",
+    "signature": "1703e5519dcea849af6857a8a8ed6803709e3812d2c17381f306ee05c54164b8",
+    "returncode": 0,
+    "seconds": 1.6895649433135986
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_cfo_-0.02": {
+    "status": "done",
+    "signature": "5e0df537c998935cd2c4e133c7862f6291a7746db4ec3ca5312230940a37914b",
+    "returncode": 0,
+    "seconds": 1.7141728401184082
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_cfo_-0.01": {
+    "status": "done",
+    "signature": "430987c110e335e8f067d01e061655c92999aed15fe87cd8a735b28636d478ec",
+    "returncode": 0,
+    "seconds": 1.6913995742797852
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_cfo_-0.005": {
+    "status": "done",
+    "signature": "e480989f7b23163f93a4d8b368ef9d85518eb37e48d2ebd414c83186b6570041",
+    "returncode": 0,
+    "seconds": 1.695655345916748
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_cfo_-0.001": {
+    "status": "done",
+    "signature": "d5ba9a06d11577bf9d6d602847d3aed02cb3f9fc99fc9f00f9fb2b784da3c784",
+    "returncode": 0,
+    "seconds": 1.6473262310028076
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_cfo_0.001": {
+    "status": "done",
+    "signature": "0b7a670bf613b8a760bcbb0361baacc227d7e3d5e2b141b9001ef3e52e2bc9b9",
+    "returncode": 0,
+    "seconds": 1.6921894550323486
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_cfo_0.005": {
+    "status": "done",
+    "signature": "fb694138751741a31a29f851b5f61b2b76b307928ba63b0484245bb9d3927fa8",
+    "returncode": 0,
+    "seconds": 1.659393548965454
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_cfo_0.01": {
+    "status": "done",
+    "signature": "89455f301bcddc01c56121b0f6d6474ea43af12cb21fe65256e857679ae68d95",
+    "returncode": 0,
+    "seconds": 1.7179138660430908
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_cfo_0.02": {
+    "status": "done",
+    "signature": "7bb618180a63c9e210483ba7b5613428257f7dc405723b0b3c378f40f4b6207f",
+    "returncode": 0,
+    "seconds": 1.6811463832855225
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_gain_0.25": {
+    "status": "done",
+    "signature": "feea46b5743c3ee395890e4208373df9a05d8a86b1ebddb46c5a89c93f0929cd",
+    "returncode": 0,
+    "seconds": 1.6958096027374268
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_gain_0.5": {
+    "status": "done",
+    "signature": "a0dbf72a78988cdae3a53fda337a62626a408ed9782c848086260bc91f5b6175",
+    "returncode": 0,
+    "seconds": 1.6729588508605957
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_gain_2.0": {
+    "status": "done",
+    "signature": "ac20728f50a8416f684ad0e648cef3daa0fbce7734c37153a945d39498824b63",
+    "returncode": 0,
+    "seconds": 1.7070214748382568
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_gain_4.0": {
+    "status": "done",
+    "signature": "340c82fedf6d20de9fe850faa38d3937f4751eadd36e9e3afaba26abb06fc76e",
+    "returncode": 0,
+    "seconds": 1.725480556488037
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_noise_-5.0": {
+    "status": "done",
+    "signature": "86e5aeabd3f35d5f19ec14dc07cf84384b635cef595e6270c94758cd7b048c1f",
+    "returncode": 0,
+    "seconds": 1.7121849060058594
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_noise_0.0": {
+    "status": "done",
+    "signature": "42a2d7daaf72a774b224a2ea82c0fbf6b37b0c3061880b071b8613a719f17914",
+    "returncode": 0,
+    "seconds": 1.699676752090454
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_noise_5.0": {
+    "status": "done",
+    "signature": "d37558d0d512b45d545961b20aacacd031755cc39fe8242ae8c918d8d77b1e00",
+    "returncode": 0,
+    "seconds": 1.7142095565795898
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_noise_10.0": {
+    "status": "done",
+    "signature": "0ed2b7654d7510415caaab614a2214751d7a24b0183ea10161a8648ef218f2ff",
+    "returncode": 0,
+    "seconds": 1.6982226371765137
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_noise_20.0": {
+    "status": "done",
+    "signature": "9f4f7a2e7c7df4bad045514420dce53c2cbdb2c393263798e066ed44adeac75d",
+    "returncode": 0,
+    "seconds": 1.7200238704681396
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_iq_imbalance_0.05": {
+    "status": "done",
+    "signature": "877f038d50c6d7c99d55729c29bc8f197959275ffe976ab914bd468561f24a46",
+    "returncode": 0,
+    "seconds": 1.6668181419372559
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_iq_imbalance_0.1": {
+    "status": "done",
+    "signature": "92b2c7bb12919fafa9b5a3de55e93726faad5e51c6068f3e01bc5ae6911e20e1",
+    "returncode": 0,
+    "seconds": 1.665006160736084
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_iq_imbalance_0.2": {
+    "status": "done",
+    "signature": "80ba797100cd65baf8901556441e4e28ddf0a7943834612c17321d3404b42296",
+    "returncode": 0,
+    "seconds": 1.7110693454742432
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_multipath_0.1": {
+    "status": "done",
+    "signature": "0774a09923dafe07d4a9e8dd0b325ab57fa39ee4336e08c1cd06471989a29fa8",
+    "returncode": 0,
+    "seconds": 1.6860527992248535
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_multipath_0.3": {
+    "status": "done",
+    "signature": "278c620f930c16a2193bd5767830ad0c8ec97ca49a08a8e4d578921bccd1ceeb",
+    "returncode": 0,
+    "seconds": 1.6785743236541748
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_multipath_0.5": {
+    "status": "done",
+    "signature": "bc6a8dd193c65dd74232ed814796d7d653c06156329bcb71dab8fad08143b066",
+    "returncode": 0,
+    "seconds": 1.6810035705566406
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_clip_0.8": {
+    "status": "done",
+    "signature": "70b221c8edebe491d3b9ab056d1a682ef843b1785a446c5faca2616fba20cf3f",
+    "returncode": 0,
+    "seconds": 1.7238082885742188
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_clip_1.0": {
+    "status": "done",
+    "signature": "50ef5f835f79bf6a2f83406e1c3f3167e8fa62273c30b21b7eb241636dbd3e50",
+    "returncode": 0,
+    "seconds": 1.723036766052246
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_clip_1.5": {
+    "status": "done",
+    "signature": "d4d626051555e8224092075a5b2dd94cca376ee2dc39fe6b888f69d0df7d86cc",
+    "returncode": 0,
+    "seconds": 1.7185122966766357
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_finetune_f1.0_clip_2.0": {
+    "status": "done",
+    "signature": "17270fc3ff9cc54b491490b86675dbee95325f60afe0cc1ed9ad20e8fb1acc0a",
+    "returncode": 0,
+    "seconds": 1.6977300643920898
+  },
+  "pre_bidirectional_transformer_s42_rml2018_modulation_scratch_f0.01": {
+    "status": "running",
+    "signature": "073d7b0ad27f94e83e1da8137edd361037cc822a232c00516aea5adef57ae19c",
+    "start": 1795068141.6110604
+  }
+}

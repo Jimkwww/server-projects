@@ -1,0 +1,36 @@
+{
+  "cls_dev_train": {
+    "file": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_train.npy",
+    "sha256": "bcbd4936d357b5ede404ee93a9ed4d305c4c96d96bda9657d2032662d63089a5",
+    "n": 19968
+  },
+  "cls_dev_val": {
+    "file": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_val.npy",
+    "sha256": "0c2f091d762b20c8fdfc8302d0795aa4e0b9fb78f2036dcd32ca95ac68175a55",
+    "n": 3120
+  },
+  "cls_dev_test": {
+    "file": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_test.npy",
+    "sha256": "b0a599f807e2ddb2f2895ec6d1a791e351d888f573285e04b8d3f9067403728a",
+    "n": 8112
+  },
+  "radchar_train": {
+    "file": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_train.npy",
+    "sha256": "cd038f7d35e7cc897820d1af7934af76b41c20996d546aa7e28127dd4c1a90a0",
+    "n": 30000
+  },
+  "radchar_dev": {
+    "file": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_dev.npy",
+    "sha256": "cb7b0c0002c8fc50f2fe8fe1fc2ae5625dbfa7272db878b3d7120448e747683f",
+    "n": 10000
+  },
+  "radchar_eval": {
+    "file": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_eval.npy",
+    "sha256": "ca19a5412cc3a9f916eb0c107f5d730e1a2556e4fec341f05c096e0ccd47d8a2",
+    "n": 10000
+  },
+  "radchar_h5": {
+    "file": "/data1/user_wzk/datasets/Radchar/radchar_tiny_rml.h5",
+    "sha256": "dbb1ecfd501f683c3be6d56e97c20de62dea78be580eb8040ec7b40c4d19827b"
+  }
+}

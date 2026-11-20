@@ -1,0 +1,14 @@
+{
+  "format": "npy",
+  "x": "/data1/user_wzk/datasets/SSM_L_round3/f2_x.npy",
+  "y": "/data1/user_wzk/datasets/SSM_L_round3/f2_y.npy",
+  "snr": "/data1/user_wzk/datasets/SSM_L_round3/f2_snr.npy",
+  "layout": "NLC",
+  "label_format": "integer",
+  "normalization": "none",
+  "classes": 24,
+  "splits": {
+    "train": "/home/user_wzk/wzk/projects/SSM/SSM_L/round3_scale_transfer/data/f2_train_idx.npy",
+    "val": "/home/user_wzk/wzk/projects/SSM/SSM_L/round3_scale_transfer/data/f2_val_idx.npy"
+  }
+}

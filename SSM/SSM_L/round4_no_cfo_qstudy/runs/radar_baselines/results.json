@@ -1,0 +1,123 @@
+{
+  "data": {
+    "splits": {
+      "train": {
+        "count": 30000,
+        "sha256": "cd038f7d35e7cc897820d1af7934af76b41c20996d546aa7e28127dd4c1a90a0"
+      },
+      "val": {
+        "count": 10000,
+        "sha256": "cb7b0c0002c8fc50f2fe8fe1fc2ae5625dbfa7272db878b3d7120448e747683f"
+      },
+      "test": {
+        "count": 10000,
+        "sha256": "ca19a5412cc3a9f916eb0c107f5d730e1a2556e4fec341f05c096e0ccd47d8a2"
+      }
+    },
+    "shape": [
+      [
+        50000,
+        512,
+        2
+      ],
+      [
+        50000,
+        5
+      ],
+      [
+        50000,
+        1
+      ]
+    ],
+    "data_files": [
+      {
+        "path": "/data1/user_wzk/datasets/Radchar/radchar_tiny_rml.h5",
+        "bytes": 207727480,
+        "mtime_ns": 1794327907584937091
+      }
+    ],
+    "manifest": {
+      "format": "h5",
+      "file": "/data1/user_wzk/datasets/Radchar/radchar_tiny_rml.h5",
+      "x_key": "X",
+      "y_key": "Y",
+      "snr_key": "Z",
+      "layout": "NLC",
+      "label_format": "one_hot",
+      "normalization": "none",
+      "classes": 5,
+      "splits": {
+        "train": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_train.npy",
+        "val": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_dev.npy",
+        "test": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_eval.npy"
+      },
+      "class_names": [
+        "coherent_pulse_train",
+        "barker_code",
+        "polyphase_barker_code",
+        "frank_code",
+        "linear_frequency_modulated"
+      ],
+      "_manifest_path": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/configs/radchar.json"
+    },
+    "manifest_sha256": "841d0de136ba4291d8357783db6a05308042a36c69f0374be608076ee4456245"
+  },
+  "patch": 8,
+  "n_classes": 5,
+  "flattened_iq": {
+    "features": "flattened_iq",
+    "feature_dim": 1024,
+    "val": {
+      "n": 10000,
+      "oa": 0.6298,
+      "macro_f1": 0.6267883311519276,
+      "class_f1": [
+        0.822303282959875,
+        0.839724680432645,
+        0.27318628753654,
+        0.6363636363636364,
+        0.5623637684669411
+      ]
+    },
+    "test": {
+      "n": 10000,
+      "oa": 0.6343,
+      "macro_f1": 0.6297056470111545,
+      "class_f1": [
+        0.8364378668027558,
+        0.8353315390261806,
+        0.28900804289544235,
+        0.63950734249171,
+        0.5482434438396834
+      ]
+    }
+  },
+  "physical": {
+    "features": "physical",
+    "feature_dim": 192,
+    "val": {
+      "n": 10000,
+      "oa": 0.4416,
+      "macro_f1": 0.4283507442907372,
+      "class_f1": [
+        0.5272883541039965,
+        0.29333333333333333,
+        0.277602523659306,
+        0.33229329173166927,
+        0.7112362186253812
+      ]
+    },
+    "test": {
+      "n": 10000,
+      "oa": 0.4389,
+      "macro_f1": 0.4270183298087543,
+      "class_f1": [
+        0.5334462320067739,
+        0.2929562433297759,
+        0.26784694460308395,
+        0.34002057613168724,
+        0.7008216529724505
+      ]
+    }
+  }
+}

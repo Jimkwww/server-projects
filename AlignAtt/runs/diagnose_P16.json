@@ -1,0 +1,37 @@
+{
+  "args": {
+    "pairs": 2000,
+    "P": 16,
+    "d": 2,
+    "snr": "inf",
+    "seed": 17,
+    "device": "cuda:0",
+    "out": "runs/diagnose_P16.json"
+  },
+  "results": {
+    "noiseless": {
+      "controlled": {
+        "max_abs_mean": 1.0,
+        "max_abs_median": 1.0,
+        "delay_acc": 0.334,
+        "delay_mae": 2.011,
+        "entropy_mean": 0.1792622611895381
+      },
+      "same_class": {
+        "max_abs_mean": 0.4991987943649292,
+        "max_abs_median": 0.5,
+        "entropy_mean": 0.8221072397143637
+      },
+      "diff_class": {
+        "max_abs_mean": 0.5122016668319702,
+        "max_abs_median": 0.4999999403953552,
+        "entropy_mean": 0.8215315339788817
+      },
+      "noise": {
+        "max_abs_mean": 0.3784281015396118,
+        "max_abs_median": 0.37488263845443726,
+        "entropy_mean": 0.8903565349092791
+      }
+    }
+  }
+}

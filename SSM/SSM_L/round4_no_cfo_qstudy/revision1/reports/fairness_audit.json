@@ -1,0 +1,205 @@
+{
+  "initial_weights_fixedq_vs_learnq": {
+    "17": {
+      "encoder_equal": true,
+      "filter_equal": true,
+      "buffers_equal": true,
+      "aux_stats_equal": true,
+      "decoder_init_equal": true,
+      "fixedq_encoder_sha256": "e1463227fe87d3557afefa6d11aadff09649bd0e4412ef084352f97ed050d914",
+      "learnq_encoder_sha256": "e1463227fe87d3557afefa6d11aadff09649bd0e4412ef084352f97ed050d914"
+    },
+    "42": {
+      "encoder_equal": true,
+      "filter_equal": true,
+      "buffers_equal": true,
+      "aux_stats_equal": true,
+      "decoder_init_equal": true,
+      "fixedq_encoder_sha256": "80c4647c576659c142237ebc91642f7773be9b77e780295db9c7e25e5e306e38",
+      "learnq_encoder_sha256": "80c4647c576659c142237ebc91642f7773be9b77e780295db9c7e25e5e306e38"
+    },
+    "2026": {
+      "encoder_equal": true,
+      "filter_equal": true,
+      "buffers_equal": true,
+      "aux_stats_equal": true,
+      "decoder_init_equal": true,
+      "fixedq_encoder_sha256": "a0774ade308314bf3c4c7a77e572f1206357aa9c2a773f2c3851f0455ec578b0",
+      "learnq_encoder_sha256": "a0774ade308314bf3c4c7a77e572f1206357aa9c2a773f2c3851f0455ec578b0"
+    }
+  },
+  "pretrain_config_round2_vs_round4": {
+    "round4_pretrain_cfg": {
+      "epochs": 50,
+      "lr": 0.0003,
+      "batch_size": 128,
+      "weight_decay": 0.01,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "scheduler": "cosine",
+      "warmup_fraction": 0.05,
+      "grad_clip": 1.0,
+      "mask_ratio": 0.5,
+      "augment_cfo_max": 0.0
+    },
+    "round2_pretrain_cfg": {
+      "epochs": 50,
+      "lr": 0.0003,
+      "batch_size": 128,
+      "weight_decay": 0.01,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "scheduler": "cosine",
+      "warmup_fraction": 0.05,
+      "grad_clip": 1.0,
+      "mask_ratio": 0.5,
+      "augment_cfo_max": 0.0
+    },
+    "diffs": {},
+    "model_cfg_equal": true
+  },
+  "downstream_freezing_A_B_C_D": {
+    "rml:A_fixedq_fixedq:seed17": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "rml:A_fixedq_fixedq:seed42": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "rml:A_fixedq_fixedq:seed2026": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "rml:B_learnq_fixedq:seed17": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "rml:B_learnq_fixedq:seed42": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "rml:B_learnq_fixedq:seed2026": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "rml:C_fixedq_learnq:seed17": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "rml:C_fixedq_learnq:seed42": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "rml:C_fixedq_learnq:seed2026": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "rml:D_learnq_learnq:seed17": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "rml:D_learnq_learnq:seed42": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "rml:D_learnq_learnq:seed2026": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "radar:A_fixedq_fixedq:seed17": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "radar:A_fixedq_fixedq:seed42": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "radar:A_fixedq_fixedq:seed2026": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "radar:B_learnq_fixedq:seed17": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "radar:B_learnq_fixedq:seed42": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "radar:B_learnq_fixedq:seed2026": {
+      "expected": "frozen",
+      "aux_frozen_verified": true,
+      "hash_equal": true
+    },
+    "radar:C_fixedq_learnq:seed17": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "radar:C_fixedq_learnq:seed42": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "radar:C_fixedq_learnq:seed2026": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "radar:D_learnq_learnq:seed17": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "radar:D_learnq_learnq:seed42": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    },
+    "radar:D_learnq_learnq:seed2026": {
+      "expected": "learn",
+      "aux_frozen_verified": null,
+      "hash_equal": null
+    }
+  },
+  "filter_update_C_D": {
+    "rml": {
+      "C_filter_maxdelta_vs_fixedq_pretrain": 0.12637707591056824,
+      "D_filter_maxdelta_vs_learnq_pretrain": 0.1368962824344635
+    },
+    "radar": {
+      "C_filter_maxdelta_vs_fixedq_pretrain": 0.09124994277954102,
+      "D_filter_maxdelta_vs_learnq_pretrain": 0.18056845664978027
+    }
+  },
+  "resume_behavior": {
+    "verified": "code inspection (pretrain_r4.py train())",
+    "finding": "resume restores aux/phys from the checkpoint (ck.get(\"aux\"/\"phys\")), and model.load_state_dict(ck[\"model\"]) restores aux_mean/aux_std buffers; NO stat re-fit on resume. A fresh fit can occur only if the shared_init cache is missing, and is then overwritten by the checkpoint load."
+  },
+  "unverifiable": [
+    "round2 learn-Q pretrain used a different entry script (pretrain/engine.py) than round4 fixed-Q (pretrain_r4.py); optimizer param selection differs textually (round2: model.parameters(); round4: requires_grad filter) but is equivalent when no params are frozen, and the mask stream (seed+200000) and data order (seed) are identical. Full bit-level equivalence of the two training loops was not re-run.",
+    "The exact decoder init RNG state was reconstructed and matched; a full forward/backward bit-match of the two engines was not re-executed (\u672a\u6838\u9a8c)."
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "train": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_train.npy",
+  "val": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_dev.npy",
+  "test": "/home/user_wzk/wzk/projects/SSM/SSM_L/round2_overnight/data/radchar_eval.npy"
+}

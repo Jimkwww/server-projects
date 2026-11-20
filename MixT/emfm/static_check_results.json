@@ -1,0 +1,25 @@
+{
+  "scope": "Local static checks only; no imports of ML packages, model execution, or server training",
+  "python_syntax": {
+    "__init__.py": "pass",
+    "check.py": "pass",
+    "data.py": "pass",
+    "models.py": "pass",
+    "tests/__init__.py": "pass",
+    "tests/test_correctness.py": "pass",
+    "train.py": "pass"
+  },
+  "config_json": {
+    "global_matched.json": "pass",
+    "global_small.json": "pass",
+    "swin_small.json": "pass"
+  },
+  "analytical_parameters": {
+    "global_matched": 2251592,
+    "global_small": 1195160,
+    "swin_small": 2166488
+  },
+  "matched_relative_gap": 0.03928200848562281,
+  "manifest_sha256": "3c76d726ef0b141f213b2267f8b5933210f80776fe458d1aefd63bc9006f246d",
+  "runtime_tests": "NOT RUN: execute on server per README"
+}

@@ -1,0 +1,26 @@
+{
+  "note": "No git repo in old project (delivered as zip). These are SHA256 of the actual in-use files copied into SSM_L.",
+  "old_project_root": "/home/user_wzk/wzk/projects/SSM/SSM",
+  "old_project_files_sha256": {
+    "ssm_exp/model.py": "89fa9cb14521778ee14d40bd3bba2dd80e86f6ba2cb146bef843be34c7d7dc6a",
+    "ssm_exp/engine.py": "9827b3711c2372245b26e6423120f47bb62e757d388ef0caa6f70c8d87dc2a5b",
+    "ssm_exp/data.py": "26435502a81ed9f1ac779de47af23afa69faae7c8dc6387d4832d4ce1718adb3",
+    "ssm_exp/utils.py": "06f377b63616e7a1a82195a0fd392a16bfaa986c9e304f1d7fdc2236de9284e4",
+    "ssm_exp/eval.py": "c83fa763eda4b156c1f57066dad145712479cfa04aa273d87f9041cdc3daec01",
+    "ssm_exp/benchmark.py": "7bfba81ddca043279b4e1cc519061f5f510480440123b328f55fde9275ed5a29",
+    "ssm_exp/summarize.py": "42ed316d8bbea119e94d0fee247087341f5294929066e2763f4d166299e835c2",
+    "ssm_exp/audit.py": "7dda3e010367615957bfc81508dee6ffb303dfb9bb4a9a4af1c3dc2849679716",
+    "configs/data_raw.json": "4a1e882edee4c6eceeeafe6341503b00f0ef80aba19347aa01aa3c921fd62067",
+    "configs/resolved.json": "483b90a7023a4d28df514b565befe6f09d490879e3f7dd227cb0d684953205e8",
+    "configs/resolved_qcorr_gates.json": "b119f2c7c565c60cd026f17ea8d24413677087da936e6e2f998fa7484b5456a1",
+    "docs/EXPERIMENT_PROTOCOL.md": "16c7345eb1a12bb178570825eadfca4765d130d2a8e5fe14487279acab0b3ca6",
+    "reports/server_audit.md": "dc19f85fa24f2fada1f711ba85b4269b2f77ce39e7a1c1ca5531ab9d1c792e1a"
+  },
+  "split_hashes": {
+    "data/cls_dev_train.npy": "bcbd4936d357b5ede404ee93a9ed4d305c4c96d96bda9657d2032662d63089a5",
+    "data/cls_dev_val.npy": "0c2f091d762b20c8fdfc8302d0795aa4e0b9fb78f2036dcd32ca95ac68175a55",
+    "data/cls_dev_test.npy": "b0a599f807e2ddb2f2895ec6d1a791e351d888f573285e04b8d3f9067403728a"
+  },
+  "manifest_csv_sha256": "3c76d726ef0b141f213b2267f8b5933210f80776fe458d1aefd63bc9006f246d",
+  "rml2018a_hdf5": "/data1/user_wzk/datasets/RML2018A/GOLD_XYZ_OSC.0001_1024.hdf5"
+}

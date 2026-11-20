@@ -1,0 +1,27 @@
+{
+  "scope": "Local AST/JSON checks only; no model/data runtime executed",
+  "python_syntax": {
+    "__init__.py": "pass",
+    "check.py": "pass",
+    "data.py": "pass",
+    "masked_model.py": "pass",
+    "models.py": "pass",
+    "prepare_pretrain.py": "pass",
+    "pretrain.py": "pass",
+    "pretrain_data.py": "pass",
+    "tests/__init__.py": "pass",
+    "tests/test_correctness.py": "pass",
+    "tests/test_pretrain.py": "pass",
+    "train.py": "pass"
+  },
+  "configs": {
+    "global_matched.json": "pass",
+    "global_matched_50ep.json": "pass",
+    "global_small.json": "pass",
+    "pretrain_global_matched.json": "pass",
+    "pretrain_swin_small.json": "pass",
+    "swin_small.json": "pass",
+    "swin_small_50ep.json": "pass"
+  },
+  "runtime_tests": "NOT RUN: server required"
+}

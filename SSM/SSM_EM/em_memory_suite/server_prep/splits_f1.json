@@ -1,0 +1,4 @@
+{
+  "train": "/home/user_wzk/wzk/projects/SSM/SSM_L/round3_scale_transfer/data/f1_indices.npy",
+  "val": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_val.npy"
+}

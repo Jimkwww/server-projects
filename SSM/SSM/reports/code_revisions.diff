@@ -1,0 +1,151 @@
+########## diff ssm_exp/data.py ##########
+--- /tmp/ssm_orig/SSM/ssm_exp/data.py	2026-10-29 08:04:32.989072520 +0000
++++ ssm_exp/data.py	2026-10-29 07:53:15.984097128 +0000
+@@ -26,8 +26,8 @@
+         if k in m: m[k]=absolute(m[k])
+     m['splits']={k:absolute(v) for k,v in m['splits'].items()}
+     m['_manifest_path']=str(path)
+-    if m.get('normalization') not in ('none','sample_rms'):
+-        raise ValueError('manifest must specify normalization: none or sample_rms')
++    if m.get('normalization') not in ('none','sample_rms','max_abs'):
++        raise ValueError('manifest must specify normalization: none, sample_rms or max_abs')
+     if m.get('layout') not in ('NLC','NCL'):
+         raise ValueError('layout must be NLC or NCL')
+     if m.get('label_format') not in ('integer','one_hot'):
+@@ -71,6 +71,10 @@
+         if a.shape[0]!=2 or not np.isfinite(a).all(): raise ValueError('invalid IQ')
+         if self.m['normalization']=='sample_rms':
+             a/=max(float(np.sqrt(np.mean(np.sum(a*a,axis=0)))),1e-8)
++        elif self.m['normalization']=='max_abs':
++            # Historical Global: joint max absolute COMPONENT over I and Q, not per-channel
++            # and not the complex-envelope magnitude.
++            a/=max(float(np.abs(a).max()),1e-8)
+         label=np.asarray(y[idx])
+         if self.m['label_format']=='one_hot':
+             if label.size!=self.m['classes'] or not np.isclose(label.sum(),1) or not np.all((label==0)|(label==1)):
+########## diff ssm_exp/model.py ##########
+--- /tmp/ssm_orig/SSM/ssm_exp/model.py	2026-10-29 08:04:32.989072520 +0000
++++ ssm_exp/model.py	2026-10-29 07:58:58.501816989 +0000
+@@ -38,6 +38,16 @@
+     return torch.stack((torch.log(energy + eps), r.real, r.imag), -1)
+ 
+ 
++def sinusoidal_positions(n, d, device, dtype):
++    """Absolute sinusoidal token positions; matches the historical Global reference."""
++    t = torch.arange(n, device=device, dtype=torch.float32)[:, None]
++    freq = torch.exp(torch.arange(0, d, 2, device=device).float() * (-math.log(10000) / d))
++    p = torch.zeros(n, d, device=device, dtype=torch.float32)
++    p[:, 0::2] = torch.sin(t * freq)
++    p[:, 1::2] = torch.cos(t * freq[:d // 2])
++    return p.to(dtype)
++
++
+ def perturb(x, frequency=0., phase=0.):
+     """frequency in cycles/raw sample, phase in radians; scalar or [B]."""
+     f = torch.as_tensor(frequency, device=x.device, dtype=x.dtype).reshape(-1, 1)
+@@ -120,8 +130,11 @@
+     def forward(self, x, p):
+         b, n, d = x.shape
+         q,k,v = self.qkv(x).reshape(b,n,3,self.heads,d//self.heads).permute(2,0,3,1,4).unbind(0)
+-        y = F.scaled_dot_product_attention(q,k,v,dropout_p=self.dropout if self.training else 0.)
+-        return self.out(y.transpose(1,2).reshape(b,n,d))
++        # Manual softmax attention, matching the historical Global reference (no padding
++        # mask is needed for fixed-length RML2018A). Avoids non-deterministic SDPA kernels.
++        scores = (q @ k.transpose(-2, -1)) * ((d // self.heads) ** -0.5)
++        weights = F.dropout(scores.float().softmax(-1).to(x.dtype), self.dropout, self.training)
++        return self.out((weights @ v).transpose(1, 2).reshape(b, n, d))
+ 
+ 
+ class Block(nn.Module):
+@@ -155,20 +168,26 @@
+         self.head = nn.Linear(cfg['dim'],cfg['classes'])
+         self.register_buffer('phys_mean',torch.zeros(3))
+         self.register_buffer('phys_std',torch.ones(3))
+-        if cfg['position']=='learned':
++        # Historical Global reference uses absolute sinusoidal positions (audited from the
++        # frozen SwinE/MultToken Global). The recurrent SSM variants use no explicit positions.
++        pos_mode = 'sinusoidal' if cfg['variant']=='G' else cfg['position']
++        if pos_mode=='learned':
+             self.pos = nn.Parameter(torch.zeros(1,cfg['input_length']//cfg['patch'],cfg['dim']))
+             nn.init.normal_(self.pos,std=.02)
+-        elif cfg['position']=='none':
++        elif pos_mode in ('none','sinusoidal'):
+             self.pos = None
+         else:
+-            raise ValueError('position must be none or learned')
++            raise ValueError('position must be none, learned or sinusoidal')
++        self.pos_mode = pos_mode
+ 
+     def forward(self,x):
+         u = self.front(x)
+-        if self.pos is not None:
++        if self.pos_mode=='learned':
+             if u.shape[1] != self.pos.shape[1]:
+                 raise ValueError('learned position requires training length; use separate length models')
+             u = u + self.pos
++        elif self.pos_mode=='sinusoidal':
++            u = u + sinusoidal_positions(u.shape[1],u.shape[2],u.device,u.dtype)
+         if self.cfg['variant'] in ('S2','S2_concat'):
+             p = (physical_features(x,self.cfg['patch'])-self.phys_mean)/self.phys_std
+         else:
+########## diff ssm_exp/engine.py ##########
+--- /tmp/ssm_orig/SSM/ssm_exp/engine.py	2026-10-29 08:04:32.989072520 +0000
++++ ssm_exp/engine.py	2026-10-29 07:54:54.444588709 +0000
+@@ -20,6 +20,7 @@
+     if not required <= c.keys(): raise ValueError('incomplete config')
+     if c['train']['precision']!='fp32': raise ValueError('v1 supports fp32 only')
+     if c['train']['scheduler'] not in ('cosine','constant'): raise ValueError('invalid scheduler')
++    if not 0 <= c['train'].get('warmup_fraction', 0) < 1: raise ValueError('invalid warmup_fraction')
+     return c
+ 
+ 
+@@ -102,11 +103,14 @@
+     model=Classifier(c['model']).to(device)
+     opt=torch.optim.AdamW(model.parameters(),lr=c['train']['lr'],weight_decay=c['train']['weight_decay'],
+                          betas=tuple(c['train']['betas']),eps=c['train']['adam_eps'])
+-    def lr_factor(epoch):
+-        warm=c['train']['warmup_epochs']; total=c['train']['epochs']
+-        if epoch<warm: return (epoch+1)/max(1,warm)
++    # Step-level warmup + cosine, matching the historical Global protocol (warmup is a
++    # fraction of total optimizer steps, not epochs).
++    total_steps=c['train']['epochs']*len(dl)
++    warmup_steps=max(1,int(total_steps*c['train']['warmup_fraction']))
++    def lr_factor(step):
++        if step<warmup_steps: return (step+1)/max(1,warmup_steps)
+         if c['train']['scheduler']=='constant': return 1.
+-        return .5*(1+math.cos(math.pi*(epoch-warm)/max(1,total-warm)))
++        return .5*(1+math.cos(math.pi*min(1.,(step-warmup_steps)/max(1,total_steps-warmup_steps))))
+     scheduler=torch.optim.lr_scheduler.LambdaLR(opt,lr_factor)
+     provenance={'data':data_audit,'code_sha256':code_hash(),'environment':environment(),'smoke':args.smoke}
+     start=0; best=-1.; best_epoch=-1; phys=None
+@@ -141,7 +145,7 @@
+             if not torch.isfinite(loss): raise FloatingPointError('nonfinite training loss')
+             loss.backward()
+             norm=torch.nn.utils.clip_grad_norm_(model.parameters(),c['train']['grad_clip'],error_if_nonfinite=True)
+-            max_grad=max(max_grad,float(norm)); opt.step()
++            max_grad=max(max_grad,float(norm)); opt.step(); scheduler.step()
+             total+=loss.item()*len(y); n+=len(y); correct+=(logits.argmax(-1)==y).sum().item()
+             if monitor:
+                 diagnostics.append({'batch':batch,'layers':[module.last_stats for module in model.modules() if isinstance(module,ComplexSSM)]})
+@@ -154,8 +158,8 @@
+         row={'epoch':epoch,'lr':opt.param_groups[0]['lr'],'train_loss':total/n,'train_oa':correct/n,
+              'val':scores,'train_seconds':train_seconds,'max_grad_norm_before_clip':max_grad,
+              'peak_training_allocated_bytes':torch.cuda.max_memory_allocated(device) if device.type=='cuda' else None,
++             'step':scheduler.last_epoch+1,
+              'diagnostics':diagnostics}
+-        scheduler.step()
+         ck={'model':model.state_dict(),'optimizer':opt.state_dict(),'scheduler':scheduler.state_dict(),
+             'config':c,'provenance':provenance,'epoch':epoch,'best':best,'best_epoch':best_epoch,
+             'rng':rng_state(gen),'augment_rng':aug_gen.get_state(),'physics':phys}
+########## diff configs/base.json ##########
+--- /tmp/ssm_orig/SSM/configs/base.json	2026-10-29 08:04:32.985072483 +0000
++++ configs/base.json	2026-10-29 07:54:59.436613700 +0000
+@@ -33,7 +33,7 @@
+     ],
+     "adam_eps": 1e-08,
+     "scheduler": "cosine",
+-    "warmup_epochs": 0,
++    "warmup_fraction": 0.05,
+     "grad_clip": 1.0,
+     "precision": "fp32",
+     "augment_cfo_max": 0.0,

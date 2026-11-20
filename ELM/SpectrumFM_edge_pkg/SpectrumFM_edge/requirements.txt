@@ -1,0 +1,38 @@
+# SpectrumFM AMC 任务复现所需依赖
+# 版本号为服务器 conda SFM 环境（Python 3.11.16）实测可跑的版本，仅供参考；
+# 端侧按自身设备装 torch，其余 pip 安装最新可用版本即可。
+#
+# 安装方式（见《复现与算力对比指南.md》第 3 节）：
+#   1) 先按设备装 torch：
+#      - CPU  x86/ARM:  pip install torch --index-url https://download.pytorch.org/whl/cpu
+#      - NVIDIA GPU:    pip install torch   （或按 CUDA 版本到 pytorch.org 选命令）
+#      - Jetson:        用 JetPack 自带的 torch，不要 pip 重装
+#   2) 再装其余依赖:    pip install -r requirements.txt
+
+torch>=2.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+tqdm>=4.64
+matplotlib>=3.7
+seaborn>=0.13
+h5py>=3.9
+einops>=0.7
+peft>=0.10
+transformers>=4.40
+torchsummary>=1.5
+
+# ---- 服务器实测版本（对照用，无需照抄）----
+# python        3.11.16
+# torch         2.14.0+cu126
+# numpy         2.4.6
+# scipy         1.17.1
+# scikit-learn  1.9.0
+# tqdm          4.70.0
+# matplotlib    3.11.1
+# seaborn       0.13.2
+# h5py          3.16.0
+# einops        0.8.2
+# peft          0.20.0
+# transformers  5.16.1
+# torchsummary  1.5.1

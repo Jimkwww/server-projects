@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "encoder_sha256": "5b519b0bea835f90ca4c5e11848a93cf7183a3601d09d0ee75a7a17529f92242",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round5_epoch_scale/runs/pretrain/f2/Q_seed2026/ckpt_epoch30.pt",
+  "step": 23460,
+  "pass": 30,
+  "val": {
+    "oa": 0.3631410256410256,
+    "macro_f1": 0.35045246843403116,
+    "n_iter": 552,
+    "converged": true
+  },
+  "corpus": "f2",
+  "seed": 2026,
+  "ckpt_name": "epoch30",
+  "backbone": "Q",
+  "task": "rml"
+}

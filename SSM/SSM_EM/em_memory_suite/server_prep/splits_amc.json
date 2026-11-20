@@ -1,0 +1,5 @@
+{
+  "train": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_train.npy",
+  "val": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_val.npy",
+  "test": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_test.npy"
+}

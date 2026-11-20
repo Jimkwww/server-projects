@@ -1,0 +1,47 @@
+[
+  {
+    "name": "native_width",
+    "jobs": 1406,
+    "plan": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/extended_cuda2/native_width/plan/plan.json"
+  },
+  {
+    "name": "scale_small",
+    "jobs": 1406,
+    "plan": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/extended_cuda2/scale_small/plan/plan.json"
+  },
+  {
+    "name": "scale_medium",
+    "jobs": 1406,
+    "plan": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/extended_cuda2/scale_medium/plan/plan.json"
+  },
+  {
+    "name": "scale_large",
+    "jobs": 1406,
+    "plan": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/extended_cuda2/scale_large/plan/plan.json"
+  },
+  {
+    "name": "data_0.1",
+    "jobs": 1406,
+    "plan": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/extended_cuda2/data_0.1/plan/plan.json"
+  },
+  {
+    "name": "data_equal_updates_0.1",
+    "jobs": 1406,
+    "plan": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/extended_cuda2/data_equal_updates_0.1/plan/plan.json"
+  },
+  {
+    "name": "data_0.3",
+    "jobs": 1406,
+    "plan": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/extended_cuda2/data_0.3/plan/plan.json"
+  },
+  {
+    "name": "data_equal_updates_0.3",
+    "jobs": 1406,
+    "plan": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/extended_cuda2/data_equal_updates_0.3/plan/plan.json"
+  },
+  {
+    "name": "long_pretrain",
+    "jobs": 1406,
+    "plan": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/extended_cuda2/long_pretrain/plan/plan.json"
+  }
+]

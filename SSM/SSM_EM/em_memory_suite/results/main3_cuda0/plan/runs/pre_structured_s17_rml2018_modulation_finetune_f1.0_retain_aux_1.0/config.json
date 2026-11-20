@@ -1,0 +1,45 @@
+{
+  "stage": "finetune",
+  "seed": 17,
+  "data": [
+    "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/data/rml2018_clsdev/manifest.json"
+  ],
+  "model": {
+    "patch": 8,
+    "dim": 64,
+    "states": 32,
+    "depth": 3,
+    "branched": true,
+    "physical_input": true,
+    "roles": [
+      "energy",
+      "coherence",
+      "spectrum",
+      "period"
+    ],
+    "kind": "ssm",
+    "aux_route": "local",
+    "residual": true,
+    "selective": true,
+    "real": false,
+    "scan": "parallel"
+  },
+  "epochs": 50,
+  "batch_size": 128,
+  "lr": 0.0003,
+  "device": "cuda:0",
+  "require_cuda": true,
+  "workers": 4,
+  "mask_ratio": 0.5,
+  "aux_weight": 1.0,
+  "equiv_weight": 0.0,
+  "history": 8,
+  "shuffle_targets": false,
+  "paired_augmentation": false,
+  "fraction": 1.0,
+  "cpu_threads": 4,
+  "grad_accum": 1,
+  "task": "modulation",
+  "init": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/results/main3_cuda0/plan/runs/pre_structured_s17/best.pt",
+  "retain_aux": 1.0
+}

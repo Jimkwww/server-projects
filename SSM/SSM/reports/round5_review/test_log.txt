@@ -1,0 +1,99 @@
+# Round 5 Review 测试验收记录
+# 时间: 2026-11-02 05:33:37
+# 主机: wzhpc
+# Python: 3.11.16 x86_64
+# 环境: conda SFM
+# torch: 2.9.1 cuda 12.6
+# numpy: 2.4.6
+# GPU: NVIDIA A100-PCIE-40GB
+
+# 测试命令 1: python -m pytest tests/test_round5.py -v
+# 测试命令 2: python -m pytest tests/test_round5_resume.py -v
+# 测试命令 3: python -m pytest tests/ -q
+
+===== 完整通过日志（全量回归）=====
+============================= test session starts ==============================
+platform linux -- Python 3.11.16, pytest-9.1.1, pluggy-1.6.0 -- /home/user_wzk/miniconda3/envs/SFM/bin/python
+cachedir: .pytest_cache
+rootdir: /home/user_wzk/wzk/projects/SSM/SSM
+configfile: pytest.ini
+plugins: anyio-4.14.2
+collecting ... collected 75 items
+
+tests/test_core.py::test_scan_values_and_gradients[1] PASSED             [  1%]
+tests/test_core.py::test_scan_values_and_gradients[2] PASSED             [  2%]
+tests/test_core.py::test_scan_values_and_gradients[7] PASSED             [  4%]
+tests/test_core.py::test_scan_values_and_gradients[16] PASSED            [  5%]
+tests/test_core.py::test_scan_values_and_gradients[33] PASSED            [  6%]
+tests/test_core.py::test_complex_expansion_and_hand_recurrence PASSED    [  8%]
+tests/test_core.py::test_physical_transform_alignment_and_zero PASSED    [  9%]
+tests/test_core.py::test_no_cross_token_pairs PASSED                     [ 10%]
+tests/test_core.py::test_state_reset_and_trainable_gradients[S0] PASSED  [ 12%]
+tests/test_core.py::test_state_reset_and_trainable_gradients[S1] PASSED  [ 13%]
+tests/test_core.py::test_state_reset_and_trainable_gradients[S2] PASSED  [ 14%]
+tests/test_core.py::test_parameter_budget_and_metrics PASSED             [ 16%]
+tests/test_core.py::test_model_shape_backward PASSED                     [ 17%]
+tests/test_data.py::test_manifest_and_overlap[h5] PASSED                 [ 18%]
+tests/test_data.py::test_manifest_and_overlap[npy] PASSED                [ 20%]
+tests/test_engine.py::test_checkpoint_resume_exact PASSED                [ 21%]
+tests/test_engine.py::test_formal_training_guard PASSED                  [ 22%]
+tests/test_round4.py::test_complex_linear_matches_real_expansion PASSED  [ 24%]
+tests/test_round4.py::test_complex_patch_embedding_pack_order PASSED     [ 25%]
+tests/test_round4.py::test_bidirectional_serial_equals_parallel PASSED   [ 26%]
+tests/test_round4.py::test_complex_selective_serial_equals_parallel PASSED [ 28%]
+tests/test_round4.py::test_backward_flip_matches_direct_backward_recurrence PASSED [ 29%]
+tests/test_round4.py::test_bidirectional_sees_future_unidirectional_does_not PASSED [ 30%]
+tests/test_round4.py::test_bidirectional_gradients PASSED                [ 32%]
+tests/test_round4.py::test_complex_selective_gradients PASSED            [ 33%]
+tests/test_round4.py::test_d_complex_gradients PASSED                    [ 34%]
+tests/test_round4.py::test_no_cross_sample_leakage PASSED                [ 36%]
+tests/test_round4.py::test_cfo_unit_and_order PASSED                     [ 37%]
+tests/test_round4.py::test_complex_linear_phase_equivariance PASSED      [ 38%]
+tests/test_round4.py::test_d_complex_keeps_complex PASSED                [ 40%]
+tests/test_round4.py::test_stats_monitoring PASSED                       [ 41%]
+tests/test_round4.py::test_old_variants_forward_and_param_invariant[G] PASSED [ 42%]
+tests/test_round4.py::test_old_variants_forward_and_param_invariant[S0] PASSED [ 44%]
+tests/test_round4.py::test_old_variants_forward_and_param_invariant[S1] PASSED [ 45%]
+tests/test_round4.py::test_old_variants_forward_and_param_invariant[S2] PASSED [ 46%]
+tests/test_round4.py::test_old_variants_forward_and_param_invariant[S2_concat] PASSED [ 48%]
+tests/test_round4.py::test_old_variants_forward_and_param_invariant[G_corr] PASSED [ 49%]
+tests/test_round5.py::test_fair_front_complex_equals_real_expansion PASSED [ 50%]
+tests/test_round5.py::test_complex_to_real_interleaved_permutation PASSED [ 52%]
+tests/test_round5.py::test_a_line_matched_init_output_identity[pair0] PASSED [ 53%]
+tests/test_round5.py::test_a_line_matched_init_output_identity[pair1] PASSED [ 54%]
+tests/test_round5.py::test_a_line_matched_init_output_identity[pair2] PASSED [ 56%]
+tests/test_round5.py::test_a_line_matched_init_output_identity[pair3] PASSED [ 57%]
+tests/test_round5.py::test_a_line_matched_init_output_identity[pair4] PASSED [ 58%]
+tests/test_round5.py::test_a_line_shared_backbone_front_differs PASSED   [ 60%]
+tests/test_round5.py::test_complex_stays_bound_real_free_after_update PASSED [ 61%]
+tests/test_round5.py::test_bias_present_per_config_init_zero_learnable PASSED [ 62%]
+tests/test_round5.py::test_branch_reads_raw_iq_via_hook PASSED           [ 64%]
+tests/test_round5.py::test_q_corr_r_corr_init_identity PASSED            [ 65%]
+tests/test_round5.py::test_complex_recur_branch_serial_equals_parallel PASSED [ 66%]
+tests/test_round5.py::test_real_recur_branch_serial_equals_closed_form PASSED [ 68%]
+tests/test_round5.py::test_state_continuous_across_patch_reset_at_sample_boundary PASSED [ 69%]
+tests/test_round5.py::test_state_corr_manual_7_pairs_no_cross_patch PASSED [ 70%]
+tests/test_round5.py::test_zero_fusion_equals_s1[Q_linear] PASSED        [ 72%]
+tests/test_round5.py::test_zero_fusion_equals_s1[Q_corr] PASSED          [ 73%]
+tests/test_round5.py::test_zero_fusion_equals_s1[R_corr] PASSED          [ 74%]
+tests/test_round5.py::test_zero_fusion_equals_s1[Q_corr_frozen] PASSED   [ 76%]
+tests/test_round5.py::test_gradient_reaches_branch_params PASSED         [ 77%]
+tests/test_round5.py::test_no_cross_sample_leakage[branch0] PASSED       [ 78%]
+tests/test_round5.py::test_no_cross_sample_leakage[branch1] PASSED       [ 80%]
+tests/test_round5.py::test_dims_params_dtype PASSED                      [ 81%]
+tests/test_round5.py::test_old_variants_unchanged[G] PASSED              [ 82%]
+tests/test_round5.py::test_old_variants_unchanged[S0] PASSED             [ 84%]
+tests/test_round5.py::test_old_variants_unchanged[S1] PASSED             [ 85%]
+tests/test_round5.py::test_old_variants_unchanged[S2] PASSED             [ 86%]
+tests/test_round5.py::test_old_variants_unchanged[B_front] PASSED        [ 88%]
+tests/test_round5.py::test_old_variants_unchanged[D_complex] PASSED      [ 89%]
+tests/test_round5.py::test_data_and_aug_stream_independent_of_model_build PASSED [ 90%]
+tests/test_round5.py::test_branch_params_in_optimizer_no_detach[Q_linear] PASSED [ 92%]
+tests/test_round5.py::test_branch_params_in_optimizer_no_detach[Q_corr] PASSED [ 93%]
+tests/test_round5.py::test_branch_params_in_optimizer_no_detach[R_corr] PASSED [ 94%]
+tests/test_round5.py::test_q_corr_frozen_branch_excluded_from_optimizer PASSED [ 96%]
+tests/test_round5.py::test_r_corr_spectral_norm_below_one PASSED         [ 97%]
+tests/test_round5_resume.py::test_resume_bit_identical_to_uninterrupted_run PASSED [ 98%]
+tests/test_round5_resume.py::test_resume_refuses_missing_aux_stats PASSED [100%]
+
+============================= 75 passed in 22.40s ==============================

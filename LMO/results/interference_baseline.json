@@ -1,0 +1,441 @@
+{
+  "total": 72,
+  "correct": 65,
+  "accuracy": 0.9027777777777778,
+  "elapsed_sec": 13.85586953163147,
+  "avg_sec_per_sample": 0.1924426323837704,
+  "results": [
+    {
+      "sample_id": "gnss_gps_00000026",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00000370",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00000374",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00000479",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00000948",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为无干扰。",
+      "correct": false
+    },
+    {
+      "sample_id": "gnss_gps_00001001",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001212",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001223",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001226",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001374",
+      "label": "Narrowband",
+      "prediction": "干扰类型为无干扰。",
+      "correct": false
+    },
+    {
+      "sample_id": "gnss_gps_00001482",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001486",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001521",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001641",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001667",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001686",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001799",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00001930",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002063",
+      "label": "Narrowband",
+      "prediction": "干扰类型为Sigfox 协议干扰。",
+      "correct": false
+    },
+    {
+      "sample_id": "gnss_gps_00002120",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002147",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002188",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002207",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002229",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002264",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002271",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002395",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002422",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002442",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002721",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002749",
+      "label": "No_Interference",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": false
+    },
+    {
+      "sample_id": "gnss_gps_00002772",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00002850",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003073",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003111",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003164",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003175",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003195",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003224",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003365",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003643",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003660",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为无干扰。",
+      "correct": false
+    },
+    {
+      "sample_id": "gnss_gps_00003681",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003713",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003767",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003910",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00003958",
+      "label": "No_Interference",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": false
+    },
+    {
+      "sample_id": "gnss_gps_00004006",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00004185",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00004816",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00004823",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00004883",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00005068",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00005117",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00005124",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00005156",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00005218",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00005219",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00005343",
+      "label": "Pulse_DME",
+      "prediction": "干扰为DME 脉冲干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00005526",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00006061",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": false
+    },
+    {
+      "sample_id": "gnss_gps_00006238",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00006287",
+      "label": "Narrowband",
+      "prediction": "干扰类型为窄带干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00006363",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00006399",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00006460",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00006770",
+      "label": "No_Interference",
+      "prediction": "干扰类型为无干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00006884",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00007191",
+      "label": "FM_Jamming",
+      "prediction": "干扰类型为FM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00007333",
+      "label": "Sweep_Chirp",
+      "prediction": "干扰类型为扫频 Chirp 干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00007367",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    },
+    {
+      "sample_id": "gnss_gps_00007480",
+      "label": "AM_Jamming",
+      "prediction": "干扰类型为AM 调制干扰。",
+      "correct": true
+    }
+  ]
+}

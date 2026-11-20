@@ -1,0 +1,51 @@
+[
+  {
+    "variant": "Q_corr",
+    "params": 2219784,
+    "latency_b1_ms": 2.7978350408375263,
+    "throughput_b64_sps": 6920.531500262057,
+    "inference_peak_mem_mb": 102.68310546875
+  },
+  {
+    "variant": "Q_corr_gate_c",
+    "params": 2220552,
+    "latency_b1_ms": 3.022909164428711,
+    "throughput_b64_sps": 7772.794502646967,
+    "inference_peak_mem_mb": 106.75048828125
+  },
+  {
+    "variant": "Q_corr_gate_d",
+    "params": 2220552,
+    "latency_b1_ms": 3.015016671270132,
+    "throughput_b64_sps": 7774.390178164314,
+    "inference_peak_mem_mb": 102.75048828125
+  },
+  {
+    "variant": "Q_corr_gate_cd",
+    "params": 2221320,
+    "latency_b1_ms": 3.045453689992428,
+    "throughput_b64_sps": 7547.640572622279,
+    "inference_peak_mem_mb": 106.75341796875
+  },
+  {
+    "variant": "Q_corr_token_c",
+    "params": 2219960,
+    "latency_b1_ms": 2.945982851088047,
+    "throughput_b64_sps": 7779.241460901503,
+    "inference_peak_mem_mb": 102.74853515625
+  },
+  {
+    "variant": "Q_corr_token_d",
+    "params": 2219960,
+    "latency_b1_ms": 2.9502143152058125,
+    "throughput_b64_sps": 7779.645383923526,
+    "inference_peak_mem_mb": 102.74853515625
+  },
+  {
+    "variant": "Q_corr_token_cd",
+    "params": 2220136,
+    "latency_b1_ms": 2.950359135866165,
+    "throughput_b64_sps": 7913.475611653015,
+    "inference_peak_mem_mb": 102.8115234375
+  }
+]

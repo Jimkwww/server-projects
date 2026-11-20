@@ -1,0 +1,61 @@
+{
+  "pre_structured_s17": {
+    "status": "done",
+    "signature": "c99a9acc2047c2376d68520a9f2577fabd596ab8cd22802799a7ec151fb07ed3",
+    "returncode": 0,
+    "seconds": 3638.5868875980377
+  },
+  "pre_structured_s17_rml2018_modulation_probe_f0.01": {
+    "status": "done",
+    "signature": "9a93fd6fab411ff4bb01d9773c7e412f348b473bc5899f5a8ce87e454325279d",
+    "returncode": 0,
+    "seconds": 32.16416954994202
+  },
+  "pre_structured_s17_rml2018_modulation_probe_f0.01_test": {
+    "status": "done",
+    "signature": "0f2bbc2e75ffed9e57b8faf90e65265dc5a75198378298d7d6b7b2510e4d94dd",
+    "returncode": 0,
+    "seconds": 2.6354072093963623
+  },
+  "pre_structured_s17_rml2018_modulation_probe_f0.1": {
+    "status": "done",
+    "signature": "fcffd763c72a96b94fb80a9cbd012a30057b07773384e91c6307d38f8a564ac2",
+    "returncode": 0,
+    "seconds": 42.310970067977905
+  },
+  "pre_structured_s17_rml2018_modulation_probe_f0.1_test": {
+    "status": "done",
+    "signature": "d8df07af81921f6a664d73aad5d943620e2f9ecd981c19db60c24f11d5a39502",
+    "returncode": 0,
+    "seconds": 2.6969990730285645
+  },
+  "pre_structured_s17_rml2018_modulation_probe_f1.0": {
+    "status": "done",
+    "signature": "49a4e76f0dbc328ea619305c0c06f8052ea889bb450832f2515aa44be68a915e",
+    "returncode": 0,
+    "seconds": 138.24014377593994
+  },
+  "pre_structured_s17_rml2018_modulation_probe_f1.0_test": {
+    "status": "done",
+    "signature": "23a5c9af72ee7e2cfb79f146490971bdf4228665b4a38e1060636fcb9280b096",
+    "returncode": 0,
+    "seconds": 2.722029685974121
+  },
+  "pre_structured_s17_rml2018_modulation_probe_f1.0_lastinit": {
+    "status": "done",
+    "signature": "545778fcf7dd6ced6acec111a6f949f711f3fad3e18f68eb023b9abee8684dd9",
+    "returncode": 0,
+    "seconds": 138.34562969207764
+  },
+  "pre_structured_s17_rml2018_modulation_probe_f1.0_lastinit_test": {
+    "status": "done",
+    "signature": "3281643970405bd2d4fbe4803e6020dc5638ed5bd7638c05f3a425530b119db1",
+    "returncode": 0,
+    "seconds": 2.6272857189178467
+  },
+  "pre_structured_s17_rml2018_modulation_finetune_f0.01": {
+    "status": "running",
+    "signature": "60e6e4cd7f44fc1ab3e0dbade90a07591578e78977e0c8de2e3208c71cfc3e32",
+    "start": 1795068130.270067
+  }
+}

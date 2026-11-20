@@ -1,0 +1,14 @@
+任务书要求,实际实现,已有文件,完成状态,本次补充动作
+P0 no-CFO 下游评估 4结构×3init×2任务×3seed,G/Q/S1plain/G_Qlearn/G_corr 各结构按 scratch/mae/denoise 全量微调 (no-CFO) 选模 val、雷达 eval 一次,runs/{rml,radar}/*/best_val.json + eval_predictions.npz,完成,雷达主结果重新聚合为 eval OA/Macro-F1 (tables_radar_eval.md) 修正 dev 误用
+P1 Q 学习阶段 2×2 (A/B/C/D Global+Q × F0-MAE),A=fixed-fixed B=learn-fixed C=fixed-learn D=learn-learn 全量微调,runs/{rml,radar}/{A,B,C}_*/G_Qlearn_seed* + mae/G_Qlearn_seed* (=D),完成,结论限定为"该设置下固定 Q 具竞争力" 并区分 41.91% 为可学习 Q
+P2 SSM 记忆诊断 segment-reset K=1/4/16/64,S1plain 记忆诊断 (原实现 K=64 在雷达=整序列、A 组只跑 mae/denoise),reports/tables_p2.md + p2_ssm_memory_{rml,radar}.json,完成(有误),revision1 重做 A/B 组 (K=1/4/8/16/32/64/full + K16/32 半段偏移 + 一致性校验) memory_diagnosis.py
+修正 token 长度表述 (RML 128 / RadChar 64 token),forward_tokens 输出形状核实,revision1/scripts/ 内核实,完成(本次),correction.md 第1条 + 撤销 16-64 token 结论
+Q 2D 公平性审计 (固定vs学习 Q 初始权重/冻结/更新/resume),静态权重级核对 初始权重逐字节相同、A/B 冻结 hash 前后一致、C/D 滤波确有更新,fairness_audit.json/md,完成(本次),fairness_audit.py 输出 未核验项标注
+统一冻结读出 (round-3 协议 冻结编码器+mean pool+StandardScaler(train)+L2 LR C=1 lbfgs),4 编码器 (G_Qlearn_fixedq_mae / G_Qlearn_learnq_mae / G_corr_mae / G_mae) ×2任务×3seed 用 encoder_final,revision1/runs/features/*.pt + unified_probe.csv/md,完成(本次),unified_readout.py (AdamW probe 单列)
+状态统计补充 (固定可复现子集 非单模型),18 S1plain 模型 rng(0) 512样本 逐层 rho 分位/近1占比/写入门/状态RMS/瞬时tau分位+log分布/保留积 log R(t),state_statistics.json + figs/state_stats_*.png,完成(本次),state_stats.py 补充 rho 截断规则记录 + log 域保留积
+雷达 eval 主表 + P1 配对表,tables_radar_eval.md (P0/P1 eval OA+Macro-F1 per-seed + P1 配对差),revision1/reports/tables_radar_eval.md,完成(本次),radar_eval_agg.py
+逐样本预测 + 哈希,runs/**/val_predictions.npz / eval_predictions.npz (原) + revision1 读出预测 revision1/runs/predictions/,revision1/runs/predictions/,完成(本次),unified_readout.py 保存 y/pred/snr/ids + 编码器 sha256 + 收敛
+修正结论 revised_conclusion.md + 5 问题最终答案,revision1/reports/revised_conclusion.md,进行中,本次编写
+验收记录 acceptance record,revision1/reports/acceptance_revision1.md,进行中,本次编写
+命令 / 配置 / 源码 diff,revision1/reports/commands.md + config 清单 + source diff,进行中,本次编写
+打包 revision1 (不含权重),revision1_package.tar.gz,待做,本次打包

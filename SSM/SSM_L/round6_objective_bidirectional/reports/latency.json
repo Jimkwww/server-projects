@@ -1,0 +1,83 @@
+[
+  {
+    "group": "G-MAE",
+    "backbone": "G",
+    "objective": "MAE",
+    "rml_b1_ms": 1.057161632925272,
+    "rml_b128_ms": 9.909179229289293,
+    "radar_b1_ms": 1.0621188953518867,
+    "radar_b128_ms": 4.749871492385864
+  },
+  {
+    "group": "G-denoise",
+    "backbone": "G",
+    "objective": "denoise",
+    "rml_b1_ms": 1.066997479647398,
+    "rml_b128_ms": 9.896682780236006,
+    "radar_b1_ms": 1.0671376809477806,
+    "radar_b128_ms": 4.742342345416546
+  },
+  {
+    "group": "G-joint",
+    "backbone": "G",
+    "objective": "joint",
+    "rml_b1_ms": 1.0569807514548302,
+    "rml_b128_ms": 9.866452123969793,
+    "radar_b1_ms": 1.0644586384296417,
+    "radar_b128_ms": 4.734474457800388
+  },
+  {
+    "group": "Q-MAE",
+    "backbone": "Q",
+    "objective": "MAE",
+    "rml_b1_ms": 3.4816141426563263,
+    "rml_b128_ms": 17.109262961894274,
+    "radar_b1_ms": 3.210947662591934,
+    "radar_b128_ms": 7.958199419081212
+  },
+  {
+    "group": "Q-denoise",
+    "backbone": "Q",
+    "objective": "denoise",
+    "rml_b1_ms": 3.4762795083224773,
+    "rml_b128_ms": 17.10388783365488,
+    "radar_b1_ms": 3.1937557086348534,
+    "radar_b128_ms": 7.9626657627522945
+  },
+  {
+    "group": "Q-joint",
+    "backbone": "Q",
+    "objective": "joint",
+    "rml_b1_ms": 3.474839497357607,
+    "rml_b128_ms": 17.02833892777562,
+    "radar_b1_ms": 3.203768990933895,
+    "radar_b128_ms": 7.879163865000009
+  },
+  {
+    "group": "Q_bi-MAE",
+    "backbone": "Q_bi",
+    "objective": "MAE",
+    "rml_b1_ms": 5.810157619416714,
+    "rml_b128_ms": 17.74061979725957,
+    "radar_b1_ms": 5.364658553153276,
+    "radar_b128_ms": 9.698012135922909
+  },
+  {
+    "group": "Q_bi-denoise",
+    "backbone": "Q_bi",
+    "objective": "denoise",
+    "rml_b1_ms": 5.805113427340984,
+    "rml_b128_ms": 17.87394806742668,
+    "radar_b1_ms": 5.348014235496521,
+    "radar_b128_ms": 9.727966971695423
+  },
+  {
+    "group": "Q_bi-joint",
+    "backbone": "Q_bi",
+    "objective": "joint",
+    "rml_b1_ms": 5.87520644068718,
+    "rml_b128_ms": 17.766413502395153,
+    "radar_b1_ms": 5.416984353214502,
+    "radar_b128_ms": 9.70024049282074
+  }
+]

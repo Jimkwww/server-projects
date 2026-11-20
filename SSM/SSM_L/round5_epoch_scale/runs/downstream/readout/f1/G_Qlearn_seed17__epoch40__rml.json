@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "encoder_sha256": "9145be9318ede0e6f3fb47bb3a75740daca9a5356b10a6100a4ca49388961ae9",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round5_epoch_scale/runs/pretrain/f1/G_Qlearn_seed17/ckpt_epoch40.pt",
+  "step": 31280,
+  "pass": 40,
+  "val": {
+    "oa": 0.38108974358974357,
+    "macro_f1": 0.36731990612785115,
+    "n_iter": 575,
+    "converged": true
+  },
+  "corpus": "f1",
+  "seed": 17,
+  "ckpt_name": "epoch40",
+  "backbone": "G_Qlearn",
+  "task": "rml"
+}

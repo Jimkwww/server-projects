@@ -1,0 +1,15 @@
+{
+  "format": "h5",
+  "file": "/data1/user_wzk/datasets/RML2018A/GOLD_XYZ_OSC.0001_1024.hdf5",
+  "x_key": "X",
+  "y_key": "Y",
+  "snr_key": "Z",
+  "layout": "NLC",
+  "label_format": "one_hot",
+  "normalization": "max_abs",
+  "classes": 24,
+  "splits": {
+    "train": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/overfit/train.npy",
+    "val": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/overfit/val.npy"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "environment": {
+    "python": "3.11.16",
+    "torch": "2.14.0+cu126",
+    "numpy": "2.4.6",
+    "cuda": "12.6",
+    "device": "NVIDIA A100-PCIE-40GB",
+    "tf32": false,
+    "deterministic": "warn_only",
+    "precision": "fp32/complex64"
+  },
+  "parameters": 2251592,
+  "warmup": 50,
+  "repeats": 1000,
+  "scan": "parallel",
+  "model": {
+    "variant": "G",
+    "patch": 8,
+    "dim": 176,
+    "depth": 6,
+    "heads": 4,
+    "state": 128,
+    "selector_hidden": 64,
+    "classes": 24,
+    "input_length": 1024,
+    "ffn_ratio": 4,
+    "dropout": 0.0,
+    "position": "none",
+    "direction": "forward",
+    "scan": "parallel",
+    "ssm_gain": 1.0
+  },
+  "rows": [
+    {
+      "length": 1024,
+      "batch": 1,
+      "status": "ok",
+      "latency_ms_mean": 1.0288324994035065,
+      "latency_ms_p50": 0.9906883351504803,
+      "latency_ms_p95": 1.2396042933687568,
+      "throughput_samples_s": 1046.016562444038,
+      "peak_allocated_bytes": 18708992,
+      "peak_reserved_bytes": 31457280
+    },
+    {
+      "length": 1024,
+      "batch": 64,
+      "status": "ok",
+      "latency_ms_mean": 5.425480858888477,
+      "latency_ms_p50": 5.428463686257601,
+      "latency_ms_p95": 5.440782383084297,
+      "throughput_samples_s": 11821.398229383478,
+      "peak_allocated_bytes": 93008896,
+      "peak_reserved_bytes": 155189248
+    },
+    {
+      "length": 2048,
+      "batch": 1,
+      "status": "ok",
+      "latency_ms_mean": 1.1841241461224854,
+      "latency_ms_p50": 1.1834045872092247,
+      "latency_ms_p95": 1.1903413105756044,
+      "throughput_samples_s": 871.9243165392041,
+      "peak_allocated_bytes": 20922368,
+      "peak_reserved_bytes": 159383552
+    },
+    {
+      "length": 2048,
+      "batch": 64,
+      "status": "ok",
+      "latency_ms_mean": 11.777421880979091,
+      "latency_ms_p50": 11.772288242354989,
+      "latency_ms_p95": 11.885584588162601,
+      "throughput_samples_s": 5408.977193271846,
+      "peak_allocated_bytes": 235713536,
+      "peak_reserved_bytes": 329252864
+    },
+    {
+      "length": 4096,
+      "batch": 1,
+      "status": "ok",
+      "latency_ms_mean": 1.646377021446824,
+      "latency_ms_p50": 1.645740820094943,
+      "latency_ms_p95": 1.6519101802259684,
+      "throughput_samples_s": 618.7356203792502,
+      "peak_allocated_bytes": 28494848,
+      "peak_reserved_bytes": 329252864
+    },
+    {
+      "length": 4096,
+      "batch": 64,
+      "status": "ok",
+      "latency_ms_mean": 29.500478498637676,
+      "latency_ms_p50": 29.469276079908013,
+      "latency_ms_p95": 29.650676669552922,
+      "throughput_samples_s": 2158.1181143048693,
+      "peak_allocated_bytes": 718386176,
+      "peak_reserved_bytes": 935329792
+    },
+    {
+      "length": 8192,
+      "batch": 1,
+      "status": "ok",
+      "latency_ms_mean": 2.70289814658463,
+      "latency_ms_p50": 2.702578669413924,
+      "latency_ms_p95": 2.7104272041469812,
+      "throughput_samples_s": 373.7113535646865,
+      "peak_allocated_bytes": 56222720,
+      "peak_reserved_bytes": 935329792
+    },
+    {
+      "length": 8192,
+      "batch": 64,
+      "status": "ok",
+      "latency_ms_mean": 84.1196657330729,
+      "latency_ms_p50": 84.09749926067889,
+      "latency_ms_p95": 84.61428943555802,
+      "throughput_samples_s": 760.9160755474891,
+      "peak_allocated_bytes": 2492969984,
+      "peak_reserved_bytes": 3082813440
+    }
+  ],
+  "scope": "resident input; includes physical features and entire model; excludes H2D/data loading; inference only",
+  "implementation": "eager PyTorch; parallel affine prefix O(N log N) work, not fused linear-work SSM"
+}

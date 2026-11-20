@@ -1,0 +1,22 @@
+[
+  {
+    "item": "continuous_parameter_estimation",
+    "status": "BLOCKED_DATA",
+    "reason": "No real regression-labeled IQ data (bandwidth/energy/period/activity-time) on server; synthetic parameters task exists but is not real-data evidence"
+  },
+  {
+    "item": "anomaly/open-set",
+    "status": "BLOCKED_DATA",
+    "reason": "No source-matched normal/anomaly IQ dataset; LoRa rogue/other-device-type exists but is not ingested (see lora_rffi)"
+  },
+  {
+    "item": "Radio-FM/SpectrumFM/EMind official baselines",
+    "status": "BLOCKED_BASELINE",
+    "reason": "No official code/checkpoint on server; package generic_transformer is a control, not an official reproduction"
+  },
+  {
+    "item": "multi-label overlapping sources / source separation",
+    "status": "BLOCKED_INTERFACE",
+    "reason": "Package implements single-label head only (documented)"
+  }
+]

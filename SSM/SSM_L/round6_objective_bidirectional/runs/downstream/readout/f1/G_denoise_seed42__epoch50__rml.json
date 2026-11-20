@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "encoder_sha256": "e07653c5366b93697d25f309690eb039fc2afebb93ddb5585efa85d4ffb106b0",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round6_objective_bidirectional/runs/pretrain/f1/G_denoise_seed42/encoder_final.pt",
+  "step": 39100,
+  "pass": 50,
+  "val": {
+    "oa": 0.3951923076923077,
+    "macro_f1": 0.3833963112234187,
+    "n_iter": 654,
+    "converged": true
+  },
+  "corpus": "f1",
+  "seed": 42,
+  "ckpt_name": "epoch50",
+  "backbone": "G",
+  "task": "rml"
+}

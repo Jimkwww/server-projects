@@ -1,0 +1,94 @@
+{
+  "seed": 17,
+  "check1_global_backbone": {
+    "n_blocks": 6,
+    "n_attention_blocks": 6,
+    "pos_mode": "sinusoidal",
+    "front_type": "PatchEmbedding",
+    "token_shape": [
+      8,
+      128,
+      176
+    ],
+    "logits_shape": [
+      8,
+      24
+    ],
+    "backbone_shared_with_G": true,
+    "aux_fusion_zero": 0.0,
+    "max_abs_logit_diff_G_vs_GQc": 0.0,
+    "max_abs_logit_diff_G_vs_GQcf": 0.0,
+    "params": {
+      "G": 2251592,
+      "G_Q_corr": 2254440,
+      "G_Q_corr_frozen": 2254440,
+      "frozen_trainable": 2254408
+    }
+  },
+  "check2_q_feature_reuse": {
+    "branch_params_identical": true,
+    "max_abs_filter_state_diff": 0.0,
+    "max_abs_pre_std_desc_diff": 0.0,
+    "max_abs_post_std_desc_diff": 0.0,
+    "aux_stats_identical": true,
+    "has_raw_iq_corr_fusion": false,
+    "raw_iq_phys_feature_path_active": false
+  },
+  "check3_freeze_boundary": {
+    "trainable_status_diff_names": [
+      "aux_branch.b",
+      "aux_branch.raw_alpha",
+      "aux_branch.theta"
+    ],
+    "frozen_param_names": [
+      "aux_branch.b",
+      "aux_branch.raw_alpha",
+      "aux_branch.theta"
+    ],
+    "n_trainable_diff_real_scalars": 32,
+    "step1_branch_grad_abs_sum": {
+      "raw_alpha": 0.0,
+      "theta": 0.0,
+      "b": 0.0
+    },
+    "step2_branch_grad_abs_sum": {
+      "raw_alpha": 0.00011849275324493647,
+      "theta": 0.0004732523229904473,
+      "b": 4.3157460938303416e-10
+    },
+    "branch_changed_after_10_steps": {
+      "raw_alpha": true,
+      "theta": true,
+      "b": false
+    },
+    "frozen_fusion_grad_abs_sum_last": 8.317710876464844,
+    "frozen_fusion_moved": true,
+    "frozen_branch_hash_unchanged": true
+  },
+  "check4a_data_and_stats": {
+    "first_batch_ids_identical": true,
+    "first_batch_ids_head": [
+      4719,
+      19886,
+      13377,
+      13270,
+      18786,
+      1106,
+      4956,
+      1698
+    ],
+    "injected_cfo_identical": true,
+    "injected_cfo_head": [
+      -0.0016962913796305656,
+      0.001166774076409638,
+      0.00018867278413381428,
+      -0.0006960107129998505,
+      0.0009004347957670689,
+      -0.00042380180093459785,
+      0.0014940474648028612,
+      0.0013755250256508589
+    ],
+    "fit_aux_stats_identical": true,
+    "aux_ids_sha256": "9dc6a50cf09383dac2e42c5c058f1e460c507e4bd7cbf00eb78dcf1cc79c70d8"
+  }
+}

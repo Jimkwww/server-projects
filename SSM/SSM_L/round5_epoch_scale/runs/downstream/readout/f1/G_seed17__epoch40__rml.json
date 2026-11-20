@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "encoder_sha256": "f83d7907cf238179bc1d8a4b2e3ab0f22c087bcadf9054d9dcb262dc1cdd0d34",
+  "ckpt": "/home/user_wzk/wzk/projects/SSM/SSM_L/round5_epoch_scale/runs/pretrain/f1/G_seed17/ckpt_epoch40.pt",
+  "step": 31280,
+  "pass": 40,
+  "val": {
+    "oa": 0.4044871794871795,
+    "macro_f1": 0.3917189803232559,
+    "n_iter": 975,
+    "converged": true
+  },
+  "corpus": "f1",
+  "seed": 17,
+  "ckpt_name": "epoch40",
+  "backbone": "G",
+  "task": "rml"
+}

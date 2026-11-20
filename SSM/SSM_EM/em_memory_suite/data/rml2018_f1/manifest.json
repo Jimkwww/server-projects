@@ -1,0 +1,59 @@
+{
+  "dataset_id": "rml2018a_f1",
+  "group_namespace": "rml2018a_f1",
+  "provenance": "RML2018A F1 pretrain corpus (100k, (mod,SNR) stratified) reused from SSM_L round3 f1_indices. Verified no overlap with cls_dev val/test. Samples independently simulated; groups=per-sample unique id. normalization=none. sample_rate_hz/center_frequency_hz unavailable.",
+  "tasks": {
+    "modulation": {
+      "kind": "classification",
+      "outputs": 24,
+      "classes": [
+        "OOK",
+        "4ASK",
+        "8ASK",
+        "BPSK",
+        "QPSK",
+        "8PSK",
+        "16PSK",
+        "32PSK",
+        "16APSK",
+        "32APSK",
+        "64APSK",
+        "128APSK",
+        "16QAM",
+        "32QAM",
+        "64QAM",
+        "128QAM",
+        "256QAM",
+        "AM-SSB-WC",
+        "AM-SSB-SC",
+        "AM-DSB-WC",
+        "AM-DSB-SC",
+        "FM",
+        "GMSK",
+        "OQPSK"
+      ]
+    }
+  },
+  "splits": {
+    "train": {
+      "x": "train_x.npy",
+      "ids": "train_ids.npy",
+      "groups": "train_groups.npy",
+      "snr": "train_snr.npy",
+      "targets": {
+        "modulation": "train_y.npy"
+      }
+    },
+    "val": {
+      "x": "val_x.npy",
+      "ids": "val_ids.npy",
+      "groups": "val_groups.npy",
+      "snr": "val_snr.npy",
+      "targets": {
+        "modulation": "val_y.npy"
+      }
+    }
+  },
+  "sample_rate_hz": null,
+  "center_frequency_hz": null
+}

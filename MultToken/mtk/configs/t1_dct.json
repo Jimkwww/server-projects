@@ -1,0 +1,7 @@
+{
+  "classes": 24,
+  "data": {"normalization": "max_abs", "manifest_sha256": "3c76d726ef0b141f213b2267f8b5933210f80776fe458d1aefd63bc9006f246d"},
+  "training": {"epochs": 50, "batch_size": 128, "lr": 0.0003, "weight_decay": 0.01, "warmup_fraction": 0.05, "grad_clip": 1.0, "precision": "fp32"},
+  "tokenizer": {"name": "t1", "patch_size": 8, "dim": 176, "transform": "dct"},
+  "backbone": {"dim": 176, "depth": 6, "heads": 4}
+}

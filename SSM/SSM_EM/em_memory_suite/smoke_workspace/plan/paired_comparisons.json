@@ -1,0 +1,2482 @@
+[
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.5994049534201622,
+    "std": null,
+    "ci95": [
+      0.5994049534201622,
+      0.5994049534201622
+    ],
+    "paired_differences": [
+      0.5994049534201622
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.4466100335121155,
+    "std": null,
+    "ci95": [
+      0.4466100335121155,
+      0.4466100335121155
+    ],
+    "paired_differences": [
+      0.4466100335121155
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.2279600203037262,
+    "std": null,
+    "ci95": [
+      0.2279600203037262,
+      0.2279600203037262
+    ],
+    "paired_differences": [
+      0.2279600203037262
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.19778670370578766,
+    "std": null,
+    "ci95": [
+      0.19778670370578766,
+      0.19778670370578766
+    ],
+    "paired_differences": [
+      0.19778670370578766
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.7186881080269814,
+    "std": null,
+    "ci95": [
+      0.7186881080269814,
+      0.7186881080269814
+    ],
+    "paired_differences": [
+      0.7186881080269814
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.6392770260572433,
+    "std": null,
+    "ci95": [
+      0.6392770260572433,
+      0.6392770260572433
+    ],
+    "paired_differences": [
+      0.6392770260572433
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.2607896402478218,
+    "std": null,
+    "ci95": [
+      0.2607896402478218,
+      0.2607896402478218
+    ],
+    "paired_differences": [
+      0.2607896402478218
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.19744367897510529,
+    "std": null,
+    "ci95": [
+      0.19744367897510529,
+      0.19744367897510529
+    ],
+    "paired_differences": [
+      0.19744367897510529
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.30039815604686737,
+    "std": null,
+    "ci95": [
+      0.30039815604686737,
+      0.30039815604686737
+    ],
+    "paired_differences": [
+      0.30039815604686737
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.4218635857105255,
+    "std": null,
+    "ci95": [
+      0.4218635857105255,
+      0.4218635857105255
+    ],
+    "paired_differences": [
+      0.4218635857105255
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.25938941538333893,
+    "std": null,
+    "ci95": [
+      0.25938941538333893,
+      0.25938941538333893
+    ],
+    "paired_differences": [
+      0.25938941538333893
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.2775375097990036,
+    "std": null,
+    "ci95": [
+      0.2775375097990036,
+      0.2775375097990036
+    ],
+    "paired_differences": [
+      0.2775375097990036
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.5728619384649006,
+    "std": null,
+    "ci95": [
+      0.5728619384649006,
+      0.5728619384649006
+    ],
+    "paired_differences": [
+      0.5728619384649006
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.6106770833333334,
+    "std": null,
+    "ci95": [
+      0.6106770833333334,
+      0.6106770833333334
+    ],
+    "paired_differences": [
+      0.6106770833333334
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.06979507514869399,
+    "std": null,
+    "ci95": [
+      -0.06979507514869399,
+      -0.06979507514869399
+    ],
+    "paired_differences": [
+      -0.06979507514869399
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.03515625,
+    "std": null,
+    "ci95": [
+      -0.03515625,
+      -0.03515625
+    ],
+    "paired_differences": [
+      -0.03515625
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.07868573429248382,
+    "std": null,
+    "ci95": [
+      0.07868573429248382,
+      0.07868573429248382
+    ],
+    "paired_differences": [
+      0.07868573429248382
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.0546875,
+    "std": null,
+    "ci95": [
+      0.0546875,
+      0.0546875
+    ],
+    "paired_differences": [
+      0.0546875
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.036790165673245,
+    "std": null,
+    "ci95": [
+      -0.036790165673245,
+      -0.036790165673245
+    ],
+    "paired_differences": [
+      -0.036790165673245
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.02734375,
+    "std": null,
+    "ci95": [
+      -0.02734375,
+      -0.02734375
+    ],
+    "paired_differences": [
+      -0.02734375
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.03489305103279805,
+    "std": null,
+    "ci95": [
+      0.03489305103279805,
+      0.03489305103279805
+    ],
+    "paired_differences": [
+      0.03489305103279805
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.05078125,
+    "std": null,
+    "ci95": [
+      0.05078125,
+      0.05078125
+    ],
+    "paired_differences": [
+      0.05078125
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.0958395593877257,
+    "std": null,
+    "ci95": [
+      -0.0958395593877257,
+      -0.0958395593877257
+    ],
+    "paired_differences": [
+      -0.0958395593877257
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.06901041666666663,
+    "std": null,
+    "ci95": [
+      -0.06901041666666663,
+      -0.06901041666666663
+    ],
+    "paired_differences": [
+      -0.06901041666666663
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.03283134702496071,
+    "std": null,
+    "ci95": [
+      0.03283134702496071,
+      0.03283134702496071
+    ],
+    "paired_differences": [
+      0.03283134702496071
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.01432291666666663,
+    "std": null,
+    "ci95": [
+      0.01432291666666663,
+      0.01432291666666663
+    ],
+    "paired_differences": [
+      0.01432291666666663
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.07639576929122971,
+    "std": null,
+    "ci95": [
+      -0.07639576929122971,
+      -0.07639576929122971
+    ],
+    "paired_differences": [
+      -0.07639576929122971
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.0625,
+    "std": null,
+    "ci95": [
+      -0.0625,
+      -0.0625
+    ],
+    "paired_differences": [
+      -0.0625
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.00289112202300984,
+    "std": null,
+    "ci95": [
+      0.00289112202300984,
+      0.00289112202300984
+    ],
+    "paired_differences": [
+      0.00289112202300984
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.11588541666666674,
+    "std": null,
+    "ci95": [
+      0.11588541666666674,
+      0.11588541666666674
+    ],
+    "paired_differences": [
+      0.11588541666666674
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.09737395234838575,
+    "std": null,
+    "ci95": [
+      0.09737395234838575,
+      0.09737395234838575
+    ],
+    "paired_differences": [
+      0.09737395234838575
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.28255208333333337,
+    "std": null,
+    "ci95": [
+      0.28255208333333337,
+      0.28255208333333337
+    ],
+    "paired_differences": [
+      0.28255208333333337
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.0016350582058073937,
+    "std": null,
+    "ci95": [
+      -0.0016350582058073937,
+      -0.0016350582058073937
+    ],
+    "paired_differences": [
+      -0.0016350582058073937
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.07682291666666674,
+    "std": null,
+    "ci95": [
+      0.07682291666666674,
+      0.07682291666666674
+    ],
+    "paired_differences": [
+      0.07682291666666674
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.08201498971115068,
+    "std": null,
+    "ci95": [
+      0.08201498971115068,
+      0.08201498971115068
+    ],
+    "paired_differences": [
+      0.08201498971115068
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.24348958333333337,
+    "std": null,
+    "ci95": [
+      0.24348958333333337,
+      0.24348958333333337
+    ],
+    "paired_differences": [
+      0.24348958333333337
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.037179487179487186,
+    "std": null,
+    "ci95": [
+      0.037179487179487186,
+      0.037179487179487186
+    ],
+    "paired_differences": [
+      0.037179487179487186
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.04166666666666667,
+    "std": null,
+    "ci95": [
+      0.04166666666666667,
+      0.04166666666666667
+    ],
+    "paired_differences": [
+      0.04166666666666667
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.014015151515151522,
+    "std": null,
+    "ci95": [
+      0.014015151515151522,
+      0.014015151515151522
+    ],
+    "paired_differences": [
+      0.014015151515151522
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "general",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.04166666666666667,
+    "std": null,
+    "ci95": [
+      0.04166666666666667,
+      0.04166666666666667
+    ],
+    "paired_differences": [
+      0.04166666666666667
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.02751322751322751,
+    "std": null,
+    "ci95": [
+      -0.02751322751322751,
+      -0.02751322751322751
+    ],
+    "paired_differences": [
+      -0.02751322751322751
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.0,
+    "std": null,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "paired_differences": [
+      0.0
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.007671957671957663,
+    "std": null,
+    "ci95": [
+      -0.007671957671957663,
+      -0.007671957671957663
+    ],
+    "paired_differences": [
+      -0.007671957671957663
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.04166666666666667,
+    "std": null,
+    "ci95": [
+      -0.04166666666666667,
+      -0.04166666666666667
+    ],
+    "paired_differences": [
+      -0.04166666666666667
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.006343193843193817,
+    "std": null,
+    "ci95": [
+      -0.006343193843193817,
+      -0.006343193843193817
+    ],
+    "paired_differences": [
+      -0.006343193843193817
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.0,
+    "std": null,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "paired_differences": [
+      0.0
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.08333333333333334,
+    "std": null,
+    "ci95": [
+      0.08333333333333334,
+      0.08333333333333334
+    ],
+    "paired_differences": [
+      0.08333333333333334
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "reset",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.08333333333333333,
+    "std": null,
+    "ci95": [
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "paired_differences": [
+      0.08333333333333333
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.0568181818181818,
+    "std": null,
+    "ci95": [
+      -0.0568181818181818,
+      -0.0568181818181818
+    ],
+    "paired_differences": [
+      -0.0568181818181818
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.08333333333333333,
+    "std": null,
+    "ci95": [
+      -0.08333333333333333,
+      -0.08333333333333333
+    ],
+    "paired_differences": [
+      -0.08333333333333333
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.005681818181818177,
+    "std": null,
+    "ci95": [
+      0.005681818181818177,
+      0.005681818181818177
+    ],
+    "paired_differences": [
+      0.005681818181818177
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.0,
+    "std": null,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "paired_differences": [
+      0.0
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.04230769230769231,
+    "std": null,
+    "ci95": [
+      0.04230769230769231,
+      0.04230769230769231
+    ],
+    "paired_differences": [
+      0.04230769230769231
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.08333333333333334,
+    "std": null,
+    "ci95": [
+      0.08333333333333334,
+      0.08333333333333334
+    ],
+    "paired_differences": [
+      0.08333333333333334
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.046153846153846156,
+    "std": null,
+    "ci95": [
+      0.046153846153846156,
+      0.046153846153846156
+    ],
+    "paired_differences": [
+      0.046153846153846156
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "ood",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.04166666666666667,
+    "std": null,
+    "ci95": [
+      0.04166666666666667,
+      0.04166666666666667
+    ],
+    "paired_differences": [
+      0.04166666666666667
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.12314814814814812,
+    "std": null,
+    "ci95": [
+      -0.12314814814814812,
+      -0.12314814814814812
+    ],
+    "paired_differences": [
+      -0.12314814814814812
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "generic_ssm_recon",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.125,
+    "std": null,
+    "ci95": [
+      -0.125,
+      -0.125
+    ],
+    "paired_differences": [
+      -0.125
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.037037037037037035,
+    "std": null,
+    "ci95": [
+      -0.037037037037037035,
+      -0.037037037037037035
+    ],
+    "paired_differences": [
+      -0.037037037037037035
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "probe",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.08333333333333334,
+    "std": null,
+    "ci95": [
+      -0.08333333333333334,
+      -0.08333333333333334
+    ],
+    "paired_differences": [
+      -0.08333333333333334
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "coherence",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.5684878379106522,
+    "std": null,
+    "ci95": [
+      0.5684878379106522,
+      0.5684878379106522
+    ],
+    "paired_differences": [
+      0.5684878379106522
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "energy",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.45671527087688446,
+    "std": null,
+    "ci95": [
+      0.45671527087688446,
+      0.45671527087688446
+    ],
+    "paired_differences": [
+      0.45671527087688446
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "period",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.19272256642580032,
+    "std": null,
+    "ci95": [
+      0.19272256642580032,
+      0.19272256642580032
+    ],
+    "paired_differences": [
+      0.19272256642580032
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "parameters",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "spectrum",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "mse",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.7949186563491821,
+    "std": null,
+    "ci95": [
+      0.7949186563491821,
+      0.7949186563491821
+    ],
+    "paired_differences": [
+      0.7949186563491821
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "coherence",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.07042822625730671,
+    "std": null,
+    "ci95": [
+      -0.07042822625730671,
+      -0.07042822625730671
+    ],
+    "paired_differences": [
+      -0.07042822625730671
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "coherence",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.06510416666666674,
+    "std": null,
+    "ci95": [
+      -0.06510416666666674,
+      -0.06510416666666674
+    ],
+    "paired_differences": [
+      -0.06510416666666674
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "energy",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.07274656355547071,
+    "std": null,
+    "ci95": [
+      -0.07274656355547071,
+      -0.07274656355547071
+    ],
+    "paired_differences": [
+      -0.07274656355547071
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "energy",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.07421875,
+    "std": null,
+    "ci95": [
+      -0.07421875,
+      -0.07421875
+    ],
+    "paired_differences": [
+      -0.07421875
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "period",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.09116644345463865,
+    "std": null,
+    "ci95": [
+      -0.09116644345463865,
+      -0.09116644345463865
+    ],
+    "paired_differences": [
+      -0.09116644345463865
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "period",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.09375,
+    "std": null,
+    "ci95": [
+      -0.09375,
+      -0.09375
+    ],
+    "paired_differences": [
+      -0.09375
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "spectrum",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.005761291875914676,
+    "std": null,
+    "ci95": [
+      0.005761291875914676,
+      0.005761291875914676
+    ],
+    "paired_differences": [
+      0.005761291875914676
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "activity",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "spectrum",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.02473958333333326,
+    "std": null,
+    "ci95": [
+      0.02473958333333326,
+      0.02473958333333326
+    ],
+    "paired_differences": [
+      0.02473958333333326
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "coherence",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.007605820105820109,
+    "std": null,
+    "ci95": [
+      0.007605820105820109,
+      0.007605820105820109
+    ],
+    "paired_differences": [
+      0.007605820105820109
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "coherence",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.0,
+    "std": null,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "paired_differences": [
+      0.0
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "energy",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.09285714285714283,
+    "std": null,
+    "ci95": [
+      0.09285714285714283,
+      0.09285714285714283
+    ],
+    "paired_differences": [
+      0.09285714285714283
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "energy",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.125,
+    "std": null,
+    "ci95": [
+      0.125,
+      0.125
+    ],
+    "paired_differences": [
+      0.125
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "period",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.043259980759980755,
+    "std": null,
+    "ci95": [
+      0.043259980759980755,
+      0.043259980759980755
+    ],
+    "paired_differences": [
+      0.043259980759980755
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "period",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.04166666666666667,
+    "std": null,
+    "ci95": [
+      0.04166666666666667,
+      0.04166666666666667
+    ],
+    "paired_differences": [
+      0.04166666666666667
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "spectrum",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "macro_f1",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": -0.00019425019425019577,
+    "std": null,
+    "ci95": [
+      -0.00019425019425019577,
+      -0.00019425019425019577
+    ],
+    "paired_differences": [
+      -0.00019425019425019577
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  },
+  {
+    "group": {
+      "task": "waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/smoke_workspace/data/manifest.json",
+      "stage": "finetune",
+      "fraction": 1.0,
+      "split": "test",
+      "perturbation": "identity",
+      "value": 0,
+      "mode": "normal",
+      "drop": "spectrum",
+      "init_checkpoint": "best.pt",
+      "retain_aux": 0.0
+    },
+    "baseline": "pointwise_physical",
+    "metric": "oa",
+    "seeds": [
+      17
+    ],
+    "n_pairs": 1,
+    "mean": 0.0,
+    "std": null,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "paired_differences": [
+      0.0
+    ],
+    "caveat": "Few seeds give uncertain bootstrap CIs; report all paired differences."
+  }
+]

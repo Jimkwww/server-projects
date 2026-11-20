@@ -1,0 +1,126 @@
+{
+  "data": {
+    "splits": {
+      "train": {
+        "count": 160,
+        "sha256": "51cd7d0532616307ad65958a976a87741e4a1843e0aa6c3b1344c7449b9a0524"
+      },
+      "val": {
+        "count": 40,
+        "sha256": "f56c11b70360ef1297e97840969a494d2435ff1d71a6de47b382920b39a98a5e"
+      },
+      "test": {
+        "count": 40,
+        "sha256": "76600b4aadfb55a4d60b70b758fe9172e78987a3342a61e94fa2b8f8e4a5b4b1"
+      }
+    },
+    "shape": [
+      [
+        240,
+        64,
+        2
+      ],
+      [
+        240
+      ],
+      [
+        240
+      ]
+    ],
+    "data_files": [
+      {
+        "path": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/x.npy",
+        "bytes": 123008,
+        "mtime_ns": 1793260572924982302
+      },
+      {
+        "path": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/y.npy",
+        "bytes": 2048,
+        "mtime_ns": 1793260572924982302
+      },
+      {
+        "path": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/snr.npy",
+        "bytes": 2048,
+        "mtime_ns": 1793260572924982302
+      }
+    ],
+    "manifest": {
+      "format": "npy",
+      "x": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/x.npy",
+      "y": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/y.npy",
+      "snr": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/snr.npy",
+      "layout": "NLC",
+      "label_format": "integer",
+      "normalization": "none",
+      "classes": 4,
+      "splits": {
+        "train": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/train.npy",
+        "val": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/val.npy",
+        "test": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/test.npy"
+      },
+      "_manifest_path": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/data/manifest.json"
+    },
+    "manifest_sha256": "e24e17491dfcefe39de0805e603bfad089643faae4081e188db3060dbf1ac77a"
+  },
+  "environment": {
+    "python": "3.11.16",
+    "torch": "2.14.0+cu126",
+    "numpy": "2.4.6",
+    "cuda": "12.6",
+    "device": "NVIDIA A100-PCIE-40GB",
+    "tf32": false,
+    "deterministic": "warn_only",
+    "precision": "fp32/complex64"
+  },
+  "parameters": {
+    "G": 6932,
+    "S0": 6396,
+    "S1": 7148,
+    "S2": 7148,
+    "S2_concat": 7196
+  },
+  "config": {
+    "protocol": {
+      "verified": true,
+      "audit_report": "/home/user_wzk/wzk/projects/SSM/SSM/scratch/qa/SYNTHETIC_ONLY.md",
+      "name": "SYNTHETIC_QA_ONLY"
+    },
+    "model": {
+      "variant": "S0",
+      "patch": 8,
+      "dim": 16,
+      "depth": 2,
+      "heads": 4,
+      "state": 12,
+      "selector_hidden": 8,
+      "classes": 4,
+      "input_length": 64,
+      "ffn_ratio": 4,
+      "dropout": 0.0,
+      "position": "none",
+      "direction": "forward",
+      "scan": "parallel",
+      "ssm_gain": 1.0
+    },
+    "train": {
+      "seed": 17,
+      "epochs": 2,
+      "lr": 0.0003,
+      "batch_size": 16,
+      "weight_decay": 0.01,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "adam_eps": 1e-08,
+      "scheduler": "cosine",
+      "warmup_fraction": 0.05,
+      "grad_clip": 1.0,
+      "precision": "fp32",
+      "augment_cfo_max": 0.0,
+      "physical_fit_samples": 80,
+      "diagnostic_every": 5
+    }
+  },
+  "note": "Machine audit does not verify historical protocol fidelity. Human/agent code audit required."
+}

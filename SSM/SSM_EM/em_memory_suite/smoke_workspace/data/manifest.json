@@ -1,0 +1,86 @@
+{
+  "dataset_id": "synthetic_v1",
+  "group_namespace": "synthetic_v1_sources",
+  "provenance": "Independent generated examples, independent RNG streams by split; not a real-data foundation benchmark.",
+  "sample_rate_hz": null,
+  "center_frequency_hz": null,
+  "amplitude_policy": "absolute gain retained",
+  "tasks": {
+    "waveform": {
+      "kind": "classification",
+      "outputs": 12,
+      "classes": [
+        "BPSK",
+        "QPSK",
+        "8PSK",
+        "16QAM",
+        "64QAM",
+        "2FSK",
+        "4FSK",
+        "AM",
+        "FM",
+        "tone",
+        "LFM",
+        "OFDM"
+      ]
+    },
+    "parameters": {
+      "kind": "regression",
+      "outputs": 2,
+      "names": [
+        "log_gain",
+        "injected_cfo_cycles_per_sample"
+      ]
+    },
+    "activity": {
+      "kind": "segmentation",
+      "outputs": 2
+    }
+  },
+  "splits": {
+    "train": {
+      "x": "train_x.npy",
+      "ids": "train_ids.npy",
+      "groups": "train_groups.npy",
+      "snr": "train_snr.npy",
+      "targets": {
+        "waveform": "train_waveform.npy",
+        "parameters": "train_parameters.npy",
+        "activity": "train_activity.npy"
+      }
+    },
+    "val": {
+      "x": "val_x.npy",
+      "ids": "val_ids.npy",
+      "groups": "val_groups.npy",
+      "snr": "val_snr.npy",
+      "targets": {
+        "waveform": "val_waveform.npy",
+        "parameters": "val_parameters.npy",
+        "activity": "val_activity.npy"
+      }
+    },
+    "test": {
+      "x": "test_x.npy",
+      "ids": "test_ids.npy",
+      "groups": "test_groups.npy",
+      "snr": "test_snr.npy",
+      "targets": {
+        "waveform": "test_waveform.npy",
+        "parameters": "test_parameters.npy",
+        "activity": "test_activity.npy"
+      }
+    },
+    "ood": {
+      "x": "ood_x.npy",
+      "ids": "ood_ids.npy",
+      "groups": "ood_groups.npy",
+      "snr": "ood_snr.npy",
+      "targets": {
+        "waveform": "ood_waveform.npy",
+        "parameters": "ood_parameters.npy",
+        "activity": "ood_activity.npy"
+      }
+    }
+  }
+}

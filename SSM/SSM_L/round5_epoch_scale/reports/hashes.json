@@ -1,0 +1,62 @@
+{
+  "config_and_data_sha256": {
+    "pretrain.json": "22a3fd838719deafe944f0c65840972b89cd8cbf77f2d22027983a639bc70e9a",
+    "manifest_f1.json": "4b179b0a91b519ec02e2d09f0c3ab447ce5186324223c0c2faa90c39fc5a4eb9",
+    "manifest_f2.json": "808e6ec8eeb7e6bbe1f7778e04368e579b190aa2e64e212595a27848d53add3c",
+    "f1_indices.npy": "445ec2efb8fd63da471826f39f53062efa03c346d23a137a4811c11be3b682dd",
+    "f2_train_idx.npy": "94e1da7c0c68f62db199c035d5c6c006b53e9d7e5c8a9237e22ba7102a15fd01",
+    "f2_val_idx.npy": "35b5b8ec7f525c2b1e8d3955b26d34fbd7db23fc5e8e89524295a3b3581e2fcd",
+    "f2_comm_flags.npy": "a1bb5660125b52c766a94262d721b158b43db87021c9dbf1c6514875084ac9bd",
+    "downstream_nocfo_rml.json": "e090b25c3a50a7891b60608be2801953e7f5d35192cecc7d9ae260dd4e29a817",
+    "downstream_nocfo_radar.json": "dc86ed7ab979232a92c7ea789a8e04ef8e6cd330aa2c3fdf397923e7dfc5e1f6",
+    "rml_manifest.json": "6cfd6367f7660e3033913c9d04285381916e9095534299fbc8672cc08db9a4b6",
+    "radar_manifest.json": "841d0de136ba4291d8357783db6a05308042a36c69f0374be608076ee4456245"
+  },
+  "shared_init_sha256": [
+    {
+      "backbone": "G",
+      "seed": 17,
+      "shared_init_sha256": "f1c54bc61ed6d3ade00928b7c14972e6c889a7a7bb647b2e54d6aa0df7462f6c"
+    },
+    {
+      "backbone": "G",
+      "seed": 42,
+      "shared_init_sha256": "06aee13f6a35b2f0d17d368ad03d092fc3b89967e25ccc4e4ea4b37e792fa388"
+    },
+    {
+      "backbone": "G",
+      "seed": 2026,
+      "shared_init_sha256": "a678a3c15c9e062061a62ede1bd168d3e003399464fc7e222b45feed05a9c7fc"
+    },
+    {
+      "backbone": "G_Qlearn",
+      "seed": 17,
+      "shared_init_sha256": "78828cca8a721201d0ffa8ea450720d9096ce396bf0c12c8d0f5ee20f20cfb0a"
+    },
+    {
+      "backbone": "G_Qlearn",
+      "seed": 42,
+      "shared_init_sha256": "4307f299f7480919459f75a48f1baa420bd62b104e90ae4ee22873639b6b706d"
+    },
+    {
+      "backbone": "G_Qlearn",
+      "seed": 2026,
+      "shared_init_sha256": "069c11e1b5cb21b68880dcea4cf0198dca283d0a6e5bdc83bb977e27bb3c0352"
+    },
+    {
+      "backbone": "Q",
+      "seed": 17,
+      "shared_init_sha256": "50383718c44a7e908a9a75544ad3aa2cdb731d834be44009f350bcec949bc14a"
+    },
+    {
+      "backbone": "Q",
+      "seed": 42,
+      "shared_init_sha256": "d347e17ea873e2b3f6222e8e7ded9a7a78eb2bb9f1eab01858f185ba011d6c52"
+    },
+    {
+      "backbone": "Q",
+      "seed": 2026,
+      "shared_init_sha256": "cc610d2052d4e21f4df55584ff52da2d6620faa0a097c4c957281728b96015e8"
+    }
+  ]
+}

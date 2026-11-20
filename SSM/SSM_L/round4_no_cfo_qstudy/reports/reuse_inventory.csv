@@ -1,0 +1,22 @@
+category,item,seeds,action,source,val_oa
+pretrain,G_mae,17/42/2026,reuse,SSM_L/runs/pretrain/G_mae_seed*/encoder_final.pt,
+pretrain,G_denoise,17/42/2026,reuse,SSM_L/runs/pretrain/G_denoise_seed*/encoder_final.pt,
+pretrain,Q_mae,17/42/2026,reuse,SSM_L/runs/pretrain/Q_mae_seed*/encoder_final.pt,
+pretrain,Q_denoise,17/42/2026,reuse,SSM_L/runs/pretrain/Q_denoise_seed*/encoder_final.pt,
+pretrain,G_Qlearn_mae,17/42/2026,reuse,SSM_L/round2_overnight/runs/pretrain/G_Qlearn_mae_seed*/encoder_final.pt,
+pretrain,G_Qlearn_denoise,17/42/2026,reuse,SSM_L/round2_overnight/runs/pretrain/G_Qlearn_denoise_seed*/encoder_final.pt,
+pretrain,S1plain_mae,17/42/2026,reuse,SSM_L/round2_overnight/runs/pretrain/S1plain_mae_seed*/encoder_final.pt,
+pretrain,S1plain_denoise,17/42/2026,reuse,SSM_L/round2_overnight/runs/pretrain/S1plain_denoise_seed*/encoder_final.pt,
+pretrain,G_corr_mae,17/42/2026,train_fresh,round4_no_cfo_qstudy/runs/pretrain/G_corr_mae_seed*,
+pretrain,G_Qlearn_fixedq_mae,17/42/2026,train_fresh,round4_no_cfo_qstudy/runs/pretrain/G_Qlearn_fixedq_mae_seed*,
+downstream,rml_scratch_G,17/42/2026,reuse,SSM/runs/clean/G_seed*/best_val.json,"0.393269,0.383654,0.383654"
+downstream,rml_scratch_S1plain,17/42/2026,reuse,SSM/runs/clean/S1_seed*/best_val.json,"0.390064,0.375962,0.377885"
+downstream,rml_scratch_G_corr,17/42/2026,reuse,SSM/runs/round3/G_corr_seed*/best_val.json,"0.378846,0.371154,0.369551"
+downstream,rml_scratch_Q,17/42/2026,train_fresh,round4_no_cfo_qstudy/runs/rml/scratch/Q_seed*,
+downstream,rml_scratch_G_Qlearn,17/42/2026,train_fresh,round4_no_cfo_qstudy/runs/rml/scratch/G_Qlearn_seed*,
+downstream,rml_mae_all_backbones,17/42/2026,train_fresh,round4_no_cfo_qstudy/runs/rml/mae/*,
+downstream,rml_denoise_all_backbones,17/42/2026,train_fresh,round4_no_cfo_qstudy/runs/rml/denoise/*,
+downstream,radar_all_init_all_backbones,17/42/2026,train_fresh,round4_no_cfo_qstudy/runs/radar/*,
+downstream,radar_scratch_G_corr,17/42/2026,train_fresh,round4_no_cfo_qstudy/runs/radar/scratch/G_corr_seed*,
+note,historical_round2_round3_finetunes,,not_reusable,"round2_overnight + round3_scale_transfer finetunes/scratch all used CFO aug 0.002 (G_scratch 0.4418); old SSM clean runs are no-CFO 0.0",
+note,old_ssm_clean_runs,,reusable,"SSM/runs/clean (G/S1/S2) and SSM/runs/round3 (G_corr) are augment_cfo_max=0.0",

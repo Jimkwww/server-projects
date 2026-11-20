@@ -1,0 +1,16 @@
+{
+  "format": "h5",
+  "file": "/data1/user_wzk/datasets/RML2018A/GOLD_XYZ_OSC.0001_1024.hdf5",
+  "x_key": "X",
+  "y_key": "Y",
+  "snr_key": "Z",
+  "layout": "NLC",
+  "label_format": "one_hot",
+  "normalization": "none",
+  "classes": 24,
+  "splits": {
+    "train": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_train.npy",
+    "val": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_val.npy",
+    "test": "/home/user_wzk/wzk/projects/SSM/SSM_L/data/cls_dev_test.npy"
+  }
+}

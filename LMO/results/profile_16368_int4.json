@@ -1,0 +1,45 @@
+{
+  "quant": "int4",
+  "iq_length": 16368,
+  "n_text_tokens": 49,
+  "n_signal_tokens": 1023,
+  "n_output_tokens": 2,
+  "label": "Pulse_DME",
+  "stages": {
+    "to_device": {
+      "mean_ms": 0.022,
+      "p50_ms": 0.022,
+      "p95_ms": 0.023
+    },
+    "encoder": {
+      "mean_ms": 5.702,
+      "p50_ms": 5.699,
+      "p95_ms": 5.722
+    },
+    "bridge": {
+      "mean_ms": 6.379,
+      "p50_ms": 6.317,
+      "p95_ms": 6.365
+    },
+    "prefill": {
+      "mean_ms": 91.599,
+      "p50_ms": 91.533,
+      "p95_ms": 91.603
+    },
+    "decode_one": {
+      "mean_ms": 65.635,
+      "p50_ms": 65.499,
+      "p95_ms": 66.663
+    },
+    "decode_full": {
+      "mean_ms": 67.574,
+      "p50_ms": 65.35,
+      "p95_ms": 65.966
+    }
+  },
+  "signal_ms": 12.081,
+  "qwen_ms": 159.173,
+  "total_ms": 171.254,
+  "qwen_ratio_pct": 92.95,
+  "decode_per_token_ms": 33.787
+}

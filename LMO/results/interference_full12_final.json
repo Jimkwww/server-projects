@@ -1,0 +1,77 @@
+{
+  "scheme": "final (int4磁盘存储 + merge bf16推理 + torch.compile decode)",
+  "compile_mode": "default",
+  "total": 2212,
+  "correct": 1492,
+  "accuracy": 0.674502712477396,
+  "elapsed_sec": 245.96806740760803,
+  "avg_sec_per_sample": 0.11119713716437976,
+  "peak_mem_GB": 9.334276096,
+  "disk_full_GB": 3.50739468,
+  "disk_bf16_GB": 8.411663315,
+  "compression_ratio": 2.3982654027974974,
+  "quant_time_s": 7.005578994750977,
+  "unpack_time_s": 0.5583865642547607,
+  "per_class": {
+    "AM_Jamming": {
+      "correct": 149,
+      "total": 200,
+      "acc": 0.745
+    },
+    "Comb_Jamming": {
+      "correct": 165,
+      "total": 200,
+      "acc": 0.825
+    },
+    "FM_Jamming": {
+      "correct": 100,
+      "total": 200,
+      "acc": 0.5
+    },
+    "Multi_Tone": {
+      "correct": 89,
+      "total": 200,
+      "acc": 0.445
+    },
+    "Narrowband": {
+      "correct": 119,
+      "total": 200,
+      "acc": 0.595
+    },
+    "No_Interference": {
+      "correct": 11,
+      "total": 12,
+      "acc": 0.9166666666666666
+    },
+    "Protocol_Bluetooth": {
+      "correct": 125,
+      "total": 200,
+      "acc": 0.625
+    },
+    "Protocol_WiFi": {
+      "correct": 156,
+      "total": 200,
+      "acc": 0.78
+    },
+    "Pulse_DME": {
+      "correct": 160,
+      "total": 200,
+      "acc": 0.8
+    },
+    "Single_Tone": {
+      "correct": 154,
+      "total": 200,
+      "acc": 0.77
+    },
+    "Sweep_Chirp": {
+      "correct": 136,
+      "total": 200,
+      "acc": 0.68
+    },
+    "Wideband": {
+      "correct": 128,
+      "total": 200,
+      "acc": 0.64
+    }
+  }
+}

@@ -1,0 +1,80 @@
+# ============================================================
+# 存档仓库 .gitignore —— 只存代码/报告/配置/图表，不存大文件
+# 大文件（权重/数据/打包产物）留在服务器，路径写进 md/README
+# ============================================================
+
+# ----- 权重 / 模型检查点 -----
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.ref32ep
+*.pkl
+
+# ----- 数据 / 二进制结果 -----
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.parquet
+*.bin
+*.mat
+*.wav
+*.iq
+*.raw
+*.sigmf
+*.sigmf-data
+*.sigmf-meta
+
+# ----- 日志 / 缓存 -----
+*.log
+*.out
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# ----- 打包产物 -----
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.7z
+*.rar
+
+# ----- 逐样本评估/预测产物（留在服务器，路径写在 md 里）-----
+**/eval_cases.jsonl
+**/extended_cases.jsonl
+**/test_cases.jsonl
+**/eval_val/results.json
+**/eval_val/partial.json
+**/perturbation_predictions/
+**/denoise_eval_round2.json
+
+# ----- 每 run 训练历史 / 生成式 campaign 计划 -----
+**/history.jsonl
+**/plan/plan.json
+
+# ----- per-job/per-run 生成产物（由 results_summary / run_manifest / report.md 汇总）-----
+**/metrics.json
+**/DONE.json
+**/environment.json
+**/provenance.json
+**/best_val.json
+**/best_metrics.json
+**/model_info.json
+**/parameter_counts.json
+**/registry.json
+**/metadata.json
+**/pre_*.json
+
+# ----- 临时 / 系统 -----
+*.pid
+.DS_Store
+*~
