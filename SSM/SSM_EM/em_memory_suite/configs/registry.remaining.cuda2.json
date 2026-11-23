@@ -1,0 +1,112 @@
+{
+  "device": "cuda:2",
+  "seeds": [
+    2026
+  ],
+  "core_extra_seeds": [
+    7,
+    123
+  ],
+  "pretrain_epochs": 100,
+  "downstream_epochs": 50,
+  "batch_size": 128,
+  "grad_accum": 1,
+  "workers": 4,
+  "cpu_threads": 4,
+  "fractions": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "pretrain": [
+    "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/data/rml2018_f1/manifest.json"
+  ],
+  "pretrain_domains": {},
+  "downstream": [
+    {
+      "id": "rml2018_modulation",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/data/rml2018_clsdev/manifest.json",
+      "task": "modulation",
+      "perturbations": {
+        "phase": [
+          0.7853981634,
+          1.5707963268,
+          3.1415926536
+        ],
+        "cfo": [
+          -0.02,
+          -0.01,
+          -0.005,
+          -0.001,
+          0.001,
+          0.005,
+          0.01,
+          0.02
+        ],
+        "gain": [
+          0.25,
+          0.5,
+          2.0,
+          4.0
+        ],
+        "noise": [
+          -5.0,
+          0.0,
+          5.0,
+          10.0,
+          20.0
+        ],
+        "iq_imbalance": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "multipath": [
+          0.1,
+          0.3,
+          0.5
+        ],
+        "clip": [
+          0.8,
+          1.0,
+          1.5,
+          2.0
+        ]
+      }
+    },
+    {
+      "id": "radchar_waveform",
+      "manifest": "/home/user_wzk/wzk/projects/SSM/SSM_EM/em_memory_suite/data/radchar_tiny/manifest.json",
+      "task": "radar_waveform",
+      "perturbations": {
+        "phase": [
+          0.7853981634,
+          1.5707963268,
+          3.1415926536
+        ],
+        "cfo": [
+          -0.02,
+          -0.01,
+          0.01,
+          0.02
+        ],
+        "gain": [
+          0.5,
+          2.0
+        ],
+        "noise": [
+          -5.0,
+          0.0,
+          5.0,
+          10.0
+        ]
+      }
+    }
+  ],
+  "novelty": [],
+  "extra_campaigns": {},
+  "variants": [
+    "shuffled_aux",
+    "structured_recon"
+  ]
+}

@@ -1,0 +1,11 @@
+hypothesis,status,evidence
+H1 结构化记忆改善通用迁移,supported,structured_recon 0.3763 vs generic_ssm_recon 0.3019 = +7.4pp (多分支结构贡献); structured 0.3700 vs generic_ssm 0.3248 = +4.5pp
+H2 收益不仅是物理前端,supported,pointwise_physical 0.3014 ≈ generic_ssm_recon 0.3019 都低; 物理分支+递推结合(structured 0.3700)才高
+H3 局部分支监督建立职责,refuted,fused_aux 0.3782 ≈ structured 0.3700; shuffled_aux 0.3781 也接近 -> 辅助目标定位无收益
+H4 模型实际使用时间记忆,inconclusive,history_1 0.3575 vs history_8(structured) 0.3700 差 1.2pp; 需 reset/诊断进一步判定
+H5 编码器保存多任务信息,supported,"structured radar probe 0.7761 也高于对照, 非仅 AMC"
+H6 复数/选择性/残差贡献,mixed,复数无收益(real_state 0.3764≈0.3700); 选择性门 +1.2pp(fixed_state 0.3579); 残差 +3.5pp(no_residual 0.3349)
+H7 变换关系监督额外价值,refuted,structured_equiv 0.3655 ≈ aug_without_equiv 0.3686 ≈ structured 0.3700
+H8 保留通用分支,supported,no_general AMC 0.3182(-5pp) / radar 0.6533(-12pp) 均更差
+H9 扩容扩数据保持收益,blocked,扩展 campaign(native_width/scale/data/long) 已生成 plan 但延后未跑
+H10 辅助误差改善对应任务价值,refuted,structured 0.3700 ≈ structured_recon 0.3763 -> 辅助目标不带来下游价值
