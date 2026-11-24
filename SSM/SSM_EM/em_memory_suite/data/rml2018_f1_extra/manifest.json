@@ -1,0 +1,31 @@
+{
+  "dataset_id": "rml2018a_f1_extra",
+  "group_namespace": "rml2018a_f1_extra",
+  "provenance": "RML2018A extra 100k pretrain corpus, (mod,SNR) stratified, no overlap downstream val/test. groups=per-sample. normalization=none.",
+  "tasks": {
+    "modulation": {
+      "kind": "classification",
+      "outputs": 24
+    }
+  },
+  "splits": {
+    "train": {
+      "x": "train_x.npy",
+      "ids": "train_ids.npy",
+      "groups": "train_groups.npy",
+      "snr": "train_snr.npy",
+      "targets": {
+        "modulation": "train_y.npy"
+      }
+    },
+    "val": {
+      "x": "val_x.npy",
+      "ids": "val_ids.npy",
+      "groups": "val_groups.npy",
+      "snr": "val_snr.npy",
+      "targets": {
+        "modulation": "val_y.npy"
+      }
+    }
+  }
+}

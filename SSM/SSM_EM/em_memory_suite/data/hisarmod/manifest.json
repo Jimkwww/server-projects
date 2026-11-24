@@ -1,0 +1,67 @@
+{
+  "dataset_id": "hisarmod_26class",
+  "group_namespace": "hisarmod",
+  "provenance": "HisarMod 2019, 26-class modulation (cross-dataset). Subsample train 4000/class, val 500/class, test 2000/class. Source CSV complex strings parsed to [I,Q]. sample_rate_hz varies (fs column); recorded null. groups=per-sample.",
+  "sample_rate_hz": null,
+  "center_frequency_hz": null,
+  "tasks": {
+    "modulation": {
+      "kind": "classification",
+      "outputs": 26,
+      "classes": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "30",
+        "31",
+        "32",
+        "34",
+        "40",
+        "41",
+        "44",
+        "50",
+        "51",
+        "54",
+        "61"
+      ]
+    }
+  },
+  "splits": {
+    "train": {
+      "x": "train_x.npy",
+      "ids": "train_ids.npy",
+      "groups": "train_groups.npy",
+      "targets": {
+        "modulation": "train_y.npy"
+      }
+    },
+    "val": {
+      "x": "val_x.npy",
+      "ids": "val_ids.npy",
+      "groups": "val_groups.npy",
+      "targets": {
+        "modulation": "val_y.npy"
+      }
+    },
+    "test": {
+      "x": "test_x.npy",
+      "ids": "test_ids.npy",
+      "groups": "test_groups.npy",
+      "targets": {
+        "modulation": "test_y.npy"
+      }
+    }
+  }
+}
