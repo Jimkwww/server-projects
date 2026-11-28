@@ -1,0 +1,74 @@
+[
+  {
+    "task": "rml",
+    "model": "q",
+    "test_oa": 0.3906558185404339,
+    "test_macro_f1": 0.39195355308251983,
+    "best_val_f1": 0.39270676161849094,
+    "params": 10458968,
+    "epochs": 30
+  },
+  {
+    "task": "rml",
+    "model": "structured",
+    "test_oa": 0.4490877712031558,
+    "test_macro_f1": 0.4439395710477096,
+    "best_val_f1": 0.45113853897462536,
+    "params": 10402448,
+    "epochs": 30
+  },
+  {
+    "task": "rml",
+    "model": "emind",
+    "test_oa": 0.35428994082840237,
+    "test_macro_f1": 0.3483394199015928,
+    "best_val_f1": 0.34390474167164803,
+    "params": 9683736,
+    "epochs": 30
+  },
+  {
+    "task": "rml",
+    "model": "wavesfm",
+    "test_oa": 0.35650887573964496,
+    "test_macro_f1": 0.3623130341694556,
+    "best_val_f1": 0.3641799501415905,
+    "params": 9883224,
+    "epochs": 30
+  },
+  {
+    "task": "radar",
+    "model": "q",
+    "test_oa": 0.8758,
+    "test_macro_f1": 0.8757721531758083,
+    "best_val_f1": 0.8739638716444962,
+    "params": 10453477,
+    "epochs": 30
+  },
+  {
+    "task": "radar",
+    "model": "structured",
+    "test_oa": 0.8634,
+    "test_macro_f1": 0.8645767436843979,
+    "best_val_f1": 0.8686079192093491,
+    "params": 10387989,
+    "epochs": 30
+  },
+  {
+    "task": "radar",
+    "model": "emind",
+    "test_oa": 0.8445,
+    "test_macro_f1": 0.8456584801676303,
+    "best_val_f1": 0.8438076752900605,
+    "params": 9646085,
+    "epochs": 30
+  },
+  {
+    "task": "radar",
+    "model": "wavesfm",
+    "test_oa": 0.8427,
+    "test_macro_f1": 0.8416336701034783,
+    "best_val_f1": 0.8464810995182613,
+    "params": 9877125,
+    "epochs": 30
+  }
+]

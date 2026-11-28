@@ -78,3 +78,5 @@ __pycache__/
 *.pid
 .DS_Store
 *~
+# 每 run 冗余训练历史（result.json 已含完整 history 曲线）
+**/hist.json
